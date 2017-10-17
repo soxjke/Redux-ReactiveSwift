@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BD3B3321F9662D30077E8A5"
-               BuildableName = "Redux_ReactiveSwift_tvOS.framework"
-               BlueprintName = "Redux-ReactiveSwift-tvOS"
+               BlueprintIdentifier = "4BD3B3531F9691420077E8A5"
+               BuildableName = "Redux_ReactiveSwift.framework"
+               BlueprintName = "CocoaPods-Redux-ReactiveSwift-iOS"
                ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,7 +29,26 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BD3B3871F9694900077E8A5"
+               BuildableName = "CocoaPods-Redux-ReactiveSwift-iOSTests.xctest"
+               BlueprintName = "CocoaPods-Redux-ReactiveSwift-iOSTests"
+               ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4BD3B3531F9691420077E8A5"
+            BuildableName = "Redux_ReactiveSwift.framework"
+            BlueprintName = "CocoaPods-Redux-ReactiveSwift-iOS"
+            ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -47,9 +66,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BD3B3321F9662D30077E8A5"
-            BuildableName = "Redux_ReactiveSwift_tvOS.framework"
-            BlueprintName = "Redux-ReactiveSwift-tvOS"
+            BlueprintIdentifier = "4BD3B3531F9691420077E8A5"
+            BuildableName = "Redux_ReactiveSwift.framework"
+            BlueprintName = "CocoaPods-Redux-ReactiveSwift-iOS"
             ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +84,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BD3B3321F9662D30077E8A5"
-            BuildableName = "Redux_ReactiveSwift_tvOS.framework"
-            BlueprintName = "Redux-ReactiveSwift-tvOS"
+            BlueprintIdentifier = "4BD3B3531F9691420077E8A5"
+            BuildableName = "Redux_ReactiveSwift.framework"
+            BlueprintName = "CocoaPods-Redux-ReactiveSwift-iOS"
             ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

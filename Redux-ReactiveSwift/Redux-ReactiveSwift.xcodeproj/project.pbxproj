@@ -7,419 +7,811 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04F13B78F406FF863942990B /* Pods_Redux_ReactiveSwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73143D6C34A9D57E11ECC62F /* Pods_Redux_ReactiveSwift_iOS.framework */; };
-		4BD3B2F21F96497D0077E8A5 /* CallSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B2EB1F96496D0077E8A5 /* CallSpy.swift */; };
-		4BD3B2F31F9649800077E8A5 /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B2ED1F96496D0077E8A5 /* StoreSpec.swift */; };
-		4BD3B3151F9662600077E8A5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B2F01F96496D0077E8A5 /* Store.swift */; };
-		4BD3B3171F9662600077E8A5 /* Pods_Redux_ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9ADEB50130FE29725A55D22 /* Pods_Redux_ReactiveSwift.framework */; };
-		4BD3B3191F9662600077E8A5 /* Redux_ReactiveSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BCDA5671F96481D00307E62 /* Redux_ReactiveSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BD3B32A1F9662B90077E8A5 /* Redux_ReactiveSwift_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3B3281F9662B90077E8A5 /* Redux_ReactiveSwift_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BD3B3371F9662D30077E8A5 /* Redux_ReactiveSwift_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3B3351F9662D30077E8A5 /* Redux_ReactiveSwift_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BD3B3441F9663000077E8A5 /* Redux_ReactiveSwift_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3B3421F9663000077E8A5 /* Redux_ReactiveSwift_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8082FB60B528AEA54D977510 /* Pods_Redux_ReactiveSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052E396E94C914CE4506AF1B /* Pods_Redux_ReactiveSwiftTests.framework */; };
+		023BC7D2C86D2C51DA5B6A3F /* Pods_CocoaPods_Redux_ReactiveSwift_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29196EB9593C0E834768F018 /* Pods_CocoaPods_Redux_ReactiveSwift_macOS.framework */; };
+		12647EBE419B7D423332663F /* Pods_CocoaPods_Redux_ReactiveSwift_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E76FEE2C25B4A7C5774A40 /* Pods_CocoaPods_Redux_ReactiveSwift_iOSTests.framework */; };
+		4BD3B3591F9691420077E8A5 /* CocoaPods_Redux_ReactiveSwift_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3B3571F9691420077E8A5 /* CocoaPods_Redux_ReactiveSwift_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BD3B3661F9692090077E8A5 /* CocoaPods_Redux_ReactiveSwift_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3B3641F9692090077E8A5 /* CocoaPods_Redux_ReactiveSwift_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BD3B3731F9692630077E8A5 /* CocoaPods_Redux_ReactiveSwift_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3B3711F9692630077E8A5 /* CocoaPods_Redux_ReactiveSwift_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BD3B3801F9692AA0077E8A5 /* CocoaPods_Redux_ReactiveSwift_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3B37E1F9692AA0077E8A5 /* CocoaPods_Redux_ReactiveSwift_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BD3B38D1F9694900077E8A5 /* Redux_ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD3B3541F9691420077E8A5 /* Redux_ReactiveSwift.framework */; };
+		4BD3B3961F96959A0077E8A5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B3951F96958D0077E8A5 /* Store.swift */; };
+		4BD3B3971F96959B0077E8A5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B3951F96958D0077E8A5 /* Store.swift */; };
+		4BD3B3981F96959C0077E8A5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B3951F96958D0077E8A5 /* Store.swift */; };
+		4BD3B3991F96959C0077E8A5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B3951F96958D0077E8A5 /* Store.swift */; };
+		4BD3B39F1F9695BF0077E8A5 /* CallSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B39C1F9695B80077E8A5 /* CallSpy.swift */; };
+		4BD3B3A01F9695C20077E8A5 /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B39E1F9695B80077E8A5 /* StoreSpec.swift */; };
+		4BD3B3AC1F969BBF0077E8A5 /* Carthage_Redux_ReactiveSwift_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3B3AA1F969BBF0077E8A5 /* Carthage_Redux_ReactiveSwift_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BD3B3B91F969C0F0077E8A5 /* Carthage_Redux_ReactiveSwift_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3B3B71F969C0F0077E8A5 /* Carthage_Redux_ReactiveSwift_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BD3B3C61F969C4F0077E8A5 /* Carthage_Redux_ReactiveSwift_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3B3C41F969C4F0077E8A5 /* Carthage_Redux_ReactiveSwift_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BD3B3D31F969C910077E8A5 /* Carthage_Redux_ReactiveSwift_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3B3D11F969C910077E8A5 /* Carthage_Redux_ReactiveSwift_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BD3B3E01F969CEA0077E8A5 /* Redux_ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD3B3A81F969BBF0077E8A5 /* Redux_ReactiveSwift.framework */; };
+		4BD3B3E61F969DD30077E8A5 /* CallSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B39C1F9695B80077E8A5 /* CallSpy.swift */; };
+		4BD3B3E71F969DD30077E8A5 /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B39E1F9695B80077E8A5 /* StoreSpec.swift */; };
+		4BD3B3F31F96A2DA0077E8A5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD3B3F11F96A2DA0077E8A5 /* Result.framework */; };
+		4BD3B3F41F96A2DA0077E8A5 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD3B3F21F96A2DA0077E8A5 /* ReactiveSwift.framework */; };
+		4BD3B3F71F96A2F50077E8A5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD3B3F51F96A2F50077E8A5 /* Result.framework */; };
+		4BD3B3F81F96A2F50077E8A5 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD3B3F61F96A2F50077E8A5 /* ReactiveSwift.framework */; };
+		4BD3B3FB1F96A3010077E8A5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD3B3F91F96A3010077E8A5 /* Result.framework */; };
+		4BD3B3FC1F96A3010077E8A5 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD3B3FA1F96A3010077E8A5 /* ReactiveSwift.framework */; };
+		4BD3B3FF1F96A30A0077E8A5 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD3B3FD1F96A30A0077E8A5 /* ReactiveSwift.framework */; };
+		4BD3B4001F96A30A0077E8A5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD3B3FE1F96A30A0077E8A5 /* Result.framework */; };
+		4BD3B4021F96A3690077E8A5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B3951F96958D0077E8A5 /* Store.swift */; };
+		4BD3B4031F96A3690077E8A5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B3951F96958D0077E8A5 /* Store.swift */; };
+		4BD3B4041F96A36A0077E8A5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B3951F96958D0077E8A5 /* Store.swift */; };
+		4BD3B4051F96A36B0077E8A5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B3951F96958D0077E8A5 /* Store.swift */; };
+		4BD3B40B1F96A6A20077E8A5 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD3B3F21F96A2DA0077E8A5 /* ReactiveSwift.framework */; };
+		4BD3B40F1F96A6A30077E8A5 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD3B40C1F96A6A30077E8A5 /* ReactiveCocoa.framework */; };
+		4BD3B4101F96A6A30077E8A5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD3B40D1F96A6A30077E8A5 /* Nimble.framework */; };
+		4BD3B4111F96A6A30077E8A5 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD3B40E1F96A6A30077E8A5 /* Quick.framework */; };
+		4BD3B4121F96A6AC0077E8A5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD3B3F11F96A2DA0077E8A5 /* Result.framework */; };
+		4FCB578E67F9D1EBE3B3C6EA /* Pods_CocoaPods_Redux_ReactiveSwift_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFC9CB6AD3428B8821D1EDD /* Pods_CocoaPods_Redux_ReactiveSwift_tvOS.framework */; };
+		AEB2827B2F7E4517E511F7DC /* Pods_CocoaPods_Redux_ReactiveSwift_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0E20721D6E20F17D04FB3D /* Pods_CocoaPods_Redux_ReactiveSwift_watchOS.framework */; };
+		EB63CF763B3AF97417923595 /* Pods_CocoaPods_Redux_ReactiveSwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE25E5AB988651ADB2B640D /* Pods_CocoaPods_Redux_ReactiveSwift_iOS.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4BD3B3A11F9697300077E8A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BD3B3491F9690810077E8A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BD3B3531F9691420077E8A5;
+			remoteInfo = "CocoaPods-Redux-ReactiveSwift-iOS";
+		};
+		4BD3B3E11F969CEA0077E8A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BD3B3491F9690810077E8A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BD3B3A71F969BBF0077E8A5;
+			remoteInfo = "Carthage-Redux-ReactiveSwift-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		052E396E94C914CE4506AF1B /* Pods_Redux_ReactiveSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Redux_ReactiveSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		168AECC2245C882F5324D7B2 /* Pods-Redux-ReactiveSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-ReactiveSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-ReactiveSwiftTests/Pods-Redux-ReactiveSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
-		4BCDA5671F96481D00307E62 /* Redux_ReactiveSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Redux_ReactiveSwift.h; sourceTree = "<group>"; };
-		4BCDA5681F96481D00307E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BCDA56D1F96481D00307E62 /* Redux-ReactiveSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Redux-ReactiveSwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BCDA5741F96481D00307E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BD3B2EB1F96496D0077E8A5 /* CallSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSpy.swift; sourceTree = "<group>"; };
-		4BD3B2EC1F96496D0077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BD3B2ED1F96496D0077E8A5 /* StoreSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSpec.swift; sourceTree = "<group>"; };
-		4BD3B2F01F96496D0077E8A5 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		4BD3B31F1F9662600077E8A5 /* Redux_ReactiveSwift_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BD3B3201F9662600077E8A5 /* Redux-ReactiveSwift copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Redux-ReactiveSwift copy-Info.plist"; path = "/Users/petr/projects/Redux-ReactiveSwift/Redux-ReactiveSwift/Redux-ReactiveSwift copy-Info.plist"; sourceTree = "<absolute>"; };
-		4BD3B3261F9662B90077E8A5 /* Redux_ReactiveSwift_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BD3B3281F9662B90077E8A5 /* Redux_ReactiveSwift_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Redux_ReactiveSwift_watchOS.h; sourceTree = "<group>"; };
-		4BD3B3291F9662B90077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BD3B3331F9662D30077E8A5 /* Redux_ReactiveSwift_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BD3B3351F9662D30077E8A5 /* Redux_ReactiveSwift_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Redux_ReactiveSwift_tvOS.h; sourceTree = "<group>"; };
-		4BD3B3361F9662D30077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BD3B3401F9663000077E8A5 /* Redux_ReactiveSwift_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BD3B3421F9663000077E8A5 /* Redux_ReactiveSwift_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Redux_ReactiveSwift_macOS.h; sourceTree = "<group>"; };
-		4BD3B3431F9663000077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CF981D26BCC8093B1ED9B37 /* Pods-Redux-ReactiveSwift-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-ReactiveSwift-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-ReactiveSwift-iOS/Pods-Redux-ReactiveSwift-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		71831406CE27C55469304130 /* Pods-Redux-ReactiveSwift-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-ReactiveSwift-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-ReactiveSwift-iOS/Pods-Redux-ReactiveSwift-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		73143D6C34A9D57E11ECC62F /* Pods_Redux_ReactiveSwift_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Redux_ReactiveSwift_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		95964EE030609BCEACCE8D4F /* Pods-Redux-ReactiveSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-ReactiveSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-ReactiveSwift/Pods-Redux-ReactiveSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		A1A5AF7D251DC91DE140E4B1 /* Pods-Redux-ReactiveSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-ReactiveSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-ReactiveSwift/Pods-Redux-ReactiveSwift.release.xcconfig"; sourceTree = "<group>"; };
-		B9ADEB50130FE29725A55D22 /* Pods_Redux_ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Redux_ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF113E0710C49C4E43F740E9 /* Pods-Redux-ReactiveSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-ReactiveSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-ReactiveSwiftTests/Pods-Redux-ReactiveSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		212D07EA9483A91EF4D13885 /* Pods-CocoaPods-Redux-ReactiveSwift-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPods-Redux-ReactiveSwift-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-tvOS/Pods-CocoaPods-Redux-ReactiveSwift-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		29196EB9593C0E834768F018 /* Pods_CocoaPods_Redux_ReactiveSwift_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaPods_Redux_ReactiveSwift_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		385806C8F60FEB4ED4845D9C /* Pods-CocoaPods-Redux-ReactiveSwift-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPods-Redux-ReactiveSwift-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-iOS/Pods-CocoaPods-Redux-ReactiveSwift-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		38FA98D88138A0868A6E0408 /* Pods-CocoaPods-Redux-ReactiveSwift-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPods-Redux-ReactiveSwift-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-iOSTests/Pods-CocoaPods-Redux-ReactiveSwift-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4400C9971548681461EE22FD /* Pods-CocoaPods-Redux-ReactiveSwift-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPods-Redux-ReactiveSwift-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-macOS/Pods-CocoaPods-Redux-ReactiveSwift-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4BD3B3541F9691420077E8A5 /* Redux_ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3B3571F9691420077E8A5 /* CocoaPods_Redux_ReactiveSwift_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaPods_Redux_ReactiveSwift_iOS.h; sourceTree = "<group>"; };
+		4BD3B3581F9691420077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD3B3621F9692080077E8A5 /* Redux_ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3B3641F9692090077E8A5 /* CocoaPods_Redux_ReactiveSwift_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaPods_Redux_ReactiveSwift_watchOS.h; sourceTree = "<group>"; };
+		4BD3B3651F9692090077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD3B36F1F9692630077E8A5 /* Redux_ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3B3711F9692630077E8A5 /* CocoaPods_Redux_ReactiveSwift_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaPods_Redux_ReactiveSwift_tvOS.h; sourceTree = "<group>"; };
+		4BD3B3721F9692630077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD3B37C1F9692AA0077E8A5 /* Redux_ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3B37E1F9692AA0077E8A5 /* CocoaPods_Redux_ReactiveSwift_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaPods_Redux_ReactiveSwift_macOS.h; sourceTree = "<group>"; };
+		4BD3B37F1F9692AA0077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD3B3881F9694900077E8A5 /* CocoaPods-Redux-ReactiveSwift-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CocoaPods-Redux-ReactiveSwift-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3B38C1F9694900077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD3B3951F96958D0077E8A5 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		4BD3B39C1F9695B80077E8A5 /* CallSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSpy.swift; sourceTree = "<group>"; };
+		4BD3B39E1F9695B80077E8A5 /* StoreSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSpec.swift; sourceTree = "<group>"; };
+		4BD3B3A81F969BBF0077E8A5 /* Redux_ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3B3AA1F969BBF0077E8A5 /* Carthage_Redux_ReactiveSwift_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Carthage_Redux_ReactiveSwift_iOS.h; sourceTree = "<group>"; };
+		4BD3B3AB1F969BBF0077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD3B3B51F969C0F0077E8A5 /* Redux_ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3B3B71F969C0F0077E8A5 /* Carthage_Redux_ReactiveSwift_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Carthage_Redux_ReactiveSwift_watchOS.h; sourceTree = "<group>"; };
+		4BD3B3B81F969C0F0077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD3B3C21F969C4F0077E8A5 /* Redux_ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3B3C41F969C4F0077E8A5 /* Carthage_Redux_ReactiveSwift_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Carthage_Redux_ReactiveSwift_tvOS.h; sourceTree = "<group>"; };
+		4BD3B3C51F969C4F0077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD3B3CF1F969C910077E8A5 /* Redux_ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3B3D11F969C910077E8A5 /* Carthage_Redux_ReactiveSwift_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Carthage_Redux_ReactiveSwift_macOS.h; sourceTree = "<group>"; };
+		4BD3B3D21F969C910077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD3B3DB1F969CEA0077E8A5 /* Carthage-Redux-ReactiveSwift-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carthage-Redux-ReactiveSwift-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3B3DF1F969CEA0077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD3B3F11F96A2DA0077E8A5 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		4BD3B3F21F96A2DA0077E8A5 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		4BD3B3F51F96A2F50077E8A5 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/watchOS/Result.framework; sourceTree = "<group>"; };
+		4BD3B3F61F96A2F50077E8A5 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/watchOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		4BD3B3F91F96A3010077E8A5 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/tvOS/Result.framework; sourceTree = "<group>"; };
+		4BD3B3FA1F96A3010077E8A5 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/tvOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		4BD3B3FD1F96A30A0077E8A5 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/Mac/ReactiveSwift.framework; sourceTree = "<group>"; };
+		4BD3B3FE1F96A30A0077E8A5 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		4BD3B40C1F96A6A30077E8A5 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		4BD3B40D1F96A6A30077E8A5 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		4BD3B40E1F96A6A30077E8A5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		5A8CA91B58E04ACE518C5552 /* Pods-CocoaPods-Redux-ReactiveSwift-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPods-Redux-ReactiveSwift-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-macOS/Pods-CocoaPods-Redux-ReactiveSwift-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		711321921BB197A13E05FE25 /* Pods-CocoaPods-Redux-ReactiveSwift-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPods-Redux-ReactiveSwift-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-watchOS/Pods-CocoaPods-Redux-ReactiveSwift-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		7AE25E5AB988651ADB2B640D /* Pods_CocoaPods_Redux_ReactiveSwift_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaPods_Redux_ReactiveSwift_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DEFB107EAB13EEC5FBD71DC /* Pods-CocoaPods-Redux-ReactiveSwift-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPods-Redux-ReactiveSwift-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-iOS/Pods-CocoaPods-Redux-ReactiveSwift-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		AE8ACD71D04C676A5D27AC6A /* Pods-CocoaPods-Redux-ReactiveSwift-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPods-Redux-ReactiveSwift-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-watchOS/Pods-CocoaPods-Redux-ReactiveSwift-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B757A1A0B93CCFBB6B7A6D54 /* Pods-CocoaPods-Redux-ReactiveSwift-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPods-Redux-ReactiveSwift-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-tvOS/Pods-CocoaPods-Redux-ReactiveSwift-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		CA0E20721D6E20F17D04FB3D /* Pods_CocoaPods_Redux_ReactiveSwift_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaPods_Redux_ReactiveSwift_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCFC9CB6AD3428B8821D1EDD /* Pods_CocoaPods_Redux_ReactiveSwift_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaPods_Redux_ReactiveSwift_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E24A4BE4191BE3FACF4ED03A /* Pods-CocoaPods-Redux-ReactiveSwift-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPods-Redux-ReactiveSwift-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-iOSTests/Pods-CocoaPods-Redux-ReactiveSwift-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		F2E76FEE2C25B4A7C5774A40 /* Pods_CocoaPods_Redux_ReactiveSwift_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaPods_Redux_ReactiveSwift_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4BCDA56A1F96481D00307E62 /* Frameworks */ = {
+		4BD3B3501F9691420077E8A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8082FB60B528AEA54D977510 /* Pods_Redux_ReactiveSwiftTests.framework in Frameworks */,
+				EB63CF763B3AF97417923595 /* Pods_CocoaPods_Redux_ReactiveSwift_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD3B3161F9662600077E8A5 /* Frameworks */ = {
+		4BD3B35E1F9692080077E8A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD3B3171F9662600077E8A5 /* Pods_Redux_ReactiveSwift.framework in Frameworks */,
-				04F13B78F406FF863942990B /* Pods_Redux_ReactiveSwift_iOS.framework in Frameworks */,
+				AEB2827B2F7E4517E511F7DC /* Pods_CocoaPods_Redux_ReactiveSwift_watchOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD3B3221F9662B90077E8A5 /* Frameworks */ = {
+		4BD3B36B1F9692630077E8A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FCB578E67F9D1EBE3B3C6EA /* Pods_CocoaPods_Redux_ReactiveSwift_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD3B32F1F9662D30077E8A5 /* Frameworks */ = {
+		4BD3B3781F9692AA0077E8A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023BC7D2C86D2C51DA5B6A3F /* Pods_CocoaPods_Redux_ReactiveSwift_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD3B33C1F9663000077E8A5 /* Frameworks */ = {
+		4BD3B3851F9694900077E8A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD3B38D1F9694900077E8A5 /* Redux_ReactiveSwift.framework in Frameworks */,
+				12647EBE419B7D423332663F /* Pods_CocoaPods_Redux_ReactiveSwift_iOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3A41F969BBF0077E8A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B3F31F96A2DA0077E8A5 /* Result.framework in Frameworks */,
+				4BD3B3F41F96A2DA0077E8A5 /* ReactiveSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3B11F969C0F0077E8A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B3F71F96A2F50077E8A5 /* Result.framework in Frameworks */,
+				4BD3B3F81F96A2F50077E8A5 /* ReactiveSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3BE1F969C4F0077E8A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B3FB1F96A3010077E8A5 /* Result.framework in Frameworks */,
+				4BD3B3FC1F96A3010077E8A5 /* ReactiveSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3CB1F969C910077E8A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B3FF1F96A30A0077E8A5 /* ReactiveSwift.framework in Frameworks */,
+				4BD3B4001F96A30A0077E8A5 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3D81F969CEA0077E8A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B3E01F969CEA0077E8A5 /* Redux_ReactiveSwift.framework in Frameworks */,
+				4BD3B40F1F96A6A30077E8A5 /* ReactiveCocoa.framework in Frameworks */,
+				4BD3B4101F96A6A30077E8A5 /* Nimble.framework in Frameworks */,
+				4BD3B4111F96A6A30077E8A5 /* Quick.framework in Frameworks */,
+				4BD3B4121F96A6AC0077E8A5 /* Result.framework in Frameworks */,
+				4BD3B40B1F96A6A20077E8A5 /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4BCDA55A1F96481D00307E62 = {
+		4BD3B3481F9690810077E8A5 = {
 			isa = PBXGroup;
 			children = (
-				4BD3B2EE1F96496D0077E8A5 /* Classes */,
-				4BD3B2EA1F96496D0077E8A5 /* Tests */,
-				4BCDA5661F96481D00307E62 /* Redux-ReactiveSwift-iOS */,
-				4BCDA5711F96481D00307E62 /* Redux-ReactiveSwiftTests */,
-				4BD3B3271F9662B90077E8A5 /* Redux-ReactiveSwift-watchOS */,
-				4BD3B3341F9662D30077E8A5 /* Redux-ReactiveSwift-tvOS */,
-				4BD3B3411F9663000077E8A5 /* Redux-ReactiveSwift-macOS */,
-				4BCDA5651F96481D00307E62 /* Products */,
-				835C788CFBFBDAE31D8FEE72 /* Pods */,
-				6153B51BFFA66A8F78BB5301 /* Frameworks */,
-				4BD3B3201F9662600077E8A5 /* Redux-ReactiveSwift copy-Info.plist */,
+				4BD3B39B1F9695B80077E8A5 /* Tests */,
+				4BD3B3931F96958D0077E8A5 /* Classes */,
+				4BD3B3561F9691420077E8A5 /* CocoaPods-Redux-ReactiveSwift-iOS */,
+				4BD3B3631F9692090077E8A5 /* CocoaPods-Redux-ReactiveSwift-watchOS */,
+				4BD3B3701F9692630077E8A5 /* CocoaPods-Redux-ReactiveSwift-tvOS */,
+				4BD3B37D1F9692AA0077E8A5 /* CocoaPods-Redux-ReactiveSwift-macOS */,
+				4BD3B3891F9694900077E8A5 /* CocoaPods-Redux-ReactiveSwift-iOSTests */,
+				4BD3B3A91F969BBF0077E8A5 /* Carthage-Redux-ReactiveSwift-iOS */,
+				4BD3B3B61F969C0F0077E8A5 /* Carthage-Redux-ReactiveSwift-watchOS */,
+				4BD3B3C31F969C4F0077E8A5 /* Carthage-Redux-ReactiveSwift-tvOS */,
+				4BD3B3D01F969C910077E8A5 /* Carthage-Redux-ReactiveSwift-macOS */,
+				4BD3B3DC1F969CEA0077E8A5 /* Carthage-Redux-ReactiveSwift-iOSTests */,
+				4BD3B3551F9691420077E8A5 /* Products */,
+				7D432D15729948F9282363EF /* Pods */,
+				CE859E1343C951C094DBAA6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		4BCDA5651F96481D00307E62 /* Products */ = {
+		4BD3B3551F9691420077E8A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4BCDA56D1F96481D00307E62 /* Redux-ReactiveSwiftTests.xctest */,
-				4BD3B31F1F9662600077E8A5 /* Redux_ReactiveSwift_iOS.framework */,
-				4BD3B3261F9662B90077E8A5 /* Redux_ReactiveSwift_watchOS.framework */,
-				4BD3B3331F9662D30077E8A5 /* Redux_ReactiveSwift_tvOS.framework */,
-				4BD3B3401F9663000077E8A5 /* Redux_ReactiveSwift_macOS.framework */,
+				4BD3B3541F9691420077E8A5 /* Redux_ReactiveSwift.framework */,
+				4BD3B3621F9692080077E8A5 /* Redux_ReactiveSwift.framework */,
+				4BD3B36F1F9692630077E8A5 /* Redux_ReactiveSwift.framework */,
+				4BD3B37C1F9692AA0077E8A5 /* Redux_ReactiveSwift.framework */,
+				4BD3B3881F9694900077E8A5 /* CocoaPods-Redux-ReactiveSwift-iOSTests.xctest */,
+				4BD3B3A81F969BBF0077E8A5 /* Redux_ReactiveSwift.framework */,
+				4BD3B3B51F969C0F0077E8A5 /* Redux_ReactiveSwift.framework */,
+				4BD3B3C21F969C4F0077E8A5 /* Redux_ReactiveSwift.framework */,
+				4BD3B3CF1F969C910077E8A5 /* Redux_ReactiveSwift.framework */,
+				4BD3B3DB1F969CEA0077E8A5 /* Carthage-Redux-ReactiveSwift-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4BCDA5661F96481D00307E62 /* Redux-ReactiveSwift-iOS */ = {
+		4BD3B3561F9691420077E8A5 /* CocoaPods-Redux-ReactiveSwift-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				4BCDA5671F96481D00307E62 /* Redux_ReactiveSwift.h */,
-				4BCDA5681F96481D00307E62 /* Info.plist */,
+				4BD3B3571F9691420077E8A5 /* CocoaPods_Redux_ReactiveSwift_iOS.h */,
+				4BD3B3581F9691420077E8A5 /* Info.plist */,
 			);
-			path = "Redux-ReactiveSwift-iOS";
+			path = "CocoaPods-Redux-ReactiveSwift-iOS";
 			sourceTree = "<group>";
 		};
-		4BCDA5711F96481D00307E62 /* Redux-ReactiveSwiftTests */ = {
+		4BD3B3631F9692090077E8A5 /* CocoaPods-Redux-ReactiveSwift-watchOS */ = {
 			isa = PBXGroup;
 			children = (
-				4BCDA5741F96481D00307E62 /* Info.plist */,
+				4BD3B3641F9692090077E8A5 /* CocoaPods_Redux_ReactiveSwift_watchOS.h */,
+				4BD3B3651F9692090077E8A5 /* Info.plist */,
 			);
-			path = "Redux-ReactiveSwiftTests";
+			path = "CocoaPods-Redux-ReactiveSwift-watchOS";
 			sourceTree = "<group>";
 		};
-		4BD3B2EA1F96496D0077E8A5 /* Tests */ = {
+		4BD3B3701F9692630077E8A5 /* CocoaPods-Redux-ReactiveSwift-tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				4BD3B2EB1F96496D0077E8A5 /* CallSpy.swift */,
-				4BD3B2EC1F96496D0077E8A5 /* Info.plist */,
-				4BD3B2ED1F96496D0077E8A5 /* StoreSpec.swift */,
+				4BD3B3711F9692630077E8A5 /* CocoaPods_Redux_ReactiveSwift_tvOS.h */,
+				4BD3B3721F9692630077E8A5 /* Info.plist */,
 			);
-			path = Tests;
+			path = "CocoaPods-Redux-ReactiveSwift-tvOS";
 			sourceTree = "<group>";
 		};
-		4BD3B2EE1F96496D0077E8A5 /* Classes */ = {
+		4BD3B37D1F9692AA0077E8A5 /* CocoaPods-Redux-ReactiveSwift-macOS */ = {
 			isa = PBXGroup;
 			children = (
-				4BD3B2F01F96496D0077E8A5 /* Store.swift */,
+				4BD3B37E1F9692AA0077E8A5 /* CocoaPods_Redux_ReactiveSwift_macOS.h */,
+				4BD3B37F1F9692AA0077E8A5 /* Info.plist */,
+			);
+			path = "CocoaPods-Redux-ReactiveSwift-macOS";
+			sourceTree = "<group>";
+		};
+		4BD3B3891F9694900077E8A5 /* CocoaPods-Redux-ReactiveSwift-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BD3B38C1F9694900077E8A5 /* Info.plist */,
+			);
+			path = "CocoaPods-Redux-ReactiveSwift-iOSTests";
+			sourceTree = "<group>";
+		};
+		4BD3B3931F96958D0077E8A5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4BD3B3951F96958D0077E8A5 /* Store.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		4BD3B3271F9662B90077E8A5 /* Redux-ReactiveSwift-watchOS */ = {
+		4BD3B39B1F9695B80077E8A5 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				4BD3B3281F9662B90077E8A5 /* Redux_ReactiveSwift_watchOS.h */,
-				4BD3B3291F9662B90077E8A5 /* Info.plist */,
+				4BD3B39C1F9695B80077E8A5 /* CallSpy.swift */,
+				4BD3B39E1F9695B80077E8A5 /* StoreSpec.swift */,
 			);
-			path = "Redux-ReactiveSwift-watchOS";
+			path = Tests;
 			sourceTree = "<group>";
 		};
-		4BD3B3341F9662D30077E8A5 /* Redux-ReactiveSwift-tvOS */ = {
+		4BD3B3A91F969BBF0077E8A5 /* Carthage-Redux-ReactiveSwift-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				4BD3B3351F9662D30077E8A5 /* Redux_ReactiveSwift_tvOS.h */,
-				4BD3B3361F9662D30077E8A5 /* Info.plist */,
+				4BD3B3AA1F969BBF0077E8A5 /* Carthage_Redux_ReactiveSwift_iOS.h */,
+				4BD3B3AB1F969BBF0077E8A5 /* Info.plist */,
 			);
-			path = "Redux-ReactiveSwift-tvOS";
+			path = "Carthage-Redux-ReactiveSwift-iOS";
 			sourceTree = "<group>";
 		};
-		4BD3B3411F9663000077E8A5 /* Redux-ReactiveSwift-macOS */ = {
+		4BD3B3B61F969C0F0077E8A5 /* Carthage-Redux-ReactiveSwift-watchOS */ = {
 			isa = PBXGroup;
 			children = (
-				4BD3B3421F9663000077E8A5 /* Redux_ReactiveSwift_macOS.h */,
-				4BD3B3431F9663000077E8A5 /* Info.plist */,
+				4BD3B3B71F969C0F0077E8A5 /* Carthage_Redux_ReactiveSwift_watchOS.h */,
+				4BD3B3B81F969C0F0077E8A5 /* Info.plist */,
 			);
-			path = "Redux-ReactiveSwift-macOS";
+			path = "Carthage-Redux-ReactiveSwift-watchOS";
 			sourceTree = "<group>";
 		};
-		6153B51BFFA66A8F78BB5301 /* Frameworks */ = {
+		4BD3B3C31F969C4F0077E8A5 /* Carthage-Redux-ReactiveSwift-tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				B9ADEB50130FE29725A55D22 /* Pods_Redux_ReactiveSwift.framework */,
-				052E396E94C914CE4506AF1B /* Pods_Redux_ReactiveSwiftTests.framework */,
-				73143D6C34A9D57E11ECC62F /* Pods_Redux_ReactiveSwift_iOS.framework */,
+				4BD3B3C41F969C4F0077E8A5 /* Carthage_Redux_ReactiveSwift_tvOS.h */,
+				4BD3B3C51F969C4F0077E8A5 /* Info.plist */,
 			);
-			name = Frameworks;
+			path = "Carthage-Redux-ReactiveSwift-tvOS";
 			sourceTree = "<group>";
 		};
-		835C788CFBFBDAE31D8FEE72 /* Pods */ = {
+		4BD3B3D01F969C910077E8A5 /* Carthage-Redux-ReactiveSwift-macOS */ = {
 			isa = PBXGroup;
 			children = (
-				95964EE030609BCEACCE8D4F /* Pods-Redux-ReactiveSwift.debug.xcconfig */,
-				A1A5AF7D251DC91DE140E4B1 /* Pods-Redux-ReactiveSwift.release.xcconfig */,
-				DF113E0710C49C4E43F740E9 /* Pods-Redux-ReactiveSwiftTests.debug.xcconfig */,
-				168AECC2245C882F5324D7B2 /* Pods-Redux-ReactiveSwiftTests.release.xcconfig */,
-				71831406CE27C55469304130 /* Pods-Redux-ReactiveSwift-iOS.debug.xcconfig */,
-				4CF981D26BCC8093B1ED9B37 /* Pods-Redux-ReactiveSwift-iOS.release.xcconfig */,
+				4BD3B3D11F969C910077E8A5 /* Carthage_Redux_ReactiveSwift_macOS.h */,
+				4BD3B3D21F969C910077E8A5 /* Info.plist */,
+			);
+			path = "Carthage-Redux-ReactiveSwift-macOS";
+			sourceTree = "<group>";
+		};
+		4BD3B3DC1F969CEA0077E8A5 /* Carthage-Redux-ReactiveSwift-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BD3B3DF1F969CEA0077E8A5 /* Info.plist */,
+			);
+			path = "Carthage-Redux-ReactiveSwift-iOSTests";
+			sourceTree = "<group>";
+		};
+		7D432D15729948F9282363EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				385806C8F60FEB4ED4845D9C /* Pods-CocoaPods-Redux-ReactiveSwift-iOS.debug.xcconfig */,
+				8DEFB107EAB13EEC5FBD71DC /* Pods-CocoaPods-Redux-ReactiveSwift-iOS.release.xcconfig */,
+				38FA98D88138A0868A6E0408 /* Pods-CocoaPods-Redux-ReactiveSwift-iOSTests.debug.xcconfig */,
+				E24A4BE4191BE3FACF4ED03A /* Pods-CocoaPods-Redux-ReactiveSwift-iOSTests.release.xcconfig */,
+				4400C9971548681461EE22FD /* Pods-CocoaPods-Redux-ReactiveSwift-macOS.debug.xcconfig */,
+				5A8CA91B58E04ACE518C5552 /* Pods-CocoaPods-Redux-ReactiveSwift-macOS.release.xcconfig */,
+				212D07EA9483A91EF4D13885 /* Pods-CocoaPods-Redux-ReactiveSwift-tvOS.debug.xcconfig */,
+				B757A1A0B93CCFBB6B7A6D54 /* Pods-CocoaPods-Redux-ReactiveSwift-tvOS.release.xcconfig */,
+				AE8ACD71D04C676A5D27AC6A /* Pods-CocoaPods-Redux-ReactiveSwift-watchOS.debug.xcconfig */,
+				711321921BB197A13E05FE25 /* Pods-CocoaPods-Redux-ReactiveSwift-watchOS.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE859E1343C951C094DBAA6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BD3B40D1F96A6A30077E8A5 /* Nimble.framework */,
+				4BD3B40E1F96A6A30077E8A5 /* Quick.framework */,
+				4BD3B40C1F96A6A30077E8A5 /* ReactiveCocoa.framework */,
+				4BD3B3F21F96A2DA0077E8A5 /* ReactiveSwift.framework */,
+				4BD3B3F61F96A2F50077E8A5 /* ReactiveSwift.framework */,
+				4BD3B3FA1F96A3010077E8A5 /* ReactiveSwift.framework */,
+				4BD3B3F11F96A2DA0077E8A5 /* Result.framework */,
+				4BD3B3F51F96A2F50077E8A5 /* Result.framework */,
+				4BD3B3F91F96A3010077E8A5 /* Result.framework */,
+				4BD3B3FD1F96A30A0077E8A5 /* ReactiveSwift.framework */,
+				4BD3B3FE1F96A30A0077E8A5 /* Result.framework */,
+				7AE25E5AB988651ADB2B640D /* Pods_CocoaPods_Redux_ReactiveSwift_iOS.framework */,
+				F2E76FEE2C25B4A7C5774A40 /* Pods_CocoaPods_Redux_ReactiveSwift_iOSTests.framework */,
+				29196EB9593C0E834768F018 /* Pods_CocoaPods_Redux_ReactiveSwift_macOS.framework */,
+				DCFC9CB6AD3428B8821D1EDD /* Pods_CocoaPods_Redux_ReactiveSwift_tvOS.framework */,
+				CA0E20721D6E20F17D04FB3D /* Pods_CocoaPods_Redux_ReactiveSwift_watchOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4BD3B3181F9662600077E8A5 /* Headers */ = {
+		4BD3B3511F9691420077E8A5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD3B3191F9662600077E8A5 /* Redux_ReactiveSwift.h in Headers */,
+				4BD3B3591F9691420077E8A5 /* CocoaPods_Redux_ReactiveSwift_iOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD3B3231F9662B90077E8A5 /* Headers */ = {
+		4BD3B35F1F9692080077E8A5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD3B32A1F9662B90077E8A5 /* Redux_ReactiveSwift_watchOS.h in Headers */,
+				4BD3B3661F9692090077E8A5 /* CocoaPods_Redux_ReactiveSwift_watchOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD3B3301F9662D30077E8A5 /* Headers */ = {
+		4BD3B36C1F9692630077E8A5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD3B3371F9662D30077E8A5 /* Redux_ReactiveSwift_tvOS.h in Headers */,
+				4BD3B3731F9692630077E8A5 /* CocoaPods_Redux_ReactiveSwift_tvOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD3B33D1F9663000077E8A5 /* Headers */ = {
+		4BD3B3791F9692AA0077E8A5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD3B3441F9663000077E8A5 /* Redux_ReactiveSwift_macOS.h in Headers */,
+				4BD3B3801F9692AA0077E8A5 /* CocoaPods_Redux_ReactiveSwift_macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3A51F969BBF0077E8A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B3AC1F969BBF0077E8A5 /* Carthage_Redux_ReactiveSwift_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3B21F969C0F0077E8A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B3B91F969C0F0077E8A5 /* Carthage_Redux_ReactiveSwift_watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3BF1F969C4F0077E8A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B3C61F969C4F0077E8A5 /* Carthage_Redux_ReactiveSwift_tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3CC1F969C910077E8A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B3D31F969C910077E8A5 /* Carthage_Redux_ReactiveSwift_macOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4BCDA56C1F96481D00307E62 /* Redux-ReactiveSwiftTests */ = {
+		4BD3B3531F9691420077E8A5 /* CocoaPods-Redux-ReactiveSwift-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BCDA57B1F96481D00307E62 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwiftTests" */;
+			buildConfigurationList = 4BD3B35A1F9691420077E8A5 /* Build configuration list for PBXNativeTarget "CocoaPods-Redux-ReactiveSwift-iOS" */;
 			buildPhases = (
-				D59C3E5125F66A221E0F37C9 /* [CP] Check Pods Manifest.lock */,
-				4BCDA5691F96481D00307E62 /* Sources */,
-				4BCDA56A1F96481D00307E62 /* Frameworks */,
-				4BCDA56B1F96481D00307E62 /* Resources */,
-				25BBE1FD9B2591F51A9376D0 /* [CP] Embed Pods Frameworks */,
-				70686A8691706415E37F5824 /* [CP] Copy Pods Resources */,
+				60400931B5D066AE9B213FF2 /* [CP] Check Pods Manifest.lock */,
+				4BD3B34F1F9691420077E8A5 /* Sources */,
+				4BD3B3501F9691420077E8A5 /* Frameworks */,
+				4BD3B3511F9691420077E8A5 /* Headers */,
+				4BD3B3521F9691420077E8A5 /* Resources */,
+				79F10665D300B16A9EFF8465 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Redux-ReactiveSwiftTests";
-			productName = "Redux-ReactiveSwiftTests";
-			productReference = 4BCDA56D1F96481D00307E62 /* Redux-ReactiveSwiftTests.xctest */;
+			name = "CocoaPods-Redux-ReactiveSwift-iOS";
+			productName = "CocoaPods-Redux-ReactiveSwift-iOS";
+			productReference = 4BD3B3541F9691420077E8A5 /* Redux_ReactiveSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BD3B3611F9692080077E8A5 /* CocoaPods-Redux-ReactiveSwift-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BD3B3671F9692090077E8A5 /* Build configuration list for PBXNativeTarget "CocoaPods-Redux-ReactiveSwift-watchOS" */;
+			buildPhases = (
+				A197DD1E9F97DE64B364AA1E /* [CP] Check Pods Manifest.lock */,
+				4BD3B35D1F9692080077E8A5 /* Sources */,
+				4BD3B35E1F9692080077E8A5 /* Frameworks */,
+				4BD3B35F1F9692080077E8A5 /* Headers */,
+				4BD3B3601F9692080077E8A5 /* Resources */,
+				FD2C231B883B66AB45F6DC10 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CocoaPods-Redux-ReactiveSwift-watchOS";
+			productName = "CocoaPods-Redux-ReactiveSwift-watchOS";
+			productReference = 4BD3B3621F9692080077E8A5 /* Redux_ReactiveSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BD3B36E1F9692630077E8A5 /* CocoaPods-Redux-ReactiveSwift-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BD3B3741F9692630077E8A5 /* Build configuration list for PBXNativeTarget "CocoaPods-Redux-ReactiveSwift-tvOS" */;
+			buildPhases = (
+				116FE654BE4C10FD4E584886 /* [CP] Check Pods Manifest.lock */,
+				4BD3B36A1F9692630077E8A5 /* Sources */,
+				4BD3B36B1F9692630077E8A5 /* Frameworks */,
+				4BD3B36C1F9692630077E8A5 /* Headers */,
+				4BD3B36D1F9692630077E8A5 /* Resources */,
+				374D1C11267B7865F93EF7EC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CocoaPods-Redux-ReactiveSwift-tvOS";
+			productName = "CocoaPods-Redux-ReactiveSwift-tvOS";
+			productReference = 4BD3B36F1F9692630077E8A5 /* Redux_ReactiveSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BD3B37B1F9692AA0077E8A5 /* CocoaPods-Redux-ReactiveSwift-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BD3B3811F9692AA0077E8A5 /* Build configuration list for PBXNativeTarget "CocoaPods-Redux-ReactiveSwift-macOS" */;
+			buildPhases = (
+				03E9F714B79A4E1CC2070CCF /* [CP] Check Pods Manifest.lock */,
+				4BD3B3771F9692AA0077E8A5 /* Sources */,
+				4BD3B3781F9692AA0077E8A5 /* Frameworks */,
+				4BD3B3791F9692AA0077E8A5 /* Headers */,
+				4BD3B37A1F9692AA0077E8A5 /* Resources */,
+				C47D99480225C6E324CA5B60 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CocoaPods-Redux-ReactiveSwift-macOS";
+			productName = "CocoaPods-Redux-ReactiveSwift-macOS";
+			productReference = 4BD3B37C1F9692AA0077E8A5 /* Redux_ReactiveSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BD3B3871F9694900077E8A5 /* CocoaPods-Redux-ReactiveSwift-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BD3B3901F9694900077E8A5 /* Build configuration list for PBXNativeTarget "CocoaPods-Redux-ReactiveSwift-iOSTests" */;
+			buildPhases = (
+				8F4755DED8CEF00427936C40 /* [CP] Check Pods Manifest.lock */,
+				4BD3B3841F9694900077E8A5 /* Sources */,
+				4BD3B3851F9694900077E8A5 /* Frameworks */,
+				4BD3B3861F9694900077E8A5 /* Resources */,
+				066C8F36C0F64BC08BA72E4D /* [CP] Embed Pods Frameworks */,
+				D1ACAE7AB0F0D52F6E447EEA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BD3B3A21F9697300077E8A5 /* PBXTargetDependency */,
+			);
+			name = "CocoaPods-Redux-ReactiveSwift-iOSTests";
+			productName = "CocoaPods-Redux-ReactiveSwift-iOSTests";
+			productReference = 4BD3B3881F9694900077E8A5 /* CocoaPods-Redux-ReactiveSwift-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4BD3B3121F9662600077E8A5 /* Redux-ReactiveSwift-iOS */ = {
+		4BD3B3A71F969BBF0077E8A5 /* Carthage-Redux-ReactiveSwift-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BD3B31C1F9662600077E8A5 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift-iOS" */;
+			buildConfigurationList = 4BD3B3AF1F969BBF0077E8A5 /* Build configuration list for PBXNativeTarget "Carthage-Redux-ReactiveSwift-iOS" */;
 			buildPhases = (
-				4BD3B3131F9662600077E8A5 /* [CP] Check Pods Manifest.lock */,
-				4BD3B3141F9662600077E8A5 /* Sources */,
-				4BD3B3161F9662600077E8A5 /* Frameworks */,
-				4BD3B3181F9662600077E8A5 /* Headers */,
-				4BD3B31A1F9662600077E8A5 /* Resources */,
-				4BD3B31B1F9662600077E8A5 /* [CP] Copy Pods Resources */,
+				4BD3B3E91F969EC60077E8A5 /* [Carthage] Outdated */,
+				4BD3B3A31F969BBF0077E8A5 /* Sources */,
+				4BD3B3A41F969BBF0077E8A5 /* Frameworks */,
+				4BD3B3A51F969BBF0077E8A5 /* Headers */,
+				4BD3B3A61F969BBF0077E8A5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Redux-ReactiveSwift-iOS";
-			productName = "Redux-ReactiveSwift";
-			productReference = 4BD3B31F1F9662600077E8A5 /* Redux_ReactiveSwift_iOS.framework */;
+			name = "Carthage-Redux-ReactiveSwift-iOS";
+			productName = "Carthage-Redux-ReactiveSwift-iOS";
+			productReference = 4BD3B3A81F969BBF0077E8A5 /* Redux_ReactiveSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4BD3B3251F9662B90077E8A5 /* Redux-ReactiveSwift-watchOS */ = {
+		4BD3B3B41F969C0F0077E8A5 /* Carthage-Redux-ReactiveSwift-watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BD3B32B1F9662B90077E8A5 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift-watchOS" */;
+			buildConfigurationList = 4BD3B3BA1F969C0F0077E8A5 /* Build configuration list for PBXNativeTarget "Carthage-Redux-ReactiveSwift-watchOS" */;
 			buildPhases = (
-				4BD3B3211F9662B90077E8A5 /* Sources */,
-				4BD3B3221F9662B90077E8A5 /* Frameworks */,
-				4BD3B3231F9662B90077E8A5 /* Headers */,
-				4BD3B3241F9662B90077E8A5 /* Resources */,
+				4BD3B3EA1F969EEA0077E8A5 /* [Carthage] Outdated */,
+				4BD3B3B01F969C0F0077E8A5 /* Sources */,
+				4BD3B3B11F969C0F0077E8A5 /* Frameworks */,
+				4BD3B3B21F969C0F0077E8A5 /* Headers */,
+				4BD3B3B31F969C0F0077E8A5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Redux-ReactiveSwift-watchOS";
-			productName = "Redux-ReactiveSwift-watchOS";
-			productReference = 4BD3B3261F9662B90077E8A5 /* Redux_ReactiveSwift_watchOS.framework */;
+			name = "Carthage-Redux-ReactiveSwift-watchOS";
+			productName = "Carthage-Redux-ReactiveSwift-watchOS";
+			productReference = 4BD3B3B51F969C0F0077E8A5 /* Redux_ReactiveSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4BD3B3321F9662D30077E8A5 /* Redux-ReactiveSwift-tvOS */ = {
+		4BD3B3C11F969C4F0077E8A5 /* Carthage-Redux-ReactiveSwift-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BD3B3381F9662D30077E8A5 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift-tvOS" */;
+			buildConfigurationList = 4BD3B3C71F969C4F0077E8A5 /* Build configuration list for PBXNativeTarget "Carthage-Redux-ReactiveSwift-tvOS" */;
 			buildPhases = (
-				4BD3B32E1F9662D30077E8A5 /* Sources */,
-				4BD3B32F1F9662D30077E8A5 /* Frameworks */,
-				4BD3B3301F9662D30077E8A5 /* Headers */,
-				4BD3B3311F9662D30077E8A5 /* Resources */,
+				4BD3B3EB1F969EF60077E8A5 /* [Carthage] Outdated */,
+				4BD3B3BD1F969C4F0077E8A5 /* Sources */,
+				4BD3B3BE1F969C4F0077E8A5 /* Frameworks */,
+				4BD3B3BF1F969C4F0077E8A5 /* Headers */,
+				4BD3B3C01F969C4F0077E8A5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Redux-ReactiveSwift-tvOS";
-			productName = "Redux-ReactiveSwift-tvOS";
-			productReference = 4BD3B3331F9662D30077E8A5 /* Redux_ReactiveSwift_tvOS.framework */;
+			name = "Carthage-Redux-ReactiveSwift-tvOS";
+			productName = "Carthage-Redux-ReactiveSwift-tvOS";
+			productReference = 4BD3B3C21F969C4F0077E8A5 /* Redux_ReactiveSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4BD3B33F1F9663000077E8A5 /* Redux-ReactiveSwift-macOS */ = {
+		4BD3B3CE1F969C910077E8A5 /* Carthage-Redux-ReactiveSwift-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BD3B3451F9663000077E8A5 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift-macOS" */;
+			buildConfigurationList = 4BD3B3D41F969C910077E8A5 /* Build configuration list for PBXNativeTarget "Carthage-Redux-ReactiveSwift-macOS" */;
 			buildPhases = (
-				4BD3B33B1F9663000077E8A5 /* Sources */,
-				4BD3B33C1F9663000077E8A5 /* Frameworks */,
-				4BD3B33D1F9663000077E8A5 /* Headers */,
-				4BD3B33E1F9663000077E8A5 /* Resources */,
+				4BD3B3EC1F969EFC0077E8A5 /* [Carthage] Outdated */,
+				4BD3B3CA1F969C910077E8A5 /* Sources */,
+				4BD3B3CB1F969C910077E8A5 /* Frameworks */,
+				4BD3B3CC1F969C910077E8A5 /* Headers */,
+				4BD3B3CD1F969C910077E8A5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Redux-ReactiveSwift-macOS";
-			productName = "Redux-ReactiveSwift-macOS";
-			productReference = 4BD3B3401F9663000077E8A5 /* Redux_ReactiveSwift_macOS.framework */;
+			name = "Carthage-Redux-ReactiveSwift-macOS";
+			productName = "Carthage-Redux-ReactiveSwift-macOS";
+			productReference = 4BD3B3CF1F969C910077E8A5 /* Redux_ReactiveSwift.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		4BD3B3DA1F969CEA0077E8A5 /* Carthage-Redux-ReactiveSwift-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BD3B3E31F969CEA0077E8A5 /* Build configuration list for PBXNativeTarget "Carthage-Redux-ReactiveSwift-iOSTests" */;
+			buildPhases = (
+				4BD3B3EF1F96A11D0077E8A5 /* [Carthage] Outdated */,
+				4BD3B3D71F969CEA0077E8A5 /* Sources */,
+				4BD3B3D81F969CEA0077E8A5 /* Frameworks */,
+				4BD3B3D91F969CEA0077E8A5 /* Resources */,
+				4BD3B4131F96A88D0077E8A5 /* [Carthage] Copy frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BD3B3E21F969CEA0077E8A5 /* PBXTargetDependency */,
+			);
+			name = "Carthage-Redux-ReactiveSwift-iOSTests";
+			productName = "Carthage-Redux-ReactiveSwift-iOSTests";
+			productReference = 4BD3B3DB1F969CEA0077E8A5 /* Carthage-Redux-ReactiveSwift-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4BCDA55B1F96481D00307E62 /* Project object */ = {
+		4BD3B3491F9690810077E8A5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = "Petro Korienev";
 				TargetAttributes = {
-					4BCDA56C1F96481D00307E62 = {
+					4BD3B3531F9691420077E8A5 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
-					4BD3B3121F9662600077E8A5 = {
-						ProvisioningStyle = Automatic;
-					};
-					4BD3B3251F9662B90077E8A5 = {
+					4BD3B3611F9692080077E8A5 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
-					4BD3B3321F9662D30077E8A5 = {
+					4BD3B36E1F9692630077E8A5 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
-					4BD3B33F1F9663000077E8A5 = {
+					4BD3B37B1F9692AA0077E8A5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					4BD3B3871F9694900077E8A5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					4BD3B3A71F969BBF0077E8A5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					4BD3B3B41F969C0F0077E8A5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					4BD3B3C11F969C4F0077E8A5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					4BD3B3CE1F969C910077E8A5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					4BD3B3DA1F969CEA0077E8A5 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 4BCDA55E1F96481D00307E62 /* Build configuration list for PBXProject "Redux-ReactiveSwift" */;
+			buildConfigurationList = 4BD3B34C1F9690810077E8A5 /* Build configuration list for PBXProject "Redux-ReactiveSwift" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 4BCDA55A1F96481D00307E62;
-			productRefGroup = 4BCDA5651F96481D00307E62 /* Products */;
+			mainGroup = 4BD3B3481F9690810077E8A5;
+			productRefGroup = 4BD3B3551F9691420077E8A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4BCDA56C1F96481D00307E62 /* Redux-ReactiveSwiftTests */,
-				4BD3B3121F9662600077E8A5 /* Redux-ReactiveSwift-iOS */,
-				4BD3B3251F9662B90077E8A5 /* Redux-ReactiveSwift-watchOS */,
-				4BD3B3321F9662D30077E8A5 /* Redux-ReactiveSwift-tvOS */,
-				4BD3B33F1F9663000077E8A5 /* Redux-ReactiveSwift-macOS */,
+				4BD3B3531F9691420077E8A5 /* CocoaPods-Redux-ReactiveSwift-iOS */,
+				4BD3B3611F9692080077E8A5 /* CocoaPods-Redux-ReactiveSwift-watchOS */,
+				4BD3B36E1F9692630077E8A5 /* CocoaPods-Redux-ReactiveSwift-tvOS */,
+				4BD3B37B1F9692AA0077E8A5 /* CocoaPods-Redux-ReactiveSwift-macOS */,
+				4BD3B3871F9694900077E8A5 /* CocoaPods-Redux-ReactiveSwift-iOSTests */,
+				4BD3B3A71F969BBF0077E8A5 /* Carthage-Redux-ReactiveSwift-iOS */,
+				4BD3B3B41F969C0F0077E8A5 /* Carthage-Redux-ReactiveSwift-watchOS */,
+				4BD3B3C11F969C4F0077E8A5 /* Carthage-Redux-ReactiveSwift-tvOS */,
+				4BD3B3CE1F969C910077E8A5 /* Carthage-Redux-ReactiveSwift-macOS */,
+				4BD3B3DA1F969CEA0077E8A5 /* Carthage-Redux-ReactiveSwift-iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4BCDA56B1F96481D00307E62 /* Resources */ = {
+		4BD3B3521F9691420077E8A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD3B31A1F9662600077E8A5 /* Resources */ = {
+		4BD3B3601F9692080077E8A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD3B3241F9662B90077E8A5 /* Resources */ = {
+		4BD3B36D1F9692630077E8A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD3B3311F9662D30077E8A5 /* Resources */ = {
+		4BD3B37A1F9692AA0077E8A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD3B33E1F9663000077E8A5 /* Resources */ = {
+		4BD3B3861F9694900077E8A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3A61F969BBF0077E8A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3B31F969C0F0077E8A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3C01F969C4F0077E8A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3CD1F969C910077E8A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3D91F969CEA0077E8A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -429,33 +821,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		25BBE1FD9B2591F51A9376D0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Redux-ReactiveSwiftTests/Pods-Redux-ReactiveSwiftTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Redux-ReactiveSwiftTests/Pods-Redux-ReactiveSwiftTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4BD3B3131F9662600077E8A5 /* [CP] Check Pods Manifest.lock */ = {
+		03E9F714B79A4E1CC2070CCF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -466,107 +832,396 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Redux-ReactiveSwift-iOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [[ `dirname $0` =~ \"org.carthage.CarthageKit\" ]]; then\n    echo \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n    exit 0\nfi\ndiff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4BD3B31B1F9662600077E8A5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [[ `dirname $0` =~ \"org.carthage.CarthageKit\" ]]; then\n    exit 0\nfi\n\"${SRCROOT}/Pods/Target Support Files/Pods-Redux-ReactiveSwift-iOS/Pods-Redux-ReactiveSwift-iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		70686A8691706415E37F5824 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Redux-ReactiveSwiftTests/Pods-Redux-ReactiveSwiftTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D59C3E5125F66A221E0F37C9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Redux-ReactiveSwiftTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CocoaPods-Redux-ReactiveSwift-macOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		066C8F36C0F64BC08BA72E4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-iOSTests/Pods-CocoaPods-Redux-ReactiveSwift-iOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift-iOS/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result-iOS/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-iOSTests/Pods-CocoaPods-Redux-ReactiveSwift-iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		116FE654BE4C10FD4E584886 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoaPods-Redux-ReactiveSwift-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		374D1C11267B7865F93EF7EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-tvOS/Pods-CocoaPods-Redux-ReactiveSwift-tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BD3B3E91F969EC60077E8A5 /* [Carthage] Outdated */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[Carthage] Outdated";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings";
+		};
+		4BD3B3EA1F969EEA0077E8A5 /* [Carthage] Outdated */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[Carthage] Outdated";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings";
+		};
+		4BD3B3EB1F969EF60077E8A5 /* [Carthage] Outdated */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[Carthage] Outdated";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings";
+		};
+		4BD3B3EC1F969EFC0077E8A5 /* [Carthage] Outdated */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[Carthage] Outdated";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings";
+		};
+		4BD3B3EF1F96A11D0077E8A5 /* [Carthage] Outdated */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[Carthage] Outdated";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings";
+		};
+		4BD3B4131F96A88D0077E8A5 /* [Carthage] Copy frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			name = "[Carthage] Copy frameworks";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Quick.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		60400931B5D066AE9B213FF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoaPods-Redux-ReactiveSwift-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79F10665D300B16A9EFF8465 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-iOS/Pods-CocoaPods-Redux-ReactiveSwift-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F4755DED8CEF00427936C40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoaPods-Redux-ReactiveSwift-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A197DD1E9F97DE64B364AA1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoaPods-Redux-ReactiveSwift-watchOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C47D99480225C6E324CA5B60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-macOS/Pods-CocoaPods-Redux-ReactiveSwift-macOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1ACAE7AB0F0D52F6E447EEA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-iOSTests/Pods-CocoaPods-Redux-ReactiveSwift-iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD2C231B883B66AB45F6DC10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-watchOS/Pods-CocoaPods-Redux-ReactiveSwift-watchOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4BCDA5691F96481D00307E62 /* Sources */ = {
+		4BD3B34F1F9691420077E8A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD3B2F31F9649800077E8A5 /* StoreSpec.swift in Sources */,
-				4BD3B2F21F96497D0077E8A5 /* CallSpy.swift in Sources */,
+				4BD3B3961F96959A0077E8A5 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD3B3141F9662600077E8A5 /* Sources */ = {
+		4BD3B35D1F9692080077E8A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD3B3151F9662600077E8A5 /* Store.swift in Sources */,
+				4BD3B3971F96959B0077E8A5 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD3B3211F9662B90077E8A5 /* Sources */ = {
+		4BD3B36A1F9692630077E8A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD3B3981F96959C0077E8A5 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD3B32E1F9662D30077E8A5 /* Sources */ = {
+		4BD3B3771F9692AA0077E8A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD3B3991F96959C0077E8A5 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD3B33B1F9663000077E8A5 /* Sources */ = {
+		4BD3B3841F9694900077E8A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD3B39F1F9695BF0077E8A5 /* CallSpy.swift in Sources */,
+				4BD3B3A01F9695C20077E8A5 /* StoreSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3A31F969BBF0077E8A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B4021F96A3690077E8A5 /* Store.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3B01F969C0F0077E8A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B4031F96A3690077E8A5 /* Store.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3BD1F969C4F0077E8A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B4041F96A36A0077E8A5 /* Store.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3CA1F969C910077E8A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B4051F96A36B0077E8A5 /* Store.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3D71F969CEA0077E8A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B3E61F969DD30077E8A5 /* CallSpy.swift in Sources */,
+				4BD3B3E71F969DD30077E8A5 /* StoreSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4BD3B3A21F9697300077E8A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BD3B3531F9691420077E8A5 /* CocoaPods-Redux-ReactiveSwift-iOS */;
+			targetProxy = 4BD3B3A11F9697300077E8A5 /* PBXContainerItemProxy */;
+		};
+		4BD3B3E21F969CEA0077E8A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BD3B3A71F969BBF0077E8A5 /* Carthage-Redux-ReactiveSwift-iOS */;
+			targetProxy = 4BD3B3E11F969CEA0077E8A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		4BCDA5761F96481D00307E62 /* Debug */ = {
+		4BD3B34D1F9690810077E8A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		4BD3B34E1F9690810077E8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		4BD3B35B1F9691420077E8A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 385806C8F60FEB4ED4845D9C /* Pods-CocoaPods-Redux-ReactiveSwift-iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -595,8 +1250,576 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CocoaPods-Redux-ReactiveSwift-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-iOS";
+				PRODUCT_NAME = Redux_ReactiveSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BD3B35C1F9691420077E8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DEFB107EAB13EEC5FBD71DC /* Pods-CocoaPods-Redux-ReactiveSwift-iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CocoaPods-Redux-ReactiveSwift-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-iOS";
+				PRODUCT_NAME = Redux_ReactiveSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BD3B3681F9692090077E8A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE8ACD71D04C676A5D27AC6A /* Pods-CocoaPods-Redux-ReactiveSwift-watchOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CocoaPods-Redux-ReactiveSwift-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-watchOS";
+				PRODUCT_NAME = Redux_ReactiveSwift;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		4BD3B3691F9692090077E8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 711321921BB197A13E05FE25 /* Pods-CocoaPods-Redux-ReactiveSwift-watchOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CocoaPods-Redux-ReactiveSwift-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-watchOS";
+				PRODUCT_NAME = Redux_ReactiveSwift;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		4BD3B3751F9692630077E8A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 212D07EA9483A91EF4D13885 /* Pods-CocoaPods-Redux-ReactiveSwift-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CocoaPods-Redux-ReactiveSwift-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-tvOS";
+				PRODUCT_NAME = Redux_ReactiveSwift;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BD3B3761F9692630077E8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B757A1A0B93CCFBB6B7A6D54 /* Pods-CocoaPods-Redux-ReactiveSwift-tvOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CocoaPods-Redux-ReactiveSwift-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-tvOS";
+				PRODUCT_NAME = Redux_ReactiveSwift;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BD3B3821F9692AA0077E8A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4400C9971548681461EE22FD /* Pods-CocoaPods-Redux-ReactiveSwift-macOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CocoaPods-Redux-ReactiveSwift-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-macOS";
+				PRODUCT_NAME = Redux_ReactiveSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BD3B3831F9692AA0077E8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A8CA91B58E04ACE518C5552 /* Pods-CocoaPods-Redux-ReactiveSwift-macOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CocoaPods-Redux-ReactiveSwift-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-macOS";
+				PRODUCT_NAME = Redux_ReactiveSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BD3B3911F9694900077E8A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38FA98D88138A0868A6E0408 /* Pods-CocoaPods-Redux-ReactiveSwift-iOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -614,18 +1837,81 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				INFOPLIST_FILE = "CocoaPods-Redux-ReactiveSwift-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		4BCDA5771F96481D00307E62 /* Release */ = {
+		4BD3B3921F9694900077E8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E24A4BE4191BE3FACF4ED03A /* Pods-CocoaPods-Redux-ReactiveSwift-iOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CocoaPods-Redux-ReactiveSwift-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BD3B3AD1F969BBF0077E8A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -655,11 +1941,97 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Carthage-Redux-ReactiveSwift-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-iOS";
+				PRODUCT_NAME = Redux_ReactiveSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BD3B3AE1F969BBF0077E8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -668,290 +2040,702 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				INFOPLIST_FILE = "Carthage-Redux-ReactiveSwift-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-iOS";
+				PRODUCT_NAME = Redux_ReactiveSwift;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		4BCDA57C1F96481D00307E62 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF113E0710C49C4E43F740E9 /* Pods-Redux-ReactiveSwiftTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Redux-ReactiveSwiftTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwiftTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4BCDA57D1F96481D00307E62 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 168AECC2245C882F5324D7B2 /* Pods-Redux-ReactiveSwiftTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Redux-ReactiveSwiftTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwiftTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		4BD3B31D1F9662600077E8A5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71831406CE27C55469304130 /* Pods-Redux-ReactiveSwift-iOS.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Redux-ReactiveSwift copy-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-iOS";
-				PRODUCT_NAME = Redux_ReactiveSwift_iOS;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4BD3B31E1F9662600077E8A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CF981D26BCC8093B1ED9B37 /* Pods-Redux-ReactiveSwift-iOS.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Redux-ReactiveSwift copy-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-iOS";
-				PRODUCT_NAME = Redux_ReactiveSwift_iOS;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		4BD3B32C1F9662B90077E8A5 /* Debug */ = {
+		4BD3B3BB1F969C0F0077E8A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Redux-ReactiveSwift-watchOS/Info.plist";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Carthage-Redux-ReactiveSwift-watchOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Redux_ReactiveSwift;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		4BD3B32D1F9662B90077E8A5 /* Release */ = {
+		4BD3B3BC1F969C0F0077E8A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Redux-ReactiveSwift-watchOS/Info.plist";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Carthage-Redux-ReactiveSwift-watchOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Redux_ReactiveSwift;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
-		4BD3B3391F9662D30077E8A5 /* Debug */ = {
+		4BD3B3C81F969C4F0077E8A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Redux-ReactiveSwift-tvOS/Info.plist";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Carthage-Redux-ReactiveSwift-tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Redux_ReactiveSwift;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		4BD3B33A1F9662D30077E8A5 /* Release */ = {
+		4BD3B3C91F969C4F0077E8A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Redux-ReactiveSwift-tvOS/Info.plist";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Carthage-Redux-ReactiveSwift-tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Redux_ReactiveSwift;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		4BD3B3461F9663000077E8A5 /* Debug */ = {
+		4BD3B3D51F969C910077E8A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Redux-ReactiveSwift-macOS/Info.plist";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Carthage-Redux-ReactiveSwift-macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Redux_ReactiveSwift;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		4BD3B3471F9663000077E8A5 /* Release */ = {
+		4BD3B3D61F969C910077E8A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Redux-ReactiveSwift-macOS/Info.plist";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Carthage-Redux-ReactiveSwift-macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Redux_ReactiveSwift;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BD3B3E41F969CEA0077E8A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Carthage-Redux-ReactiveSwift-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Carthage-Redux-ReactiveSwift-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BD3B3E51F969CEA0077E8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Carthage-Redux-ReactiveSwift-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Carthage-Redux-ReactiveSwift-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4BCDA55E1F96481D00307E62 /* Build configuration list for PBXProject "Redux-ReactiveSwift" */ = {
+		4BD3B34C1F9690810077E8A5 /* Build configuration list for PBXProject "Redux-ReactiveSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BCDA5761F96481D00307E62 /* Debug */,
-				4BCDA5771F96481D00307E62 /* Release */,
+				4BD3B34D1F9690810077E8A5 /* Debug */,
+				4BD3B34E1F9690810077E8A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BCDA57B1F96481D00307E62 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwiftTests" */ = {
+		4BD3B35A1F9691420077E8A5 /* Build configuration list for PBXNativeTarget "CocoaPods-Redux-ReactiveSwift-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BCDA57C1F96481D00307E62 /* Debug */,
-				4BCDA57D1F96481D00307E62 /* Release */,
+				4BD3B35B1F9691420077E8A5 /* Debug */,
+				4BD3B35C1F9691420077E8A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BD3B31C1F9662600077E8A5 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift-iOS" */ = {
+		4BD3B3671F9692090077E8A5 /* Build configuration list for PBXNativeTarget "CocoaPods-Redux-ReactiveSwift-watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BD3B31D1F9662600077E8A5 /* Debug */,
-				4BD3B31E1F9662600077E8A5 /* Release */,
+				4BD3B3681F9692090077E8A5 /* Debug */,
+				4BD3B3691F9692090077E8A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BD3B32B1F9662B90077E8A5 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift-watchOS" */ = {
+		4BD3B3741F9692630077E8A5 /* Build configuration list for PBXNativeTarget "CocoaPods-Redux-ReactiveSwift-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BD3B32C1F9662B90077E8A5 /* Debug */,
-				4BD3B32D1F9662B90077E8A5 /* Release */,
+				4BD3B3751F9692630077E8A5 /* Debug */,
+				4BD3B3761F9692630077E8A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BD3B3381F9662D30077E8A5 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift-tvOS" */ = {
+		4BD3B3811F9692AA0077E8A5 /* Build configuration list for PBXNativeTarget "CocoaPods-Redux-ReactiveSwift-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BD3B3391F9662D30077E8A5 /* Debug */,
-				4BD3B33A1F9662D30077E8A5 /* Release */,
+				4BD3B3821F9692AA0077E8A5 /* Debug */,
+				4BD3B3831F9692AA0077E8A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BD3B3451F9663000077E8A5 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift-macOS" */ = {
+		4BD3B3901F9694900077E8A5 /* Build configuration list for PBXNativeTarget "CocoaPods-Redux-ReactiveSwift-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BD3B3461F9663000077E8A5 /* Debug */,
-				4BD3B3471F9663000077E8A5 /* Release */,
+				4BD3B3911F9694900077E8A5 /* Debug */,
+				4BD3B3921F9694900077E8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BD3B3AF1F969BBF0077E8A5 /* Build configuration list for PBXNativeTarget "Carthage-Redux-ReactiveSwift-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD3B3AD1F969BBF0077E8A5 /* Debug */,
+				4BD3B3AE1F969BBF0077E8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BD3B3BA1F969C0F0077E8A5 /* Build configuration list for PBXNativeTarget "Carthage-Redux-ReactiveSwift-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD3B3BB1F969C0F0077E8A5 /* Debug */,
+				4BD3B3BC1F969C0F0077E8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BD3B3C71F969C4F0077E8A5 /* Build configuration list for PBXNativeTarget "Carthage-Redux-ReactiveSwift-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD3B3C81F969C4F0077E8A5 /* Debug */,
+				4BD3B3C91F969C4F0077E8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BD3B3D41F969C910077E8A5 /* Build configuration list for PBXNativeTarget "Carthage-Redux-ReactiveSwift-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD3B3D51F969C910077E8A5 /* Debug */,
+				4BD3B3D61F969C910077E8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BD3B3E31F969CEA0077E8A5 /* Build configuration list for PBXNativeTarget "Carthage-Redux-ReactiveSwift-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD3B3E41F969CEA0077E8A5 /* Debug */,
+				4BD3B3E51F969CEA0077E8A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4BCDA55B1F96481D00307E62 /* Project object */;
+	rootObject = 4BD3B3491F9690810077E8A5 /* Project object */;
 }

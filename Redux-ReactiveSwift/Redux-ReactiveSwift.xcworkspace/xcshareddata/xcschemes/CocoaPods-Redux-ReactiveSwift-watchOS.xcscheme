@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BD3B33F1F9663000077E8A5"
-               BuildableName = "Redux_ReactiveSwift_macOS.framework"
-               BlueprintName = "Redux-ReactiveSwift-macOS"
+               BlueprintIdentifier = "4BD3B3611F9692080077E8A5"
+               BuildableName = "Redux_ReactiveSwift.framework"
+               BlueprintName = "CocoaPods-Redux-ReactiveSwift-watchOS"
                ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BD3B33F1F9663000077E8A5"
-            BuildableName = "Redux_ReactiveSwift_macOS.framework"
-            BlueprintName = "Redux-ReactiveSwift-macOS"
+            BlueprintIdentifier = "4BD3B3611F9692080077E8A5"
+            BuildableName = "Redux_ReactiveSwift.framework"
+            BlueprintName = "CocoaPods-Redux-ReactiveSwift-watchOS"
             ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +65,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BD3B33F1F9663000077E8A5"
-            BuildableName = "Redux_ReactiveSwift_macOS.framework"
-            BlueprintName = "Redux-ReactiveSwift-macOS"
+            BlueprintIdentifier = "4BD3B3611F9692080077E8A5"
+            BuildableName = "Redux_ReactiveSwift.framework"
+            BlueprintName = "CocoaPods-Redux-ReactiveSwift-watchOS"
             ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

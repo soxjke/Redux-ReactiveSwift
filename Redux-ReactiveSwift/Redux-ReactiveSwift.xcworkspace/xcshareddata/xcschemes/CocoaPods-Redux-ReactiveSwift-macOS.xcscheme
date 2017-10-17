@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BD3B37B1F9692AA0077E8A5"
+               BuildableName = "Redux_ReactiveSwift.framework"
+               BlueprintName = "CocoaPods-Redux-ReactiveSwift-macOS"
+               ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -13,16 +29,6 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BCDA56C1F96481D00307E62"
-               BuildableName = "Redux-ReactiveSwiftTests.xctest"
-               BlueprintName = "Redux-ReactiveSwiftTests"
-               ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <AdditionalOptions>
       </AdditionalOptions>
@@ -38,6 +44,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4BD3B37B1F9692AA0077E8A5"
+            BuildableName = "Redux_ReactiveSwift.framework"
+            BlueprintName = "CocoaPods-Redux-ReactiveSwift-macOS"
+            ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -47,6 +62,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4BD3B37B1F9692AA0077E8A5"
+            BuildableName = "Redux_ReactiveSwift.framework"
+            BlueprintName = "CocoaPods-Redux-ReactiveSwift-macOS"
+            ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
