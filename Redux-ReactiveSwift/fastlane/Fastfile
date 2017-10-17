@@ -6,6 +6,7 @@ platform :ios do
 		workspace: 'Redux-ReactiveSwift.xcworkspace',
 		scheme: 'Redux-ReactiveSwift-iOS',
 		output_directory: '.xcov',
+		derived_data_path: lane_context[SharedValues::SCAN_DERIVED_DATA_PATH],
 		skip_slack: true
     )
   end

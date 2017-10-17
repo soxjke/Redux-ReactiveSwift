@@ -5,7 +5,7 @@ PODS:
     - ReactiveSwift (= 2.1.0-alpha.2)
   - ReactiveSwift (2.1.0-alpha.2):
     - Result (~> 3.2)
-  - Redux-ReactiveSwift (0.1.0):
+  - Redux-ReactiveSwift (0.1.1):
     - ReactiveSwift (= 2.1.0-alpha2)
   - Result (3.2.4)
 
@@ -24,7 +24,7 @@ SPEC CHECKSUMS:
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   ReactiveCocoa: 94ab12409f18fc774002ce124c793d5e64c42b9b
   ReactiveSwift: 963e7f9c679e57576b0c91f78cb7481b4f9879e9
-  Redux-ReactiveSwift: 28bb6091f19852d3c3e2ad3753adc6729d71762b
+  Redux-ReactiveSwift: e8f0c4168a01f14cd0ab7de3d8dc61d4256b9128
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
 
 PODFILE CHECKSUM: 50cb64c13e92f69a6bbdf5fceb869709775de67f
