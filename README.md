@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/Redux-ReactiveSwift.svg?style=flat)](http://cocoapods.org/pods/Redux-ReactiveSwift)
 [![License](https://img.shields.io/cocoapods/l/Redux-ReactiveSwift.svg?style=flat)](http://cocoapods.org/pods/Redux-ReactiveSwift)
 [![Platform](https://img.shields.io/cocoapods/p/Redux-ReactiveSwift.svg?style=flat)](http://cocoapods.org/pods/Redux-ReactiveSwift)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## Example
 
@@ -18,6 +19,13 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'Redux-ReactiveSwift'
+```
+
+Redux-ReactiveSwift is available through [Carthage](https://github.com/Carthage/Carthage). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+github "soxjke/Redux-ReactiveSwift"
 ```
 
 ## Author
