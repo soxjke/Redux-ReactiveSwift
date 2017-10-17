@@ -485,7 +485,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Redux-ReactiveSwift-iOS/Pods-Redux-ReactiveSwift-iOS-resources.sh\"\n";
+			shellScript = "if [[ `dirname $0` =~ \"org.carthage.CarthageKit\" ]]; then\n    exit 0\nfi\n\"${SRCROOT}/Pods/Target Support Files/Pods-Redux-ReactiveSwift-iOS/Pods-Redux-ReactiveSwift-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		70686A8691706415E37F5824 /* [CP] Copy Pods Resources */ = {
