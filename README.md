@@ -1,6 +1,6 @@
 # Redux-ReactiveSwift
 
-[![CI Status](http://img.shields.io/travis/Petro Korienev/Redux-ReactiveSwift.svg?style=flat)](https://travis-ci.org/Petro Korienev/Redux-ReactiveSwift)
+[![CI Status](https://travis-ci.org/soxjke/Redux-ReactiveSwift.svg?branch=master)](https://travis-ci.org/soxjke/Redux-ReactiveSwift)
 [![Version](https://img.shields.io/cocoapods/v/Redux-ReactiveSwift.svg?style=flat)](http://cocoapods.org/pods/Redux-ReactiveSwift)
 [![License](https://img.shields.io/cocoapods/l/Redux-ReactiveSwift.svg?style=flat)](http://cocoapods.org/pods/Redux-ReactiveSwift)
 [![Platform](https://img.shields.io/cocoapods/p/Redux-ReactiveSwift.svg?style=flat)](http://cocoapods.org/pods/Redux-ReactiveSwift)
