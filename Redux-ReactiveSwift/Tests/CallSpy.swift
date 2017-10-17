@@ -1,9 +1,9 @@
 //
 //  CallSpy.swift
-//  Redux-ReactiveSwift_Tests
+//  Redux-ReactiveSwiftTests
 //
 //  Created by Petro Korienev on 10/17/17.
-//  Copyright © 2017 CocoaPods. All rights reserved.
+//  Copyright © 2017 Petro Korienev. All rights reserved.
 //
 
 import Foundation

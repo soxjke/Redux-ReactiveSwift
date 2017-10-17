@@ -3,7 +3,7 @@
 //  Redux-ReactiveSwift
 //
 //  Created by Petro Korienev on 10/12/17.
-//  Copyright © 2017 Sigma Software. All rights reserved.
+//  Copyright © 2017 Petro Korienev. All rights reserved.
 //
 
 import Foundation
