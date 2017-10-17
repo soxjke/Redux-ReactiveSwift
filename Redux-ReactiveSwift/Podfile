@@ -1,9 +1,9 @@
 use_frameworks!
 
-target 'Redux-ReactiveSwift_Example' do
+target 'Redux-ReactiveSwift' do
   pod 'Redux-ReactiveSwift', :path => '../'
 
-  target 'Redux-ReactiveSwift_Tests' do
+  target 'Redux-ReactiveSwiftTests' do
     inherit! :search_paths
 
   pod 'Quick', '~> 1.2.0'

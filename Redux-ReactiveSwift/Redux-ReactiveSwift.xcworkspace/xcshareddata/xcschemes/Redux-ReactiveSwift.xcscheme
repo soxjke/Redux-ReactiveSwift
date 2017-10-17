@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "Redux-ReactiveSwift_Example.app"
-               BlueprintName = "Redux-ReactiveSwift_Example"
-               ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "Redux-ReactiveSwift_Tests.xctest"
-               BlueprintName = "Redux-ReactiveSwift_Tests"
+               BlueprintIdentifier = "4BCDA5631F96481D00307E62"
+               BuildableName = "Redux_ReactiveSwift.framework"
+               BlueprintName = "Redux-ReactiveSwift"
                ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -41,15 +27,16 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       language = ""
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "Redux-ReactiveSwift_Tests.xctest"
-               BlueprintName = "Redux-ReactiveSwift_Tests"
+               BlueprintIdentifier = "4BCDA56C1F96481D00307E62"
+               BuildableName = "Redux-ReactiveSwiftTests.xctest"
+               BlueprintName = "Redux-ReactiveSwiftTests"
                ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -57,9 +44,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "Redux-ReactiveSwift_Example.app"
-            BlueprintName = "Redux-ReactiveSwift_Example"
+            BlueprintIdentifier = "4BCDA5631F96481D00307E62"
+            BuildableName = "Redux_ReactiveSwift.framework"
+            BlueprintName = "Redux-ReactiveSwift"
             ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -77,16 +64,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "Redux-ReactiveSwift_Example.app"
-            BlueprintName = "Redux-ReactiveSwift_Example"
+            BlueprintIdentifier = "4BCDA5631F96481D00307E62"
+            BuildableName = "Redux_ReactiveSwift.framework"
+            BlueprintName = "Redux-ReactiveSwift"
             ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -96,16 +82,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "Redux-ReactiveSwift_Example.app"
-            BlueprintName = "Redux-ReactiveSwift_Example"
+            BlueprintIdentifier = "4BCDA5631F96481D00307E62"
+            BuildableName = "Redux_ReactiveSwift.framework"
+            BlueprintName = "Redux-ReactiveSwift"
             ReferencedContainer = "container:Redux-ReactiveSwift.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

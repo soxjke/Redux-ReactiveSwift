@@ -1,7 +1,9 @@
 osx_image: xcode9
 language: swift
 before_install:
+- cd Redux-ReactiveSwift
 - bundle install
 script:
+- cd Redux-ReactiveSwift
 - fastlane ios test
 - pod lib lint
