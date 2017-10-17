@@ -1,42 +1,23 @@
-#
-# Be sure to run `pod lib lint Redux-ReactiveSwift.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'Redux-ReactiveSwift'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Redux-ReactiveSwift.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Simple Redux Store implementation over ReactiveSwift.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This library focuses on simple implementation of ReduxStore backed by ReactiveSwift mutable property.
+Store combines power of Redux's state controlling obviousness with reactive bindings. One can act with the store like with property.
                        DESC
 
-  s.homepage         = 'https://github.com/Petro Korienev/Redux-ReactiveSwift'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/soxjke/Redux-ReactiveSwift'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Petro Korienev' => 'soxjke@gmail.com' }
-  s.source           = { :git => 'https://github.com/Petro Korienev/Redux-ReactiveSwift.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/soxjke/Redux-ReactiveSwift.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/soxjke'
 
-  s.ios.deployment_target = '8.0'
-
+  s.ios.deployment_target = '9.0'
+  s.osx.deployment_target = '10.10'  
   s.source_files = 'Redux-ReactiveSwift/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'Redux-ReactiveSwift' => ['Redux-ReactiveSwift/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.dependency 'ReactiveSwift', '2.1.0-alpha2'
 end

@@ -6,7 +6,18 @@ target 'Redux-ReactiveSwift_Example' do
   target 'Redux-ReactiveSwift_Tests' do
     inherit! :search_paths
 
-    pod 'Quick', '~> 1.2.0'
+  pod 'Quick', '~> 1.2.0'
   pod 'Nimble', '~> 7.0.2'
+  pod 'ReactiveCocoa', '~> 7.0.0-alpha1'
   end
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if target.name == 'ReactiveCocoa'
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '3.2'
+            end
+        end
+    end
 end

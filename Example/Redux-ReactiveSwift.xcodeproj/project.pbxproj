@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3712E0B51D6AA1D9B6618DE0 /* Pods_Redux_ReactiveSwift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50640284081015D25CA0CAE /* Pods_Redux_ReactiveSwift_Example.framework */; };
+		4B534D3F1F96195800037C8A /* CallSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B534D3E1F96195800037C8A /* CallSpy.swift */; };
+		4B54CA951F960C0A0011C8AF /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B54CA931F95F2310011C8AF /* StoreSpec.swift */; };
+		4B54CA961F960F100011C8AF /* Redux_ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B54CA971F960F100011C8AF /* Redux_ReactiveSwift.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		EDC72627D4FCAD2CD9E07FE0 /* Pods_Redux_ReactiveSwift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6B246A2D79BCB384630A10 /* Pods_Redux_ReactiveSwift_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +31,11 @@
 
 /* Begin PBXFileReference section */
 		1396B57D2BA847C373B8B3AF /* Pods-Redux-ReactiveSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-ReactiveSwift_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-ReactiveSwift_Tests/Pods-Redux-ReactiveSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5A4C79FD45DAAED8FA3F9054 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4B534D3E1F96195800037C8A /* CallSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSpy.swift; sourceTree = "<group>"; };
+		4B54CA931F95F2310011C8AF /* StoreSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSpec.swift; sourceTree = "<group>"; };
+		4B54CA941F960B930011C8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B54CA971F960F100011C8AF /* Redux_ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Redux_ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A4C79FD45DAAED8FA3F9054 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5FF2B517162EC0630C5AC7CB /* Pods-Redux-ReactiveSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-ReactiveSwift_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-ReactiveSwift_Example/Pods-Redux-ReactiveSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Redux-ReactiveSwift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redux-ReactiveSwift_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,14 +45,12 @@
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Redux-ReactiveSwift_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Redux-ReactiveSwift_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6C0F123160D7D2601A94DF8D /* Pods-Redux-ReactiveSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-ReactiveSwift_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-ReactiveSwift_Example/Pods-Redux-ReactiveSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A357CABA93678464E1838507 /* Pods-Redux-ReactiveSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-ReactiveSwift_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-ReactiveSwift_Tests/Pods-Redux-ReactiveSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BF7A8E809E60FB0A34AF6D40 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BF7A8E809E60FB0A34AF6D40 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DA6B246A2D79BCB384630A10 /* Pods_Redux_ReactiveSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Redux_ReactiveSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E50640284081015D25CA0CAE /* Pods_Redux_ReactiveSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Redux_ReactiveSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED8EAA377B25A73FB2D1A044 /* Redux-ReactiveSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "Redux-ReactiveSwift.podspec"; path = "../Redux-ReactiveSwift.podspec"; sourceTree = "<group>"; };
+		ED8EAA377B25A73FB2D1A044 /* Redux-ReactiveSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Redux-ReactiveSwift.podspec"; path = "../Redux-ReactiveSwift.podspec"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B54CA961F960F100011C8AF /* Redux_ReactiveSwift.framework in Frameworks */,
 				EDC72627D4FCAD2CD9E07FE0 /* Pods_Redux_ReactiveSwift_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,12 +85,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4B54CA921F95F2310011C8AF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4B54CA931F95F2310011C8AF /* StoreSpec.swift */,
+				4B534D3E1F96195800037C8A /* CallSpy.swift */,
+				4B54CA941F960B930011C8AF /* Info.plist */,
+			);
+			name = Tests;
+			path = "../Redux-ReactiveSwift/Tests";
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				4B54CA921F95F2310011C8AF /* Tests */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for Redux-ReactiveSwift */,
-				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				2CB7DE639D8D3A24033879FA /* Pods */,
 				ACFADCA5BB5CC7842949CE13 /* Frameworks */,
@@ -123,23 +139,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +152,7 @@
 		ACFADCA5BB5CC7842949CE13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B54CA971F960F100011C8AF /* Redux_ReactiveSwift.framework */,
 				E50640284081015D25CA0CAE /* Pods_Redux_ReactiveSwift_Example.framework */,
 				DA6B246A2D79BCB384630A10 /* Pods_Redux_ReactiveSwift_Tests.framework */,
 			);
@@ -211,7 +211,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = CocoaPods;
+				ORGANIZATIONNAME = "Sigma Software";
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -270,13 +270,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Redux-ReactiveSwift_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1DED7A208BF91F1EE481A5D8 /* [CP] Copy Pods Resources */ = {
@@ -300,9 +303,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Redux-ReactiveSwift_Example/Pods-Redux-ReactiveSwift_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Redux-ReactiveSwift/Redux_ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Redux_ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -315,9 +325,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Redux-ReactiveSwift_Tests/Pods-Redux-ReactiveSwift_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -345,13 +366,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Redux-ReactiveSwift_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -370,7 +394,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				4B534D3F1F96195800037C8A /* CallSpy.swift in Sources */,
+				4B54CA951F960C0A0011C8AF /* StoreSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,12 +570,13 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = "$SRCROOT/../Redux-ReactiveSwift/Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Redux-ReactiveSwift_Example.app/Redux-ReactiveSwift_Example";
 			};
 			name = Debug;
 		};
@@ -562,12 +588,13 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = "$SRCROOT/../Redux-ReactiveSwift/Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Redux-ReactiveSwift_Example.app/Redux-ReactiveSwift_Example";
 			};
 			name = Release;
 		};
