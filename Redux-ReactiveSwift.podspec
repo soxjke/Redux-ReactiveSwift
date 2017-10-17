@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Redux-ReactiveSwift'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Simple Redux Store implementation over ReactiveSwift.'
 
   s.description      = <<-DESC

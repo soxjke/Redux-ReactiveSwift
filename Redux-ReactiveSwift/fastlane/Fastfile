@@ -4,7 +4,7 @@ platform :ios do
     scan
     xcov(
 		workspace: 'Redux-ReactiveSwift.xcworkspace',
-		scheme: 'Redux-ReactiveSwift',
+		scheme: 'Redux-ReactiveSwift-iOS',
 		output_directory: '.xcov',
 		skip_slack: true
     )

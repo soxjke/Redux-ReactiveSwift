@@ -1,6 +1,6 @@
 use_frameworks!
 
-target 'Redux-ReactiveSwift' do
+target 'Redux-ReactiveSwift-iOS' do
   pod 'Redux-ReactiveSwift', :path => '../'
 
   target 'Redux-ReactiveSwiftTests' do

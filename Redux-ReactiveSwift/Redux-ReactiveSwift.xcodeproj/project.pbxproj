@@ -7,29 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BCDA56E1F96481D00307E62 /* Redux_ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCDA5641F96481D00307E62 /* Redux_ReactiveSwift.framework */; };
-		4BCDA5751F96481D00307E62 /* Redux_ReactiveSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BCDA5671F96481D00307E62 /* Redux_ReactiveSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BD3B2F11F9649790077E8A5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B2F01F96496D0077E8A5 /* Store.swift */; };
+		04F13B78F406FF863942990B /* Pods_Redux_ReactiveSwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73143D6C34A9D57E11ECC62F /* Pods_Redux_ReactiveSwift_iOS.framework */; };
 		4BD3B2F21F96497D0077E8A5 /* CallSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B2EB1F96496D0077E8A5 /* CallSpy.swift */; };
 		4BD3B2F31F9649800077E8A5 /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B2ED1F96496D0077E8A5 /* StoreSpec.swift */; };
+		4BD3B3151F9662600077E8A5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3B2F01F96496D0077E8A5 /* Store.swift */; };
+		4BD3B3171F9662600077E8A5 /* Pods_Redux_ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9ADEB50130FE29725A55D22 /* Pods_Redux_ReactiveSwift.framework */; };
+		4BD3B3191F9662600077E8A5 /* Redux_ReactiveSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BCDA5671F96481D00307E62 /* Redux_ReactiveSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BD3B32A1F9662B90077E8A5 /* Redux_ReactiveSwift_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3B3281F9662B90077E8A5 /* Redux_ReactiveSwift_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BD3B3371F9662D30077E8A5 /* Redux_ReactiveSwift_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3B3351F9662D30077E8A5 /* Redux_ReactiveSwift_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BD3B3441F9663000077E8A5 /* Redux_ReactiveSwift_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD3B3421F9663000077E8A5 /* Redux_ReactiveSwift_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8082FB60B528AEA54D977510 /* Pods_Redux_ReactiveSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052E396E94C914CE4506AF1B /* Pods_Redux_ReactiveSwiftTests.framework */; };
-		945693F4F6ECDDDD5E068D7D /* Pods_Redux_ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9ADEB50130FE29725A55D22 /* Pods_Redux_ReactiveSwift.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4BCDA56F1F96481D00307E62 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4BCDA55B1F96481D00307E62 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4BCDA5631F96481D00307E62;
-			remoteInfo = "Redux-ReactiveSwift";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		052E396E94C914CE4506AF1B /* Pods_Redux_ReactiveSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Redux_ReactiveSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		168AECC2245C882F5324D7B2 /* Pods-Redux-ReactiveSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-ReactiveSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-ReactiveSwiftTests/Pods-Redux-ReactiveSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
-		4BCDA5641F96481D00307E62 /* Redux_ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BCDA5671F96481D00307E62 /* Redux_ReactiveSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Redux_ReactiveSwift.h; sourceTree = "<group>"; };
 		4BCDA5681F96481D00307E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BCDA56D1F96481D00307E62 /* Redux-ReactiveSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Redux-ReactiveSwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +30,20 @@
 		4BD3B2EC1F96496D0077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BD3B2ED1F96496D0077E8A5 /* StoreSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSpec.swift; sourceTree = "<group>"; };
 		4BD3B2F01F96496D0077E8A5 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		4BD3B31F1F9662600077E8A5 /* Redux_ReactiveSwift_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3B3201F9662600077E8A5 /* Redux-ReactiveSwift copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Redux-ReactiveSwift copy-Info.plist"; path = "/Users/petr/projects/Redux-ReactiveSwift/Redux-ReactiveSwift/Redux-ReactiveSwift copy-Info.plist"; sourceTree = "<absolute>"; };
+		4BD3B3261F9662B90077E8A5 /* Redux_ReactiveSwift_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3B3281F9662B90077E8A5 /* Redux_ReactiveSwift_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Redux_ReactiveSwift_watchOS.h; sourceTree = "<group>"; };
+		4BD3B3291F9662B90077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD3B3331F9662D30077E8A5 /* Redux_ReactiveSwift_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3B3351F9662D30077E8A5 /* Redux_ReactiveSwift_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Redux_ReactiveSwift_tvOS.h; sourceTree = "<group>"; };
+		4BD3B3361F9662D30077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD3B3401F9663000077E8A5 /* Redux_ReactiveSwift_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redux_ReactiveSwift_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3B3421F9663000077E8A5 /* Redux_ReactiveSwift_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Redux_ReactiveSwift_macOS.h; sourceTree = "<group>"; };
+		4BD3B3431F9663000077E8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CF981D26BCC8093B1ED9B37 /* Pods-Redux-ReactiveSwift-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-ReactiveSwift-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-ReactiveSwift-iOS/Pods-Redux-ReactiveSwift-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		71831406CE27C55469304130 /* Pods-Redux-ReactiveSwift-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-ReactiveSwift-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-ReactiveSwift-iOS/Pods-Redux-ReactiveSwift-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		73143D6C34A9D57E11ECC62F /* Pods_Redux_ReactiveSwift_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Redux_ReactiveSwift_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95964EE030609BCEACCE8D4F /* Pods-Redux-ReactiveSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-ReactiveSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-ReactiveSwift/Pods-Redux-ReactiveSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		A1A5AF7D251DC91DE140E4B1 /* Pods-Redux-ReactiveSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-ReactiveSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-ReactiveSwift/Pods-Redux-ReactiveSwift.release.xcconfig"; sourceTree = "<group>"; };
 		B9ADEB50130FE29725A55D22 /* Pods_Redux_ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Redux_ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,20 +51,41 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4BCDA5601F96481D00307E62 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				945693F4F6ECDDDD5E068D7D /* Pods_Redux_ReactiveSwift.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4BCDA56A1F96481D00307E62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BCDA56E1F96481D00307E62 /* Redux_ReactiveSwift.framework in Frameworks */,
 				8082FB60B528AEA54D977510 /* Pods_Redux_ReactiveSwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3161F9662600077E8A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B3171F9662600077E8A5 /* Pods_Redux_ReactiveSwift.framework in Frameworks */,
+				04F13B78F406FF863942990B /* Pods_Redux_ReactiveSwift_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3221F9662B90077E8A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B32F1F9662D30077E8A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B33C1F9663000077E8A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,30 +97,37 @@
 			children = (
 				4BD3B2EE1F96496D0077E8A5 /* Classes */,
 				4BD3B2EA1F96496D0077E8A5 /* Tests */,
-				4BCDA5661F96481D00307E62 /* Redux-ReactiveSwift */,
+				4BCDA5661F96481D00307E62 /* Redux-ReactiveSwift-iOS */,
 				4BCDA5711F96481D00307E62 /* Redux-ReactiveSwiftTests */,
+				4BD3B3271F9662B90077E8A5 /* Redux-ReactiveSwift-watchOS */,
+				4BD3B3341F9662D30077E8A5 /* Redux-ReactiveSwift-tvOS */,
+				4BD3B3411F9663000077E8A5 /* Redux-ReactiveSwift-macOS */,
 				4BCDA5651F96481D00307E62 /* Products */,
 				835C788CFBFBDAE31D8FEE72 /* Pods */,
 				6153B51BFFA66A8F78BB5301 /* Frameworks */,
+				4BD3B3201F9662600077E8A5 /* Redux-ReactiveSwift copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		4BCDA5651F96481D00307E62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4BCDA5641F96481D00307E62 /* Redux_ReactiveSwift.framework */,
 				4BCDA56D1F96481D00307E62 /* Redux-ReactiveSwiftTests.xctest */,
+				4BD3B31F1F9662600077E8A5 /* Redux_ReactiveSwift_iOS.framework */,
+				4BD3B3261F9662B90077E8A5 /* Redux_ReactiveSwift_watchOS.framework */,
+				4BD3B3331F9662D30077E8A5 /* Redux_ReactiveSwift_tvOS.framework */,
+				4BD3B3401F9663000077E8A5 /* Redux_ReactiveSwift_macOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4BCDA5661F96481D00307E62 /* Redux-ReactiveSwift */ = {
+		4BCDA5661F96481D00307E62 /* Redux-ReactiveSwift-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				4BCDA5671F96481D00307E62 /* Redux_ReactiveSwift.h */,
 				4BCDA5681F96481D00307E62 /* Info.plist */,
 			);
-			path = "Redux-ReactiveSwift";
+			path = "Redux-ReactiveSwift-iOS";
 			sourceTree = "<group>";
 		};
 		4BCDA5711F96481D00307E62 /* Redux-ReactiveSwiftTests */ = {
@@ -122,11 +156,39 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		4BD3B3271F9662B90077E8A5 /* Redux-ReactiveSwift-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				4BD3B3281F9662B90077E8A5 /* Redux_ReactiveSwift_watchOS.h */,
+				4BD3B3291F9662B90077E8A5 /* Info.plist */,
+			);
+			path = "Redux-ReactiveSwift-watchOS";
+			sourceTree = "<group>";
+		};
+		4BD3B3341F9662D30077E8A5 /* Redux-ReactiveSwift-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				4BD3B3351F9662D30077E8A5 /* Redux_ReactiveSwift_tvOS.h */,
+				4BD3B3361F9662D30077E8A5 /* Info.plist */,
+			);
+			path = "Redux-ReactiveSwift-tvOS";
+			sourceTree = "<group>";
+		};
+		4BD3B3411F9663000077E8A5 /* Redux-ReactiveSwift-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				4BD3B3421F9663000077E8A5 /* Redux_ReactiveSwift_macOS.h */,
+				4BD3B3431F9663000077E8A5 /* Info.plist */,
+			);
+			path = "Redux-ReactiveSwift-macOS";
+			sourceTree = "<group>";
+		};
 		6153B51BFFA66A8F78BB5301 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				B9ADEB50130FE29725A55D22 /* Pods_Redux_ReactiveSwift.framework */,
 				052E396E94C914CE4506AF1B /* Pods_Redux_ReactiveSwiftTests.framework */,
+				73143D6C34A9D57E11ECC62F /* Pods_Redux_ReactiveSwift_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,6 +200,8 @@
 				A1A5AF7D251DC91DE140E4B1 /* Pods-Redux-ReactiveSwift.release.xcconfig */,
 				DF113E0710C49C4E43F740E9 /* Pods-Redux-ReactiveSwiftTests.debug.xcconfig */,
 				168AECC2245C882F5324D7B2 /* Pods-Redux-ReactiveSwiftTests.release.xcconfig */,
+				71831406CE27C55469304130 /* Pods-Redux-ReactiveSwift-iOS.debug.xcconfig */,
+				4CF981D26BCC8093B1ED9B37 /* Pods-Redux-ReactiveSwift-iOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -145,37 +209,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4BCDA5611F96481D00307E62 /* Headers */ = {
+		4BD3B3181F9662600077E8A5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BCDA5751F96481D00307E62 /* Redux_ReactiveSwift.h in Headers */,
+				4BD3B3191F9662600077E8A5 /* Redux_ReactiveSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3231F9662B90077E8A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B32A1F9662B90077E8A5 /* Redux_ReactiveSwift_watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3301F9662D30077E8A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B3371F9662D30077E8A5 /* Redux_ReactiveSwift_tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B33D1F9663000077E8A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B3441F9663000077E8A5 /* Redux_ReactiveSwift_macOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4BCDA5631F96481D00307E62 /* Redux-ReactiveSwift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4BCDA5781F96481D00307E62 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift" */;
-			buildPhases = (
-				573D4153B1E301D69BD8F0E4 /* [CP] Check Pods Manifest.lock */,
-				4BCDA55F1F96481D00307E62 /* Sources */,
-				4BCDA5601F96481D00307E62 /* Frameworks */,
-				4BCDA5611F96481D00307E62 /* Headers */,
-				4BCDA5621F96481D00307E62 /* Resources */,
-				4E2F8DEFF0665BD8E617E7EC /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Redux-ReactiveSwift";
-			productName = "Redux-ReactiveSwift";
-			productReference = 4BCDA5641F96481D00307E62 /* Redux_ReactiveSwift.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		4BCDA56C1F96481D00307E62 /* Redux-ReactiveSwiftTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BCDA57B1F96481D00307E62 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwiftTests" */;
@@ -190,12 +258,85 @@
 			buildRules = (
 			);
 			dependencies = (
-				4BCDA5701F96481D00307E62 /* PBXTargetDependency */,
 			);
 			name = "Redux-ReactiveSwiftTests";
 			productName = "Redux-ReactiveSwiftTests";
 			productReference = 4BCDA56D1F96481D00307E62 /* Redux-ReactiveSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4BD3B3121F9662600077E8A5 /* Redux-ReactiveSwift-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BD3B31C1F9662600077E8A5 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift-iOS" */;
+			buildPhases = (
+				4BD3B3131F9662600077E8A5 /* [CP] Check Pods Manifest.lock */,
+				4BD3B3141F9662600077E8A5 /* Sources */,
+				4BD3B3161F9662600077E8A5 /* Frameworks */,
+				4BD3B3181F9662600077E8A5 /* Headers */,
+				4BD3B31A1F9662600077E8A5 /* Resources */,
+				4BD3B31B1F9662600077E8A5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Redux-ReactiveSwift-iOS";
+			productName = "Redux-ReactiveSwift";
+			productReference = 4BD3B31F1F9662600077E8A5 /* Redux_ReactiveSwift_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BD3B3251F9662B90077E8A5 /* Redux-ReactiveSwift-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BD3B32B1F9662B90077E8A5 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift-watchOS" */;
+			buildPhases = (
+				4BD3B3211F9662B90077E8A5 /* Sources */,
+				4BD3B3221F9662B90077E8A5 /* Frameworks */,
+				4BD3B3231F9662B90077E8A5 /* Headers */,
+				4BD3B3241F9662B90077E8A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Redux-ReactiveSwift-watchOS";
+			productName = "Redux-ReactiveSwift-watchOS";
+			productReference = 4BD3B3261F9662B90077E8A5 /* Redux_ReactiveSwift_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BD3B3321F9662D30077E8A5 /* Redux-ReactiveSwift-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BD3B3381F9662D30077E8A5 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift-tvOS" */;
+			buildPhases = (
+				4BD3B32E1F9662D30077E8A5 /* Sources */,
+				4BD3B32F1F9662D30077E8A5 /* Frameworks */,
+				4BD3B3301F9662D30077E8A5 /* Headers */,
+				4BD3B3311F9662D30077E8A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Redux-ReactiveSwift-tvOS";
+			productName = "Redux-ReactiveSwift-tvOS";
+			productReference = 4BD3B3331F9662D30077E8A5 /* Redux_ReactiveSwift_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BD3B33F1F9663000077E8A5 /* Redux-ReactiveSwift-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BD3B3451F9663000077E8A5 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift-macOS" */;
+			buildPhases = (
+				4BD3B33B1F9663000077E8A5 /* Sources */,
+				4BD3B33C1F9663000077E8A5 /* Frameworks */,
+				4BD3B33D1F9663000077E8A5 /* Headers */,
+				4BD3B33E1F9663000077E8A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Redux-ReactiveSwift-macOS";
+			productName = "Redux-ReactiveSwift-macOS";
+			productReference = 4BD3B3401F9663000077E8A5 /* Redux_ReactiveSwift_macOS.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -207,11 +348,22 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Petro Korienev";
 				TargetAttributes = {
-					4BCDA5631F96481D00307E62 = {
+					4BCDA56C1F96481D00307E62 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
-					4BCDA56C1F96481D00307E62 = {
+					4BD3B3121F9662600077E8A5 = {
+						ProvisioningStyle = Automatic;
+					};
+					4BD3B3251F9662B90077E8A5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					4BD3B3321F9662D30077E8A5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					4BD3B33F1F9663000077E8A5 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -229,21 +381,45 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4BCDA5631F96481D00307E62 /* Redux-ReactiveSwift */,
 				4BCDA56C1F96481D00307E62 /* Redux-ReactiveSwiftTests */,
+				4BD3B3121F9662600077E8A5 /* Redux-ReactiveSwift-iOS */,
+				4BD3B3251F9662B90077E8A5 /* Redux-ReactiveSwift-watchOS */,
+				4BD3B3321F9662D30077E8A5 /* Redux-ReactiveSwift-tvOS */,
+				4BD3B33F1F9663000077E8A5 /* Redux-ReactiveSwift-macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4BCDA5621F96481D00307E62 /* Resources */ = {
+		4BCDA56B1F96481D00307E62 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BCDA56B1F96481D00307E62 /* Resources */ = {
+		4BD3B31A1F9662600077E8A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3241F9662B90077E8A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B3311F9662D30077E8A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B33E1F9663000077E8A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,7 +441,6 @@
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/Redux-ReactiveSwift/Redux_ReactiveSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -274,14 +449,31 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Redux_ReactiveSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Redux-ReactiveSwiftTests/Pods-Redux-ReactiveSwiftTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4E2F8DEFF0665BD8E617E7EC /* [CP] Copy Pods Resources */ = {
+		4BD3B3131F9662600077E8A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Redux-ReactiveSwift-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BD3B31B1F9662600077E8A5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,25 +485,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Redux-ReactiveSwift/Pods-Redux-ReactiveSwift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		573D4153B1E301D69BD8F0E4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Redux-ReactiveSwift-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Redux-ReactiveSwift-iOS/Pods-Redux-ReactiveSwift-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		70686A8691706415E37F5824 /* [CP] Copy Pods Resources */ = {
@@ -350,14 +524,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4BCDA55F1F96481D00307E62 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4BD3B2F11F9649790077E8A5 /* Store.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4BCDA5691F96481D00307E62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,15 +533,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4BCDA5701F96481D00307E62 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4BCDA5631F96481D00307E62 /* Redux-ReactiveSwift */;
-			targetProxy = 4BCDA56F1F96481D00307E62 /* PBXContainerItemProxy */;
+		4BD3B3141F9662600077E8A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD3B3151F9662600077E8A5 /* Store.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXTargetDependency section */
+		4BD3B3211F9662B90077E8A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B32E1F9662D30077E8A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3B33B1F9663000077E8A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		4BCDA5761F96481D00307E62 /* Debug */ = {
@@ -491,48 +678,6 @@
 			};
 			name = Release;
 		};
-		4BCDA5791F96481D00307E62 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95964EE030609BCEACCE8D4F /* Pods-Redux-ReactiveSwift.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Redux-ReactiveSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4BCDA57A1F96481D00307E62 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1A5AF7D251DC91DE140E4B1 /* Pods-Redux-ReactiveSwift.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Redux-ReactiveSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		4BCDA57C1F96481D00307E62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DF113E0710C49C4E43F740E9 /* Pods-Redux-ReactiveSwiftTests.debug.xcconfig */;
@@ -563,6 +708,192 @@
 			};
 			name = Release;
 		};
+		4BD3B31D1F9662600077E8A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71831406CE27C55469304130 /* Pods-Redux-ReactiveSwift-iOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Redux-ReactiveSwift copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-iOS";
+				PRODUCT_NAME = Redux_ReactiveSwift_iOS;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BD3B31E1F9662600077E8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CF981D26BCC8093B1ED9B37 /* Pods-Redux-ReactiveSwift-iOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Redux-ReactiveSwift copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-iOS";
+				PRODUCT_NAME = Redux_ReactiveSwift_iOS;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4BD3B32C1F9662B90077E8A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Redux-ReactiveSwift-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		4BD3B32D1F9662B90077E8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Redux-ReactiveSwift-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		4BD3B3391F9662D30077E8A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Redux-ReactiveSwift-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		4BD3B33A1F9662D30077E8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Redux-ReactiveSwift-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		4BD3B3461F9663000077E8A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Redux-ReactiveSwift-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		4BD3B3471F9663000077E8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Redux-ReactiveSwift-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soxjke.Redux-ReactiveSwift-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,20 +906,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BCDA5781F96481D00307E62 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4BCDA5791F96481D00307E62 /* Debug */,
-				4BCDA57A1F96481D00307E62 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4BCDA57B1F96481D00307E62 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BCDA57C1F96481D00307E62 /* Debug */,
 				4BCDA57D1F96481D00307E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BD3B31C1F9662600077E8A5 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD3B31D1F9662600077E8A5 /* Debug */,
+				4BD3B31E1F9662600077E8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BD3B32B1F9662B90077E8A5 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD3B32C1F9662B90077E8A5 /* Debug */,
+				4BD3B32D1F9662B90077E8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BD3B3381F9662D30077E8A5 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD3B3391F9662D30077E8A5 /* Debug */,
+				4BD3B33A1F9662D30077E8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BD3B3451F9663000077E8A5 /* Build configuration list for PBXNativeTarget "Redux-ReactiveSwift-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD3B3461F9663000077E8A5 /* Debug */,
+				4BD3B3471F9663000077E8A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,5 +1,5 @@
 workspace 'Redux-ReactiveSwift.xcworkspace'
-scheme 'Redux-ReactiveSwift'
+scheme 'Redux-ReactiveSwift-iOS'
 devices ["iPhone 8"]
 
 code_coverage true
