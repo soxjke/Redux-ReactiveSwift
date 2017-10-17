@@ -16,6 +16,8 @@ Store combines power of Redux's state controlling obviousness with reactive bind
 
   s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.10'  
+  s.watchos.deployment_target = '2.0'  
+  s.tvos.deployment_target = '9.0'   
   s.source_files = 'Redux-ReactiveSwift/Classes/**/*'
   
   s.dependency 'ReactiveSwift', '2.1.0-alpha2'

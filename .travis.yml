@@ -5,5 +5,6 @@ before_install:
 - bundle install
 script:
 - fastlane ios cocoapods_test
+- fastlane ios carthage_test
 - cd ..
 - pod lib lint
