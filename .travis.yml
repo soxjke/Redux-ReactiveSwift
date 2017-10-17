@@ -5,4 +5,5 @@ before_install:
 - bundle install
 script:
 - fastlane ios test
+- cd ..
 - pod lib lint
