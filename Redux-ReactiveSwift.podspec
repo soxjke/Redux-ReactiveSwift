@@ -18,6 +18,5 @@ Store combines power of Redux's state controlling obviousness with reactive bind
   s.osx.deployment_target = '10.10'  
   s.source_files = 'Redux-ReactiveSwift/Classes/**/*'
   
-  s.public_header_files = 'Pod/Classes/**/*.h'
   s.dependency 'ReactiveSwift', '2.1.0-alpha2'
 end
