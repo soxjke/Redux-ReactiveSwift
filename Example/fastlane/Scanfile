@@ -1,0 +1,8 @@
+workspace 'Redux-ReactiveSwift.xcworkspace'
+scheme 'Redux-ReactiveSwift-Example'
+devices ["iPhone 8"]
+
+code_coverage true
+clean true
+
+output_types "html"

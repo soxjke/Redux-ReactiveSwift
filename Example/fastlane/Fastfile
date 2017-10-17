@@ -1,0 +1,12 @@
+platform :ios do
+  lane :test do
+    cocoapods(repo_update: true, verbose: true)
+    scan
+    xcov(
+		workspace: 'Redux-ReactiveSwift.xcworkspace',
+		scheme: 'Redux-ReactiveSwift-Example',
+		output_directory: '.xcov',
+		skip_slack: true
+    )
+  end
+end

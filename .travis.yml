@@ -1,10 +1,7 @@
 osx_image: xcode9
 language: swift
-cache: cocoapods
-podfile: Example/Podfile
 before_install:
-- gem install cocoapods # Since Travis is not always on latest version
-- pod install --project-directory=Example
+- bundle install
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/Redux-ReactiveSwift.xcworkspace -scheme Redux-ReactiveSwift-Example -sdk iphonesimulator11.0 ONLY_ACTIVE_ARCH=NO | xcpretty
+- fastlane ios test
 - pod lib lint

@@ -21,6 +21,12 @@ DerivedData
 
 # Bundler
 .bundle
+#xcov
+.xcov
+#scan
+test_output
+*/fastlane/report.xml
+*/fastlane/README.md
 *.xcworkspacedata
 xcuserdatad
 
