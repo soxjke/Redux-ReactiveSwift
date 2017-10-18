@@ -18,7 +18,7 @@ platform :ios do
     )
   end
   lane :carthage_test do
-    carthage
+    carthage(cache_builds: true)
     scan(
 		project: 'Redux-ReactiveSwift.xcodeproj',
 		scheme: 'Carthage-Redux-ReactiveSwift-iOS',

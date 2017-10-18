@@ -578,7 +578,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3B3AF1F969BBF0077E8A5 /* Build configuration list for PBXNativeTarget "Carthage-Redux-ReactiveSwift-iOS" */;
 			buildPhases = (
-				4BD3B3E91F969EC60077E8A5 /* [Carthage] Outdated */,
 				4BD3B3A31F969BBF0077E8A5 /* Sources */,
 				4BD3B3A41F969BBF0077E8A5 /* Frameworks */,
 				4BD3B3A51F969BBF0077E8A5 /* Headers */,
@@ -597,7 +596,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3B3BA1F969C0F0077E8A5 /* Build configuration list for PBXNativeTarget "Carthage-Redux-ReactiveSwift-watchOS" */;
 			buildPhases = (
-				4BD3B3EA1F969EEA0077E8A5 /* [Carthage] Outdated */,
 				4BD3B3B01F969C0F0077E8A5 /* Sources */,
 				4BD3B3B11F969C0F0077E8A5 /* Frameworks */,
 				4BD3B3B21F969C0F0077E8A5 /* Headers */,
@@ -616,7 +614,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3B3C71F969C4F0077E8A5 /* Build configuration list for PBXNativeTarget "Carthage-Redux-ReactiveSwift-tvOS" */;
 			buildPhases = (
-				4BD3B3EB1F969EF60077E8A5 /* [Carthage] Outdated */,
 				4BD3B3BD1F969C4F0077E8A5 /* Sources */,
 				4BD3B3BE1F969C4F0077E8A5 /* Frameworks */,
 				4BD3B3BF1F969C4F0077E8A5 /* Headers */,
@@ -635,7 +632,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3B3D41F969C910077E8A5 /* Build configuration list for PBXNativeTarget "Carthage-Redux-ReactiveSwift-macOS" */;
 			buildPhases = (
-				4BD3B3EC1F969EFC0077E8A5 /* [Carthage] Outdated */,
 				4BD3B3CA1F969C910077E8A5 /* Sources */,
 				4BD3B3CB1F969C910077E8A5 /* Frameworks */,
 				4BD3B3CC1F969C910077E8A5 /* Headers */,
@@ -654,7 +650,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3B3E31F969CEA0077E8A5 /* Build configuration list for PBXNativeTarget "Carthage-Redux-ReactiveSwift-iOSTests" */;
 			buildPhases = (
-				4BD3B3EF1F96A11D0077E8A5 /* [Carthage] Outdated */,
 				4BD3B3D71F969CEA0077E8A5 /* Sources */,
 				4BD3B3D81F969CEA0077E8A5 /* Frameworks */,
 				4BD3B3D91F969CEA0077E8A5 /* Resources */,
@@ -897,76 +892,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-tvOS/Pods-CocoaPods-Redux-ReactiveSwift-tvOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		4BD3B3E91F969EC60077E8A5 /* [Carthage] Outdated */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[Carthage] Outdated";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings";
-		};
-		4BD3B3EA1F969EEA0077E8A5 /* [Carthage] Outdated */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[Carthage] Outdated";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings";
-		};
-		4BD3B3EB1F969EF60077E8A5 /* [Carthage] Outdated */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[Carthage] Outdated";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings";
-		};
-		4BD3B3EC1F969EFC0077E8A5 /* [Carthage] Outdated */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[Carthage] Outdated";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings";
-		};
-		4BD3B3EF1F96A11D0077E8A5 /* [Carthage] Outdated */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[Carthage] Outdated";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings";
 		};
 		4BD3B4131F96A88D0077E8A5 /* [Carthage] Copy frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
