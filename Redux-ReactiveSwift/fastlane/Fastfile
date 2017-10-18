@@ -1,4 +1,7 @@
 platform :ios do
+  before_all do
+  	ensure_git_status_clean
+  end
   lane :cocoapods_test do
     cocoapods(repo_update: true, verbose: true)
     scan(
