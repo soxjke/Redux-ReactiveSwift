@@ -43,7 +43,7 @@ class ViewController: UIViewController {
 
 To connect actions one can use ReactiveSwift's ```Action```:
 
-```
+```swift
 extension ViewModel {
     func action(for buttonAction: ButtonAction) -> Action<(), (), NoError> {
         return Action {
