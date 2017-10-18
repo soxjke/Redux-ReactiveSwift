@@ -6,11 +6,15 @@
 [![Platform](https://img.shields.io/cocoapods/p/Redux-ReactiveSwift.svg?style=flat)](http://cocoapods.org/pods/Redux-ReactiveSwift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
+This library focuses on predictable state container implementation inspired by [JS Redux](http://redux.js.org). It benefits from [ReactiveSwift](https://github.com/ReactiveCocoa/ReactiveSwift). Using functional reactive approach & predictable state containers one should be able to write more clean & testable code :)
+
 ## Example
 
-The basic usage is pretty straightforward - one can create a store with `State` and `Event`
+The basic usage is pretty straightforward - one can create a store with `State` and reducer('s) of type `(State, Event) -> State`
 
 ```swift
+import Redux_ReactiveSwift
+
 class ViewModel {
     enum ButtonAction {
         case plus
