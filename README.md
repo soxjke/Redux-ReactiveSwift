@@ -16,7 +16,7 @@ class ViewModel {
         case plus
         case minus
     }
-    private(set) lazy var itemQuantityStore = itemQuantityStore<Int, ButtonAction>(state: 1, reducers: [self.itemQuantityReducer])
+    private(set) lazy var itemQuantityStore = Store<Int, ButtonAction>(state: 1, reducers: [self.itemQuantityReducer])
     private func itemQuantityReducer(state: Int, event: ButtonAction) -> Int {
         switch (event) {
             case .plus: return state + 1;
@@ -94,7 +94,7 @@ func applyMap<R1, R2>(f2: @escaping (R1, R2) -> R1, mapper: @escaping (R1) -> R1
     }
 }
 ...
-    private(set) lazy var itemQuantityStore = itemQuantityStore<Int, ButtonAction>(state: 1, reducers: [applyMap(f2: self.itemQuantityReducer, mapper: ClosedRange.clamp((0...10))]
+    private(set) lazy var itemQuantityStore = Store<Int, ButtonAction>(state: 1, reducers: [applyMap(f2: self.itemQuantityReducer, mapper: ClosedRange.clamp((0...10))]
 
 ```
 
