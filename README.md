@@ -8,7 +8,99 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+The basic usage is pretty straightforward - one can create a store with `State` and `Event`
+
+```swift
+class ViewModel {
+    enum ButtonAction {
+        case plus
+        case minus
+    }
+    private(set) lazy var itemQuantityStore = itemQuantityStore<Int, ButtonAction>(state: 1, reducers: [self.itemQuantityReducer])
+    private func itemQuantityReducer(state: Int, event: ButtonAction) -> Int {
+        switch (event) {
+            case .plus: return state + 1;
+            case .minus: return state - 1;
+        }
+    }
+}
+```
+
+Further, there can be benefit of binding data from `Store` using ReactiveSwift's `UnidirectionaBinding`:
+
+```swift
+class ViewController: UIViewController {
+    @IBOutlet weak var quantityLabel: UILabel!
+    @IBOutlet weak var plusButton: UIButton!
+    @IBOutlet weak var minusButton: UIButton!
+    lazy var viewModel = ViewModel()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        quantityLabel.reactive.text <~ viewModel.itemQuantityStore.map(String.describing)
+    }
+}
+```
+
+To connect actions one can use ReactiveSwift's ```Action```:
+
+```
+extension ViewModel {
+    func action(for buttonAction: ButtonAction) -> Action<(), (), NoError> {
+        return Action {
+            return SignalProducer<(), NoError> { [weak self] in
+                self?.itemQuantityStore.consume(event: buttonAction)
+            }
+        }
+    }
+}
+
+class ViewController {
+...
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        quantityLabel.reactive.text <~ viewModel.itemQuantityStore.map(String.describing)
+        plusButton.reactive.pressed = CocoaAction(viewModel.action(for: .plus))
+        minusButton.reactive.pressed = CocoaAction(viewModel.action(for: .minus))
+    }
+}
+```
+
+State changing logic is completely in one place. Forever. If we'd like to have something more advanced we can benefit of reducers chain:
+
+```swift
+extension ClosedRange {
+    func clamp(_ value : Bound) -> Bound {
+        return self.lowerBound > value ? self.lowerBound
+            : self.upperBound < value ? self.upperBound
+            : value
+    }
+}
+
+class ViewModel {
+    private func itemQuantityClamper(state: Int, event: ButtonAction) -> Int {
+        return (0...10).clamp(state)
+    }
+    private(set) lazy var itemQuantityStore = Store<Int, ButtonAction>(state: 1, reducers: [self.itemQuantityReducer, self.itemQuantityClamper]
+}
+```
+
+or it can be done with a single reducer with benefit of some kind of functional ```applyMap```:
+
+```swift
+// This one looks ugly because tuple splatting was removed in Swift 4, thanks Chris Lattner!
+func applyMap<R1, R2>(f2: @escaping (R1, R2) -> R1, mapper: @escaping (R1) -> R1) -> (R1, R2) -> R1 {
+    return { (arg1, arg2) -> R1 in
+        return mapper(f2(arg1, arg2))
+    }
+}
+...
+    private(set) lazy var itemQuantityStore = itemQuantityStore<Int, ButtonAction>(state: 1, reducers: [applyMap(f2: self.itemQuantityReducer, mapper: ClosedRange.clamp((0...10))]
+
+```
+
+Due to functional reactive spirit of solution you're limited only by your fantasy and Mr.Lattner's improvements to Swift language. Some more cases of `Store` usage can be found in tests spec:
+
+https://github.com/soxjke/Redux-ReactiveSwift/blob/master/Redux-ReactiveSwift/Tests/StoreSpec.swift
 
 ## Requirements
 
