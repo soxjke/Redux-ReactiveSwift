@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Redux-ReactiveSwift'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Simple Redux Store implementation over ReactiveSwift.'
 
   s.description      = <<-DESC
@@ -16,6 +16,8 @@ Store combines power of Redux's state controlling obviousness with reactive bind
 
   s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.10'  
+  s.watchos.deployment_target = '2.0'  
+  s.tvos.deployment_target = '9.0'   
   s.source_files = 'Redux-ReactiveSwift/Classes/**/*'
   
   s.dependency 'ReactiveSwift', '2.1.0-alpha2'

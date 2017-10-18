@@ -1,16 +1,36 @@
+source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
-
-target 'Redux-ReactiveSwift' do
-  pod 'Redux-ReactiveSwift', :path => '../'
-
-  target 'Redux-ReactiveSwiftTests' do
-    inherit! :search_paths
-
-  pod 'Quick', '~> 1.2.0'
-  pod 'Nimble', '~> 7.0.2'
-  pod 'ReactiveCocoa', '~> 7.0.0-alpha1'
-  end
+inhibit_all_warnings!
+    
+def common_pods
+	pod 'ReactiveSwift', '~> 2.1.0-alpha2'
 end
+
+def test_pods
+    pod 'Quick', '1.2.0'
+    pod 'Nimble', '7.0.2'
+    pod 'ReactiveCocoa', '~> 7.0.0-alpha1'
+end
+
+def app_pods
+end
+
+test_targets = ['CocoaPods-Redux-ReactiveSwift-iOSTests']
+app_targets = ['CocoaPods-Redux-ReactiveSwift-watchOS', 'CocoaPods-Redux-ReactiveSwift-tvOS', 'CocoaPods-Redux-ReactiveSwift-iOS', 'CocoaPods-Redux-ReactiveSwift-macOS']
+
+test_targets.each { |targetName|
+    target targetName do
+        common_pods
+        test_pods
+    end
+}
+
+app_targets.each { |targetName|
+    target targetName do
+        common_pods
+        app_pods
+    end
+}
 
 post_install do |installer|
     installer.pods_project.targets.each do |target|

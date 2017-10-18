@@ -4,6 +4,7 @@ before_install:
 - cd Redux-ReactiveSwift
 - bundle install
 script:
-- fastlane ios test
+- fastlane ios cocoapods_test
+- fastlane ios carthage_test
 - cd ..
 - pod lib lint
