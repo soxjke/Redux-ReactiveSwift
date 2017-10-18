@@ -102,7 +102,7 @@ func applyMap<R1, R2>(f2: @escaping (R1, R2) -> R1, mapper: @escaping (R1) -> R1
 
 ```
 
-Due to functional reactive spirit of solution you're limited only by your fantasy and Mr.Lattner's improvements to Swift language. Some more cases of `Store` usage can be found in tests spec:
+Due to functional reactive spirit of solution you're limited only by your fantasy and Mr.Lattner's "enhancements" to Swift language. Some more cases of `Store` usage can be found in tests spec:
 
 https://github.com/soxjke/Redux-ReactiveSwift/blob/master/Redux-ReactiveSwift/Tests/StoreSpec.swift
 
