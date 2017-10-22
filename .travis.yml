@@ -8,3 +8,5 @@ script:
 - fastlane ios carthage_test
 - cd ..
 - pod lib lint
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -J 'Redux-ReactiveSwift'
