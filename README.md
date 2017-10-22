@@ -1,5 +1,7 @@
 # Redux-ReactiveSwift
 
+[![Redux-ReactiveSwift](https://github.com/soxjke/Redux-ReactiveSwift/blob/logo-upload/Redux-ReactiveSwift-logo.svg)](https://github.com/soxjke/Redux-ReactiveSwift)
+
 [![CI Status](https://travis-ci.org/soxjke/Redux-ReactiveSwift.svg?branch=master)](https://travis-ci.org/soxjke/Redux-ReactiveSwift)
 [![Code coverage status](https://img.shields.io/codecov/c/github/soxjke/Redux-ReactiveSwift.svg?style=flat)](http://codecov.io/github/soxjke/Redux-ReactiveSwift)
 [![Version](https://img.shields.io/cocoapods/v/Redux-ReactiveSwift.svg?style=flat)](http://cocoapods.org/pods/Redux-ReactiveSwift)
