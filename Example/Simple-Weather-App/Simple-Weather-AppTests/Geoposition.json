@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "Key": "274357",
+  "Type": "City",
+  "Rank": 75,
+  "LocalizedName": "Sao Vicente",
+  "EnglishName": "Sao Vicente",
+  "PrimaryPostalCode": "",
+  "Region": {
+    "ID": "EUR",
+    "LocalizedName": "Europe",
+    "EnglishName": "Europe"
+  },
+  "Country": {
+    "ID": "PT",
+    "LocalizedName": "Portugal",
+    "EnglishName": "Portugal"
+  },
+  "AdministrativeArea": {
+    "ID": "30",
+    "LocalizedName": "Madeira",
+    "EnglishName": "Madeira",
+    "Level": 1,
+    "LocalizedType": "Autonomous Region",
+    "EnglishType": "Autonomous Region",
+    "CountryID": "PT"
+  },
+  "TimeZone": {
+    "Code": "WEST",
+    "Name": "Atlantic/Madeira",
+    "GmtOffset": 1,
+    "IsDaylightSaving": true,
+    "NextOffsetChange": "2017-10-29T01:00:00Z"
+  },
+  "GeoPosition": {
+    "Latitude": 32.801,
+    "Longitude": -17.045,
+    "Elevation": {
+      "Metric": {
+        "Value": 119,
+        "Unit": "m",
+        "UnitType": 5
+      },
+      "Imperial": {
+        "Value": 390,
+        "Unit": "ft",
+        "UnitType": 0
+      }
+    }
+  },
+  "IsAlias": false,
+  "SupplementalAdminAreas": [
+    {
+      "Level": 2,
+      "LocalizedName": "Sao Vicente",
+      "EnglishName": "Sao Vicente"
+    }
+  ],
+  "DataSets": [
+    "Alerts"
+  ]
+}
