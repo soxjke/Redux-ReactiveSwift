@@ -73,3 +73,54 @@ class WeatherSpec: QuickSpec {
         }
     }
 }
+
+class CurrentWeatherSpec: QuickSpec {
+    override func spec() {
+        let weatherJSON: [String: Any] = try! JSONSerialization.jsonObject(with: try! Data.init(contentsOf: Bundle.test.url(forResource: "CurrentWeather", withExtension: "json")!)) as! [String: Any]
+        describe("parsing") {
+            let weather = try? CurrentWeather(JSON: weatherJSON)
+            it("should parse weather") {
+                expect(weather).notTo(beNil())
+            }
+            it("should parse phrase") {
+                expect(weather!.phrase).to(equal("Cloudy"))
+            }
+            it("should parse icon") {
+                expect(weather!.icon).to(equal(7))
+            }
+            it("should parse wind direction") {
+                expect(weather!.windDirection).to(equal("S"))
+            }
+            it("should parse time") {
+                expect(weather!.effectiveDate.timeIntervalSince1970).to(beCloseTo(1509536700))
+            }
+            
+            // Locale-specific tests. To avoid conditionals, we're skipping imperial locale
+            guard Locale.current.usesMetricSystem else { return }
+            it("should parse temperature") {
+                expect(weather!.temperature.unit).to(equal("C"))
+                if case .single(let value) = weather!.temperature.value {
+                    expect(value).to(beCloseTo(22))
+                } else {
+                    fail("parsed temperature is not single value")
+                }
+            }
+            it("should parse RealFeel temperature") {
+                expect(weather!.realFeel.unit).to(equal("C"))
+                if case .single(let value) = weather!.realFeel.value {
+                    expect(value).to(beCloseTo(20.4))
+                } else {
+                    fail("parsed RealFeel temperature is not single value")
+                }
+            }
+            it("should parse wind speend") {
+                expect(weather!.windSpeed.unit).to(equal("km/h"))
+                if case .single(let value) = weather!.windSpeed.value {
+                    expect(value).to(beCloseTo(9.4))
+                } else {
+                    fail("parsed wind speed is not single value")
+                }
+            }
+        }
+    }
+}

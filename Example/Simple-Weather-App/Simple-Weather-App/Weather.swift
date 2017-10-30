@@ -79,3 +79,28 @@ extension DayNightWeather: ImmutableMappable {
     func mapping(map: Map) {
     }
 }
+
+struct CurrentWeather {
+    let effectiveDate: Date
+    let phrase: String
+    let icon: Int
+    let temperature: WeatherFeature<Double>
+    let realFeel: WeatherFeature<Double>
+    let windSpeed: WeatherFeature<Double>
+    let windDirection: String
+}
+
+extension CurrentWeather: ImmutableMappable {
+    private static let UnitSystem = Locale.current.usesMetricSystem ? "Metric" : "Imperial"
+    init(map: Map) throws {
+        effectiveDate = try map.value("EpochTime", using: DateTransform())
+        temperature = try map.value("Temperature.\(CurrentWeather.UnitSystem)")
+        realFeel = try map.value("RealFeelTemperature.\(CurrentWeather.UnitSystem)")
+        windSpeed = try map.value("Wind.Speed.\(CurrentWeather.UnitSystem)")
+        windDirection = (try? map.value("Wind.Direction.Localized")) ?? ((try? map.value("Wind.Direction.English")) ?? "")
+        phrase = try map.value("WeatherText")
+        icon = try map.value("WeatherIcon")
+    }
+    func mapping(map: Map) {
+    }
+}

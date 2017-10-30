@@ -25,6 +25,13 @@
 		4B77C17A1FA47C0E00EBF9F9 /* Weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B77C1791FA47C0600EBF9F9 /* Weather.json */; };
 		4B77C17B1FA47C1300EBF9F9 /* Geoposition.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B77C1781FA47BED00EBF9F9 /* Geoposition.json */; };
 		4B77C17D1FA47C3100EBF9F9 /* GeopositionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B77C17C1FA47C3100EBF9F9 /* GeopositionSpec.swift */; };
+		4B92FC621FAA00F50087CB3F /* CurrentWeather.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B92FC5D1FA9F7620087CB3F /* CurrentWeather.json */; };
+		4BC05B6C1FA790EE00137006 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC05B6B1FA790EE00137006 /* LocationService.swift */; };
+		4BC05B6E1FA7982800137006 /* AppState+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC05B6D1FA7982800137006 /* AppState+Extensions.swift */; };
+		4BC05B701FA7BB0C00137006 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC05B6F1FA7BB0C00137006 /* WeatherService.swift */; };
+		4BD146E51FA73F76009BC02D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD146E41FA73F76009BC02D /* AppState.swift */; };
+		4BD146E71FA74935009BC02D /* AppEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD146E61FA74935009BC02D /* AppEvent.swift */; };
+		4BD146E91FA7494D009BC02D /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD146E81FA7494D009BC02D /* AppStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +66,13 @@
 		4B77C1781FA47BED00EBF9F9 /* Geoposition.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Geoposition.json; sourceTree = "<group>"; };
 		4B77C1791FA47C0600EBF9F9 /* Weather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Weather.json; sourceTree = "<group>"; };
 		4B77C17C1FA47C3100EBF9F9 /* GeopositionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeopositionSpec.swift; sourceTree = "<group>"; };
+		4B92FC5D1FA9F7620087CB3F /* CurrentWeather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CurrentWeather.json; sourceTree = "<group>"; };
+		4BC05B6B1FA790EE00137006 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		4BC05B6D1FA7982800137006 /* AppState+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppState+Extensions.swift"; sourceTree = "<group>"; };
+		4BC05B6F1FA7BB0C00137006 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		4BD146E41FA73F76009BC02D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		4BD146E61FA74935009BC02D /* AppEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEvent.swift; sourceTree = "<group>"; };
+		4BD146E81FA7494D009BC02D /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
 		6ACE696293004279292F58F5 /* Pods-Simple-Weather-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple-Weather-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simple-Weather-App/Pods-Simple-Weather-App.release.xcconfig"; sourceTree = "<group>"; };
 		8C3E1B25D5ECC13FCD3AD62F /* Pods-Simple-Weather-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple-Weather-AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simple-Weather-AppTests/Pods-Simple-Weather-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA72D20AA09E1FB9AF3FA41C /* Pods_Simple_Weather_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_Weather_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +140,12 @@
 				4B77C1691FA0BB0A00EBF9F9 /* WeatherFeatureCell.xib */,
 				4B77C16C1FA1F89900EBF9F9 /* Weather.swift */,
 				4B77C1761FA47B7B00EBF9F9 /* Geoposition.swift */,
+				4BD146E41FA73F76009BC02D /* AppState.swift */,
+				4BC05B6D1FA7982800137006 /* AppState+Extensions.swift */,
+				4BD146E61FA74935009BC02D /* AppEvent.swift */,
+				4BD146E81FA7494D009BC02D /* AppStore.swift */,
+				4BC05B6B1FA790EE00137006 /* LocationService.swift */,
+				4BC05B6F1FA7BB0C00137006 /* WeatherService.swift */,
 				4B3C658D1F9F760200FA80C5 /* Main.storyboard */,
 				4B3C65901F9F760200FA80C5 /* Assets.xcassets */,
 				4B3C65921F9F760200FA80C5 /* LaunchScreen.storyboard */,
@@ -137,6 +157,7 @@
 		4B3C659D1F9F760200FA80C5 /* Simple-Weather-AppTests */ = {
 			isa = PBXGroup;
 			children = (
+				4B92FC5D1FA9F7620087CB3F /* CurrentWeather.json */,
 				4B77C1791FA47C0600EBF9F9 /* Weather.json */,
 				4B77C1781FA47BED00EBF9F9 /* Geoposition.json */,
 				4B3C65A01F9F760200FA80C5 /* Info.plist */,
@@ -260,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B92FC621FAA00F50087CB3F /* CurrentWeather.json in Resources */,
 				4B77C17B1FA47C1300EBF9F9 /* Geoposition.json in Resources */,
 				4B77C17A1FA47C0E00EBF9F9 /* Weather.json in Resources */,
 			);
@@ -403,10 +425,16 @@
 			files = (
 				4B3C65AA1F9FCCFC00FA80C5 /* WeatherView.swift in Sources */,
 				4B3C658C1F9F760200FA80C5 /* ViewController.swift in Sources */,
+				4BC05B6C1FA790EE00137006 /* LocationService.swift in Sources */,
+				4BD146E51FA73F76009BC02D /* AppState.swift in Sources */,
+				4BC05B701FA7BB0C00137006 /* WeatherService.swift in Sources */,
 				4B77C1771FA47B7B00EBF9F9 /* Geoposition.swift in Sources */,
+				4BD146E71FA74935009BC02D /* AppEvent.swift in Sources */,
 				4B3C658A1F9F760200FA80C5 /* AppDelegate.swift in Sources */,
+				4BD146E91FA7494D009BC02D /* AppStore.swift in Sources */,
 				4B77C16A1FA0BB0A00EBF9F9 /* WeatherFeatureCell.swift in Sources */,
 				4B77C16D1FA1F89900EBF9F9 /* Weather.swift in Sources */,
+				4BC05B6E1FA7982800137006 /* AppState+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
