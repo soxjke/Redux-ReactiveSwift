@@ -15,5 +15,5 @@ enum AppEvent {
     case geopositionRequest
     case geopositionResult(geoposition: Geoposition?, error: Error?)
     case weatherRequest
-    case weatherResult(current: Weather?, forecast: [Weather]?, error: Error?)
+    case weatherResult(current: CurrentWeather?, forecast: [Weather]?, error: Error?)
 }

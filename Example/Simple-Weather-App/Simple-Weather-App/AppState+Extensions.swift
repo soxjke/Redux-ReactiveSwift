@@ -86,6 +86,36 @@ extension WeatherRequestState: Equatable {
     }
 }
 
+extension WeatherRequestState {
+    var isSuccess: Bool {
+        guard case .success(_, _) = self else { return false }
+        return true
+    }
+    var isError: Bool {
+        guard case .error(_) = self else { return false }
+        return true
+    }
+}
+
+
+extension AppLocation: Equatable {
+    public static func == (lhs: AppLocation, rhs: AppLocation) -> Bool {
+        return lhs.locationState == rhs.locationState && lhs.locationRequestState == rhs.locationRequestState
+    }
+}
+
+extension AppWeather: Equatable {
+    public static func == (lhs: AppWeather, rhs: AppWeather) -> Bool {
+        return lhs.geopositionRequestState == rhs.geopositionRequestState && lhs.weatherRequestState == rhs.weatherRequestState
+    }
+}
+
+extension AppState: Equatable {
+    public static func == (lhs: AppState, rhs: AppState) -> Bool {
+        return lhs.location == rhs.location && lhs.weather == rhs.weather
+    }
+}
+
 enum AppError: String, Error {
     case inconsistentStateGeoposition = "Inconsistent state for location search request"
     case inconsistentStateWeather = "Inconsistent state for weather request"

@@ -36,7 +36,7 @@ enum GeopositionRequestState {
 enum WeatherRequestState {
     case none
     case updating
-    case success(currentWeather: Weather, forecast: [Weather])
+    case success(currentWeather: CurrentWeather, forecast: [Weather])
     case error(error: Error)
 }
 

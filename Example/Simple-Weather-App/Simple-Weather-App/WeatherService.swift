@@ -108,7 +108,7 @@ extension WeatherService {
                         return
                     }
                     do {
-                        let weather = try Weather(JSON: weatherJson)
+                        let weather = try CurrentWeather(JSON: weatherJson)
                         self?.performForecastRequest(for: key, currentConditions: weather)
                     } catch (let error) {
                         self?.appStore.consume(event: .weatherResult(current: nil, forecast: nil, error: error))
@@ -117,7 +117,7 @@ extension WeatherService {
         }
     }
     
-    private func performForecastRequest(for key: String, currentConditions: Weather) {
+    private func performForecastRequest(for key: String, currentConditions: CurrentWeather) {
         sessionManager
             .request(
                 "https://dataservice.accuweather.com/forecasts/v1/daily/5day/\(key)",
