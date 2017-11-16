@@ -20,111 +20,69 @@ extension Int: Defaultable {
 }
 
 class StoreSpec: QuickSpec {
-    private enum IntegerArithmeticAction {
-        case increment
-        case decrement
-        case add(Int)
-        case subtract(Int)
-    }
+
     override func spec() {
-        func testReduce(state: Int, event: IntegerArithmeticAction) -> Int {
-            switch event {
-            case .increment: return state + 1;
-            case .decrement: return state - 1;
-            case .add(let operand): return state + operand;
-            case .subtract(let operand): return state - operand;
-            }
-        }
-        func testReduce1(state: NSNumber, event: IntegerArithmeticAction) -> NSNumber {
-            switch event {
-            case .increment: return NSNumber(integerLiteral: state.intValue + 1);
-            case .decrement: return NSNumber(integerLiteral: state.intValue - 1);
-            case .add(let operand): return NSNumber(integerLiteral: state.intValue + operand);
-            case .subtract(let operand): return NSNumber(integerLiteral: state.intValue - operand);
-            }
-        }
-        func testReduce2(state: String, event: IntegerArithmeticAction) -> String {
-            switch event {
-            case .increment: return state + "1";
-            case .decrement: return String(state.dropLast());
-            case .add(let operand): return state + (1...operand).map {"\($0)"}.joined(separator: "");
-            case .subtract(let operand): return String(state.dropLast(operand));
-            }
-        }
-        func observeValues(values: Int) {}
-        func observeNumberValues(values: NSNumber) {}
-        
         describe("Reducers processing") {
             context("single reducer") {
                 it("should call reducer on event") {
-                    let callSpy = CallSpy.makeCallSpy(f2: testReduce)
-                    let store: Store<Int, IntegerArithmeticAction> = Store(state: 0, reducers: [callSpy.1])
+                    let (store, reducer) = createStore(reducer: intReducer, initialValue: 0)
                     store.consume(event: .increment)
-                    expect(callSpy.0.callCount).to(equal(1))
+                    expect(reducer.callCount).to(equal(1))
                 }
                 it("should call reducer once on each event") {
-                    let callSpy = CallSpy.makeCallSpy(f2: testReduce)
-                    let store: Store<Int, IntegerArithmeticAction> = Store(state: 0, reducers: [callSpy.1])
+                    let (store, reducer) = createStore(reducer: intReducer, initialValue: 0)
                     store.consume(event: .increment)
                     store.consume(event: .decrement)
                     store.consume(event: .add(1))
                     store.consume(event: .subtract(1))
-                    expect(callSpy.0.callCount).to(equal(4))
+                    expect(reducer.callCount).to(equal(4))
                 }
                 it("should fire signal on event") {
-                    let callSpy = CallSpy.makeCallSpy(f1: observeValues)
-                    let store: Store<Int, IntegerArithmeticAction> = Store(state: 0, reducers: [testReduce])
-                    store.signal.observeValues(callSpy.1)
+                    let (store, _) = createStore(reducer: intReducer, initialValue: 0)
+                    let observer = observeValues(of: store, with: observeValues)
                     store.consume(event: .increment)
-                    expect(callSpy.0.callCount).to(equal(1))
+                    expect(observer.callCount).to(equal(1))
                 }
                 it("should fire signal on each event") {
-                    let callSpy = CallSpy.makeCallSpy(f1: observeValues)
-                    let store: Store<Int, IntegerArithmeticAction> = Store(state: 0, reducers: [testReduce])
-                    store.signal.observeValues(callSpy.1)
+                    let (store, _) = createStore(reducer: intReducer, initialValue: 0)
+                    let observer = observeValues(of: store, with: observeValues)
                     store.consume(event: .increment)
                     store.consume(event: .decrement)
                     store.consume(event: .add(1))
                     store.consume(event: .subtract(1))
-                    expect(callSpy.0.callCount).to(equal(4))
+                    expect(observer.callCount).to(equal(4))
                 }
             }
             context("multiple reducers") {
                 it("should call every reducer once on event") {
-                    let callSpy1 = CallSpy.makeCallSpy(f2: testReduce)
-                    let callSpy2 = CallSpy.makeCallSpy(f2: testReduce)
-                    let store: Store<Int, IntegerArithmeticAction> = Store(state: 0, reducers: [callSpy1.1, callSpy2.1])
+                    let (store, reducer1, reducer2) = createStore(reducers: intReducer, intReducer, initialValue: 0)
                     store.consume(event: .increment)
-                    expect(callSpy1.0.callCount).to(equal(1))
-                    expect(callSpy2.0.callCount).to(equal(1))
+                    expect(reducer1.callCount).to(equal(1))
+                    expect(reducer2.callCount).to(equal(1))
                 }
                 it("should call every reducer once on each event") {
-                    let callSpy1 = CallSpy.makeCallSpy(f2: testReduce)
-                    let callSpy2 = CallSpy.makeCallSpy(f2: testReduce)
-                    let store: Store<Int, IntegerArithmeticAction> = Store(state: 0, reducers: [callSpy1.1, callSpy2.1])
+                    let (store, reducer1, reducer2) = createStore(reducers: intReducer, intReducer, initialValue: 0)
                     store.consume(event: .increment)
                     store.consume(event: .decrement)
                     store.consume(event: .add(1))
                     store.consume(event: .subtract(1))
-                    expect(callSpy1.0.callCount).to(equal(4))
-                    expect(callSpy2.0.callCount).to(equal(4))
+                    expect(reducer1.callCount).to(equal(4))
+                    expect(reducer2.callCount).to(equal(4))
                 }
                 it("should fire signal on event") {
-                    let callSpy = CallSpy.makeCallSpy(f1: observeValues)
-                    let store: Store<Int, IntegerArithmeticAction> = Store(state: 0, reducers: [testReduce, testReduce, testReduce])
-                    store.signal.observeValues(callSpy.1)
+                    let store = createStore(reducers: [intReducer, intReducer, intReducer], initialValue: 0)
+                    let observer = observeValues(of: store, with: observeValues)
                     store.consume(event: .increment)
-                    expect(callSpy.0.callCount).to(equal(1))
+                    expect(observer.callCount).to(equal(1))
                 }
                 it("should fire signal on each event") {
-                    let callSpy = CallSpy.makeCallSpy(f1: observeValues)
-                    let store: Store<Int, IntegerArithmeticAction> = Store(state: 0, reducers: [testReduce, testReduce, testReduce])
-                    store.signal.observeValues(callSpy.1)
+                    let store = createStore(reducers: [intReducer, intReducer, intReducer], initialValue: 0)
+                    let observer = observeValues(of: store, with: observeValues)
                     store.consume(event: .increment)
                     store.consume(event: .decrement)
                     store.consume(event: .add(1))
                     store.consume(event: .subtract(1))
-                    expect(callSpy.0.callCount).to(equal(4))
+                    expect(observer.callCount).to(equal(4))
                 }
             }
         }
@@ -132,139 +90,114 @@ class StoreSpec: QuickSpec {
             context("value") {
                 context("single reducer") {
                     it("should calculate value by reducer") {
-                        let state = 0
-                        let event = IntegerArithmeticAction.increment
-                        let store: Store<Int, IntegerArithmeticAction> = Store(state: state, reducers: [testReduce])
-                        store.consume(event: event)
-                        expect(store.value).to(equal(testReduce(state: state, event: event)))
+                        let (store, _) = createStore(reducer: intReducer, initialValue: 0)
+                        store.consume(event: .increment)
+                        expect(store.value).to(equal(intReducer(state: 0, event: .increment)))
                     }
                     it("should calculate values by reducer on each event") {
-                        var state = 0
-                        var event = IntegerArithmeticAction.increment
-                        let store: Store<Int, IntegerArithmeticAction> = Store(state: state, reducers: [testReduce])
-                        store.consume(event: event)
-                        expect(store.value).to(equal(testReduce(state: state, event: event)))
-                        state = store.value
-                        event = .decrement
-                        store.consume(event: event)
-                        expect(store.value).to(equal(testReduce(state: state, event: event)))
+
+                        let (store, _) = createStore(reducer: intReducer, initialValue: 0)
+                        store.consume(event: .increment)
+                        expect(store.value).to(equal(intReducer(state: 0, event: .increment)))
+
+                        let state = store.value
+                        store.consume(event: .decrement)
+                        expect(store.value).to(equal(intReducer(state: state, event: .decrement)))
                     }
                 }
                 context("multiple reducers") {
-                    let reducers = [testReduce, testReduce, testReduce]
+                    let reducers = [intReducer, intReducer, intReducer]
                     it("should calculate value by reducer") {
-                        let state = 0
-                        let event = IntegerArithmeticAction.increment
-                        let store: Store<Int, IntegerArithmeticAction> = Store(state: state, reducers: reducers)
-                        store.consume(event: event)
-                        var result = state
-                        for reducer in reducers {
-                            result = reducer(result, event)
-                        }
+                        let store = createStore(reducers: reducers, initialValue: 0)
+                        store.consume(event: .increment)
+                        let result = reducers.reduce(0, { state, reducer in reducer(state, .increment) })
                         expect(store.value).to(equal(result))
                     }
                     it("should calculate values by reducer on each event") {
-                        var state = 0
-                        var event = IntegerArithmeticAction.increment
-                        let store: Store<Int, IntegerArithmeticAction> = Store(state: state, reducers: reducers)
-                        var result = state
-                        for reducer in reducers {
-                            result = reducer(result, event)
-                        }
-                        store.consume(event: event)
+                        let store = createStore(reducers: reducers, initialValue: 0)
+                        store.consume(event: .increment)
+                        let result = reducers.reduce(0, { state, reducer in reducer(state, .increment) })
                         expect(store.value).to(equal(result))
-                        state = store.value
-                        event = .decrement
-                        result = state
-                        for reducer in reducers {
-                            result = reducer(result, event)
-                        }
-                        store.consume(event: event)
-                        expect(store.value).to(equal(result))
+
+                        let state = store.value
+                        store.consume(event: .decrement)
+                        let nextResult = reducers.reduce(state, { state, reducer in reducer(state, .decrement) })
+                        expect(store.value).to(equal(nextResult))
                     }
                 }
             }
             context("signal producer") {
                 it("should produce valid sequence of values") {
-                    let store: Store<Int, IntegerArithmeticAction> = Store(state: 0, reducers: [testReduce])
-                    let callSpy = CallSpy.makeCallSpy(f1: observeValues)
-                    store.producer.startWithValues(callSpy.1)
+                    let (store, _) = createStore(reducer: intReducer, initialValue: 0)
+                    let observer = observeValuesViaProducer(of: store, with: observeValues)
+
                     store.consume(event: .increment)
                     store.consume(event: .decrement)
                     store.consume(event: .add(1))
                     store.consume(event: .subtract(1))
-                    let a = callSpy.0.arrayForAllCallsForArgument(at: 0)
+
+                    let a = observer.arrayForAllCallsForArgument(at: 0)
                     expect((a as! [Int])).to(equal([0, 1, 0, 1, 0]))
                 }
             }
         }
         describe("Reference-type state") {
+            let initialState = 0 as NSNumber
             context("value") {
                 context("single reducer") {
                     it("should calculate value by reducer") {
-                        let state = NSNumber(integerLiteral: 0)
-                        let event = IntegerArithmeticAction.increment
-                        let store: Store<NSNumber, IntegerArithmeticAction> = Store(state: state, reducers: [testReduce1])
-                        store.consume(event: event)
-                        expect(store.value).to(equal(testReduce1(state: state, event: event)))
+                        let (store, _) = createStore(reducer: nsNumberReducer, initialValue: initialState)
+                        store.consume(event: .increment)
+                        expect(store.value).to(equal(nsNumberReducer(state: initialState, event: .increment)))
                     }
                     it("should calculate values by reducer on each event") {
-                        var state = NSNumber(integerLiteral: 0)
-                        var event = IntegerArithmeticAction.increment
-                        let store: Store<NSNumber, IntegerArithmeticAction> = Store(state: state, reducers: [testReduce1])
-                        store.consume(event: event)
-                        expect(store.value).to(equal(testReduce1(state: state, event: event)))
-                        state = store.value
-                        event = .decrement
-                        store.consume(event: event)
-                        expect(store.value).to(equal(testReduce1(state: state, event: event)))
+                        let (store, _) = createStore(reducer: nsNumberReducer, initialValue: initialState)
+                        store.consume(event: .increment)
+                        expect(store.value).to(equal(nsNumberReducer(state: initialState, event: .increment)))
+
+                        let state = store.value
+                        store.consume(event: .decrement)
+                        expect(store.value).to(equal(nsNumberReducer(state: state, event: .decrement)))
+
                     }
                 }
                 context("multiple reducers") {
-                    let reducers = [testReduce1, testReduce1, testReduce1]
+                    let reducers = [nsNumberReducer, nsNumberReducer, nsNumberReducer]
                     it("should calculate value by reducer") {
-                        let state = NSNumber(integerLiteral: 0)
-                        let event = IntegerArithmeticAction.increment
-                        let store: Store<NSNumber, IntegerArithmeticAction> = Store(state: state, reducers: reducers)
-                        store.consume(event: event)
-                        var result = state
-                        for reducer in reducers {
-                            result = reducer(result, event)
-                        }
+                        let store = createStore(reducers: reducers, initialValue: initialState)
+                        store.consume(event: .increment)
+                        let result = reducers.reduce(initialState, { state, reducer in reducer(state, .increment) })
                         expect(store.value).to(equal(result))
                     }
+
                     it("should calculate values by reducer on each event") {
-                        var state = NSNumber(integerLiteral: 0)
-                        var event = IntegerArithmeticAction.increment
-                        let store: Store<NSNumber, IntegerArithmeticAction> = Store(state: state, reducers: reducers)
-                        var result = state
-                        for reducer in reducers {
-                            result = reducer(result, event)
-                        }
-                        store.consume(event: event)
+                        let store = createStore(reducers: reducers, initialValue: initialState)
+                        store.consume(event: .increment)
+                        let result = reducers.reduce(initialState, { state, reducer in reducer(state, .increment) })
                         expect(store.value).to(equal(result))
-                        state = store.value
-                        event = .decrement
-                        result = state
-                        for reducer in reducers {
-                            result = reducer(result, event)
-                        }
-                        store.consume(event: event)
-                        expect(store.value).to(equal(result))
+
+                        let state = store.value
+                        store.consume(event: .decrement)
+                        let nextResult = reducers.reduce(state, { state, reducer in reducer(state, .decrement) })
+                        expect(store.value).to(equal(nextResult))
                     }
                 }
             }
             context("signal producer") {
                 it("should produce valid sequence of values") {
-                    let store: Store<NSNumber, IntegerArithmeticAction> = Store(state: NSNumber(integerLiteral: 0), reducers: [testReduce1])
-                    let callSpy = CallSpy.makeCallSpy(f1: observeNumberValues)
-                    store.producer.startWithValues(callSpy.1)
+
+                    let (store, _) = createStore(reducer: nsNumberReducer, initialValue: initialState)
+                    let observer = observeValuesViaProducer(of: store, with: observeNumberValues)
+
                     store.consume(event: .increment)
                     store.consume(event: .decrement)
                     store.consume(event: .add(1))
                     store.consume(event: .subtract(1))
-                    let a = callSpy.0.arrayForAllCallsForArgument(at: 0)
-                    expect((a as! [NSNumber])).to(equal([NSNumber(integerLiteral: 0), NSNumber(integerLiteral: 1), NSNumber(integerLiteral: 0), NSNumber(integerLiteral: 1), NSNumber(integerLiteral: 0)]))
+
+                    let a = observer.arrayForAllCallsForArgument(at: 0)
+                    let expectedValues = [0, 1, 0, 1, 0].map { $0 as NSNumber }
+                    expect((a as! [NSNumber])).to(equal([0, 1, 0, 1, 0]))
+
                 }
             }
         }
@@ -278,16 +211,15 @@ class StoreSpec: QuickSpec {
             context("signal producer") {
                 it("should initialize with default value") {
                     let store: Store<Int, ()> = Store(reducers: [])
-                    let callSpy = CallSpy.makeCallSpy(f1: observeValues)
-                    store.producer.startWithValues(callSpy.1)
-                    expect((callSpy.0.arguments()[0] as! Int)).to(equal(Int.defaultValue))
+                    let observer = observeValuesViaProducer(of: store, with: observeValues)
+                    expect((observer.arguments()[0] as! Int)).to(equal(Int.defaultValue))
                 }
             }
         }
         describe("Value binding") {
             it("should deliver values to binding target") {
                 let label = UILabel()
-                let store: Store<String, IntegerArithmeticAction> = Store(state: "Hello", reducers: [testReduce2])
+                let store = createStore(reducers: [stringReducer], initialValue: "Hello")
                 label.reactive.text <~ store
                 expect(label.text).to(equal("Hello"))
                 store.consume(event: .increment)
@@ -303,7 +235,7 @@ class StoreSpec: QuickSpec {
                 let searchBar = UISearchBar()
                 let searchSource = ["ReactiveCocoa", "ReactiveSwift", "Result", "Redux-ReactiveSwitft"]
                 func reducer(state: [String], event: String) -> [String] {
-                    return event.characters.count > 0 ? searchSource.filter { $0.lowercased().starts(with: event.lowercased()) } : searchSource
+                    return event.count > 0 ? searchSource.filter { $0.lowercased().starts(with: event.lowercased()) } : searchSource
                 }
                 let store = Store<[String], String>(state: [], reducers: [reducer])
                 store <~ searchBar.reactive.continuousTextValues.skipNil()
@@ -328,4 +260,72 @@ class StoreSpec: QuickSpec {
             }
         }
     }
+
 }
+
+// MARK: Helpers
+
+fileprivate enum IntegerArithmeticAction {
+    case increment
+    case decrement
+    case add(Int)
+    case subtract(Int)
+}
+
+private func createStore<State, Action>(reducer: @escaping (State, Action) -> State, initialValue: State) -> (Store<State, Action>, CallSpy) {
+    let callSpy = CallSpy.makeCallSpy(f2: reducer)
+    let store: Store<State,Action> = Store(state: initialValue, reducers: [callSpy.1])
+    return (store, callSpy.0)
+}
+
+private func createStore<State, Action>(reducers first: @escaping (State, Action) -> State, _ second: @escaping (State, Action) -> State, initialValue: State) -> (Store<State, Action>, CallSpy, CallSpy) {
+    let callSpy1 = CallSpy.makeCallSpy(f2: first)
+    let callSpy2 = CallSpy.makeCallSpy(f2: second)
+
+    let store: Store<State,Action> = Store(state: initialValue, reducers: [callSpy1.1, callSpy2.1])
+    return (store, callSpy1.0, callSpy2.0)
+}
+
+private func createStore<State, Action>(reducers: [(State, Action) -> State], initialValue: State) -> (Store<State, Action>) {
+    let store: Store<State,Action> = Store(state: initialValue, reducers: reducers)
+    return store
+}
+
+private func observeValues<State, Action>(of store: Store<State, Action>, with observer: @escaping (State) -> ()) -> CallSpy  {
+    let callSpy = CallSpy.makeCallSpy(f1: observer)
+    store.signal.observeValues(callSpy.1)
+    return callSpy.0
+}
+
+private func observeValuesViaProducer<State, Action>(of store: Store<State, Action>, with observer: @escaping (State) -> ()) -> CallSpy  {
+    let callSpy = CallSpy.makeCallSpy(f1: observer)
+    store.producer.startWithValues(callSpy.1)
+    return callSpy.0
+}
+
+private func intReducer(state: Int, event: IntegerArithmeticAction) -> Int {
+    switch event {
+    case .increment: return state + 1;
+    case .decrement: return state - 1;
+    case .add(let operand): return state + operand;
+    case .subtract(let operand): return state - operand;
+    }
+}
+private func nsNumberReducer(state: NSNumber, event: IntegerArithmeticAction) -> NSNumber {
+    switch event {
+    case .increment: return NSNumber(integerLiteral: state.intValue + 1);
+    case .decrement: return NSNumber(integerLiteral: state.intValue - 1);
+    case .add(let operand): return NSNumber(integerLiteral: state.intValue + operand);
+    case .subtract(let operand): return NSNumber(integerLiteral: state.intValue - operand);
+    }
+}
+private func stringReducer(state: String, event: IntegerArithmeticAction) -> String {
+    switch event {
+    case .increment: return state + "1";
+    case .decrement: return String(state.dropLast());
+    case .add(let operand): return state + (1...operand).map {"\($0)"}.joined(separator: "");
+    case .subtract(let operand): return String(state.dropLast(operand));
+    }
+}
+private func observeValues(values: Int) {}
+private func observeNumberValues(values: NSNumber) {}
