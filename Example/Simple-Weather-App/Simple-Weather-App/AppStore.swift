@@ -20,7 +20,6 @@ final class AppStore: Store<AppState, AppEvent> {
     static let shared: AppStore = AppStore()
     private init() {
         super.init(state: AppState.defaultValue, reducers: [appstore_reducer])
-        
     }
     required init(state: AppState, reducers: [AppStore.Reducer]) {
         fatalError("init(state:reducers:) cannot be called on type AppStore. Use `shared` accessor")

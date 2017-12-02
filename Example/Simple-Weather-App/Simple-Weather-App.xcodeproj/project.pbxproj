@@ -35,6 +35,7 @@
 		4BD146E51FA73F76009BC02D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD146E41FA73F76009BC02D /* AppState.swift */; };
 		4BD146E71FA74935009BC02D /* AppEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD146E61FA74935009BC02D /* AppEvent.swift */; };
 		4BD146E91FA7494D009BC02D /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD146E81FA7494D009BC02D /* AppStore.swift */; };
+		4BD1F2E41FB6F08100994B52 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1F2E31FB6F08100994B52 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		4BD146E41FA73F76009BC02D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		4BD146E61FA74935009BC02D /* AppEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEvent.swift; sourceTree = "<group>"; };
 		4BD146E81FA7494D009BC02D /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		4BD1F2E31FB6F08100994B52 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		6ACE696293004279292F58F5 /* Pods-Simple-Weather-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple-Weather-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simple-Weather-App/Pods-Simple-Weather-App.release.xcconfig"; sourceTree = "<group>"; };
 		8C3E1B25D5ECC13FCD3AD62F /* Pods-Simple-Weather-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple-Weather-AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simple-Weather-AppTests/Pods-Simple-Weather-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA72D20AA09E1FB9AF3FA41C /* Pods_Simple_Weather_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_Weather_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +144,7 @@
 				4B3C65891F9F760200FA80C5 /* AppDelegate.swift */,
 				4B92FC5E1FA9FB9C0087CB3F /* TestAppDelegate.swift */,
 				4B3C658B1F9F760200FA80C5 /* ViewController.swift */,
+				4BD1F2E31FB6F08100994B52 /* ViewModel.swift */,
 				4B3C65A91F9FCCFC00FA80C5 /* WeatherView.swift */,
 				4B77C1661FA0B6A300EBF9F9 /* WeatherView.xib */,
 				4B77C1681FA0BB0A00EBF9F9 /* WeatherFeatureCell.swift */,
@@ -442,6 +445,7 @@
 				4BD146E71FA74935009BC02D /* AppEvent.swift in Sources */,
 				4B92FC611FA9FC090087CB3F /* main.swift in Sources */,
 				4B3C658A1F9F760200FA80C5 /* AppDelegate.swift in Sources */,
+				4BD1F2E41FB6F08100994B52 /* ViewModel.swift in Sources */,
 				4BD146E91FA7494D009BC02D /* AppStore.swift in Sources */,
 				4B77C16A1FA0BB0A00EBF9F9 /* WeatherFeatureCell.swift in Sources */,
 				4B77C16D1FA1F89900EBF9F9 /* Weather.swift in Sources */,

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -32,16 +32,48 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pe-o1-OkB" userLabel="Caption Label">
+                        <rect key="frame" x="8" y="11" width="304" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rcb-o9-ewQ" userLabel="Icon Image View">
+                        <rect key="frame" x="8" y="8" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="IlO-6R-Hqz"/>
+                            <constraint firstAttribute="height" constant="32" id="nzi-pt-ziq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Q0-ma-ZFQ" userLabel="Icon Caption Label">
+                        <rect key="frame" x="48" y="11" width="264" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="LCY-Fg-4fz" firstAttribute="leading" secondItem="ShM-ur-Oti" secondAttribute="trailing" constant="16" id="DAQ-aH-t19"/>
+                    <constraint firstAttribute="bottom" secondItem="4Q0-ma-ZFQ" secondAttribute="bottom" constant="11.5" id="IXV-hN-EPx"/>
                     <constraint firstItem="LCY-Fg-4fz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="J4R-e8-UD5"/>
+                    <constraint firstItem="rcb-o9-ewQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="NRK-4c-tVC"/>
                     <constraint firstAttribute="trailing" secondItem="LCY-Fg-4fz" secondAttribute="trailing" constant="8" id="ROK-5s-5JN"/>
+                    <constraint firstItem="9Pe-o1-OkB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Xfc-xf-lwA"/>
+                    <constraint firstAttribute="trailing" secondItem="9Pe-o1-OkB" secondAttribute="trailing" constant="8" id="XrD-Ao-QfK"/>
+                    <constraint firstItem="4Q0-ma-ZFQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="fDk-bz-h6X"/>
                     <constraint firstItem="ShM-ur-Oti" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="it3-sB-CqL"/>
+                    <constraint firstAttribute="bottom" secondItem="9Pe-o1-OkB" secondAttribute="bottom" constant="11.5" id="kHc-oW-Fhl"/>
+                    <constraint firstItem="4Q0-ma-ZFQ" firstAttribute="leading" secondItem="rcb-o9-ewQ" secondAttribute="trailing" constant="8" id="p1R-bG-04Q"/>
+                    <constraint firstItem="rcb-o9-ewQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="qUr-Nc-WLU"/>
+                    <constraint firstItem="9Pe-o1-OkB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="qao-Cj-IWe"/>
                     <constraint firstItem="ShM-ur-Oti" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="shJ-oh-v68"/>
+                    <constraint firstAttribute="trailing" secondItem="4Q0-ma-ZFQ" secondAttribute="trailing" constant="8" id="uFn-h7-Big"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="captionLabel" destination="9Pe-o1-OkB" id="IdF-Pk-stA"/>
+                <outlet property="iconCaptionLabel" destination="4Q0-ma-ZFQ" id="fzt-gy-XyN"/>
+                <outlet property="iconImageView" destination="rcb-o9-ewQ" id="EJ9-FE-sam"/>
                 <outlet property="nameLabel" destination="ShM-ur-Oti" id="AdK-T7-NiI"/>
                 <outlet property="valueLabel" destination="LCY-Fg-4fz" id="HdO-RV-P8U"/>
             </connections>
