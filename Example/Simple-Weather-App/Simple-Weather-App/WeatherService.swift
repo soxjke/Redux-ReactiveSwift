@@ -42,8 +42,8 @@ class WeatherService {
             .startWithValues { [weak self] _ in self?.appStore.consume(event: .weatherRequest )}
         let weatherProducer = self.appStore.producer
             .map { $0.weather.weatherRequestState }
-            .filter { $0 == .updating }
             .skipRepeats()  // To use skipRepeats we have to implement equatable for WeatherRequestState
+            .filter { $0 == .updating }
             .observe(on: QueueScheduler.main)
         weatherProducer.startWithValues { [weak self] _ in self?.performWeatherRequest() }
     }

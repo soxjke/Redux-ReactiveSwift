@@ -18,15 +18,15 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShM-ur-Oti">
-                        <rect key="frame" x="8" y="11" width="188" height="21"/>
+                        <rect key="frame" x="8" y="11" width="246" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCY-Fg-4fz">
-                        <rect key="frame" x="212" y="11" width="100" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Value" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCY-Fg-4fz">
+                        <rect key="frame" x="270" y="11" width="42" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="100" id="EHr-5x-vNz"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="160" id="EHr-5x-vNz"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -38,7 +38,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rcb-o9-ewQ" userLabel="Icon Image View">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rcb-o9-ewQ" userLabel="Icon Image View">
                         <rect key="frame" x="8" y="8" width="32" height="32"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="32" id="IlO-6R-Hqz"/>
@@ -70,6 +70,7 @@
                     <constraint firstAttribute="trailing" secondItem="4Q0-ma-ZFQ" secondAttribute="trailing" constant="8" id="uFn-h7-Big"/>
                 </constraints>
             </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
                 <outlet property="captionLabel" destination="9Pe-o1-OkB" id="IdF-Pk-stA"/>
                 <outlet property="iconCaptionLabel" destination="4Q0-ma-ZFQ" id="fzt-gy-XyN"/>

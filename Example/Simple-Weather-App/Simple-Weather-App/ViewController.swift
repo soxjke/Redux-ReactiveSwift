@@ -15,8 +15,12 @@ import Result
 class ViewController: UIViewController {
     @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var segmentedControl: UISegmentedControl!
+    @IBOutlet private var loadingBarButtonItem: UIBarButtonItem!
+    @IBOutlet private var refreshBarButtonItem: UIBarButtonItem!
+    @IBOutlet private var locateBarButtonItem: UIBarButtonItem!
     @IBOutlet private weak var leftBarButtonItem: UIBarButtonItem!
     @IBOutlet private weak var rightBarButtonItem: UIBarButtonItem!
+    @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     private lazy var currentWeatherView: WeatherView = WeatherView.fromNib()
     
     private var viewModel = ViewModel()
@@ -30,15 +34,47 @@ class ViewController: UIViewController {
     func setupSubviews() {
         containerView.addSubview(currentWeatherView)
         currentWeatherView.snp.makeConstraints { (make) in make.edges.equalToSuperview() }
+        
+        navigationItem.rightBarButtonItems = nil // Hide created from storyboard
     }
     
     func setupObserving() {
+        currentWeatherView.reactive.weatherFeatures <~ viewModel.weatherFeatures
+        loadingIndicator.reactive.isAnimating <~ viewModel.isLoading
+        
+        segmentedControl.reactive.isEnabled <~ viewModel.isEnabledControl(for: Set([.turnCurrent, .turnForecast]))
+        
+        reactive.title <~ viewModel.title
+        reactive.rightBarButtonItem <~ viewModel.isLoading.map { [weak self] (isLoading) -> UIBarButtonItem? in
+            return isLoading ? self?.loadingBarButtonItem : self?.refreshBarButtonItem
+        }
+        
+        leftBarButtonItem.reactive.pressed = CocoaAction(viewModel.createButtonAction(for: .turnLeft))
+        rightBarButtonItem.reactive.pressed = CocoaAction(viewModel.createButtonAction(for: .turnRight))
+        refreshBarButtonItem.reactive.pressed = CocoaAction(viewModel.reloadAction)
+        locateBarButtonItem.reactive.pressed = CocoaAction(viewModel.locateAction)
+        
         let action = viewModel.uiAction
-        leftBarButtonItem.reactive.pressed = CocoaAction(action, input: .turnLeft)
-        rightBarButtonItem.reactive.pressed = CocoaAction(action, input: .turnRight)
         segmentedControl.reactive.controlEvents(.valueChanged)
             .map { $0.selectedSegmentIndex == 0 ? UIEvent.turnCurrent : UIEvent.turnForecast }
             .observeValues { action.apply($0).start() }
-        currentWeatherView.reactive.weatherFeatures <~ viewModel.weatherFeatures
+        
+        //        I would write in more FRP-like way, however Swift is so dumb when it comes to parsing
+        //        complex expressions, so let's keep above variant. Maybe one day it will be able to compile
+        //        below one.
+        //
+        //        segmentedControl.reactive.controlEvents(.valueChanged)
+        //            .map { $0.selectedSegmentIndex == 0 ? UIEvent.turnCurrent : UIEvent.turnForecast }
+        //            .flatMap(.latest) { action.apply($0) }
+        //            .observeValues {}
+    }
+}
+
+extension Reactive where Base: UIViewController {
+    var title: BindingTarget<String?> {
+        return makeBindingTarget { $0.title = $1 }
+    }
+    var rightBarButtonItem: BindingTarget<UIBarButtonItem?> {
+        return makeBindingTarget { $0.navigationItem.rightBarButtonItem = $1 }
     }
 }

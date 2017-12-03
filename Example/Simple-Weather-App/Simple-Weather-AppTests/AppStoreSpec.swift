@@ -204,8 +204,8 @@ class AppStoreSpec: QuickSpec {
                             .forEach { expect($0.location.locationRequestState) == inputState.location.locationRequestState }
                     }
                 }
-                // MARK: ----success not older 5 minutes
-                context("sucesss state, but not older than 5 minutes") {
+                // MARK: ----success not older 10 seconds
+                context("sucesss state, but not older than 10 seconds") {
                     // setup initial state and result states
                     let relatedEvents: [Int] = [2, 3, 4]
                     beforeEach {
@@ -237,13 +237,13 @@ class AppStoreSpec: QuickSpec {
                             .forEach { expect($0.location.locationRequestState) == inputState.location.locationRequestState }
                     }
                 }
-                // MARK: ----success older 5 minutes
-                context("sucesss state, older than 5 minutes") {
+                // MARK: ----success older 10 seconds
+                context("sucesss state, older than 10 seconds") {
                     // setup initial state and result states
                     let relatedEvents: [Int] = [2, 3, 4]
                     beforeEach {
                         inputState = AppState(location: AppLocation(locationState: .available,
-                                                                    locationRequestState: .success(latitude: 1, longitude: 2, timestamp: Date().timeIntervalSince1970 - 300)),
+                                                                    locationRequestState: .success(latitude: 1, longitude: 2, timestamp: Date().timeIntervalSince1970 - 20)),
                                               weather: AppWeather(geopositionRequestState: .none,
                                                                   weatherRequestState: .none))
                         resultStates = testEvents.map { appstore_reducer(state: inputState, event: $0) }

@@ -47,7 +47,7 @@ fileprivate func location(permissionResult: Bool, previous: AppLocation) -> AppL
 fileprivate func locationRequest(previous: AppLocation) -> AppLocation {
     guard case .available = previous.locationState else { return previous }
     if case .success(_, _, let timestamp) = previous.locationRequestState {
-        if (Date().timeIntervalSince1970 - timestamp < 300) { // Don't do update if location succeeded within last 5 minutes
+        if (Date().timeIntervalSince1970 - timestamp < 10) { // Don't do update if location succeeded within last 10 seconds
             return previous
         }
     }

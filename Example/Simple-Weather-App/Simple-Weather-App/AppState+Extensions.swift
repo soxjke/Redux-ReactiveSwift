@@ -32,6 +32,10 @@ extension LocationRequestState {
         guard case .error(_) = self else { return false }
         return true
     }
+    var isUpdating: Bool {
+        guard case .updating = self else { return false }
+        return true
+    }
 }
 
 extension GeopositionRequestState: Equatable {
@@ -56,6 +60,10 @@ extension GeopositionRequestState {
     }
     var isError: Bool {
         guard case .error(_) = self else { return false }
+        return true
+    }
+    var isUpdating: Bool {
+        guard case .updating = self else { return false }
         return true
     }
 }
@@ -93,6 +101,10 @@ extension WeatherRequestState {
     }
     var isError: Bool {
         guard case .error(_) = self else { return false }
+        return true
+    }
+    var isUpdating: Bool {
+        guard case .updating = self else { return false }
         return true
     }
 }

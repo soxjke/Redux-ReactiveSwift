@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WfZ-hE-YiP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,7 +25,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="tRQ-cR-wJT"/>
                                     <barButtonItem style="plain" id="mfz-qs-9kf">
                                         <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="8Av-7O-OKJ">
-                                            <rect key="frame" x="120" y="7" width="135" height="30"/>
+                                            <rect key="frame" x="120" y="7.5" width="135" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
                                                 <segment title="Current"/>
@@ -37,7 +38,7 @@
                                 </items>
                             </toolbar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZF-sl-5s7">
-                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -53,16 +54,60 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DbU-ks-dHJ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dzp-fo-hZe">
+                        <barButtonItem key="leftBarButtonItem" image="service" id="Ekl-f9-S9F"/>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="refresh" id="qaB-Yx-R6R"/>
+                            <barButtonItem style="plain" id="Hqa-n0-AL4" userLabel="Loading">
+                                <view key="customView" contentMode="scaleToFill" id="vQf-Uv-4oX">
+                                    <rect key="frame" x="322" y="22" width="0.0" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="zKc-UC-e2m">
+                                            <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </activityIndicatorView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="containerView" destination="qZF-sl-5s7" id="MtD-BT-z9W"/>
                         <outlet property="leftBarButtonItem" destination="F7V-SQ-fXY" id="zrt-xm-znO"/>
+                        <outlet property="loadingBarButtonItem" destination="Hqa-n0-AL4" id="cg4-7J-fY5"/>
+                        <outlet property="loadingIndicator" destination="zKc-UC-e2m" id="iAO-0t-7Ep"/>
+                        <outlet property="locateBarButtonItem" destination="Ekl-f9-S9F" id="Pca-uo-ZgI"/>
+                        <outlet property="refreshBarButtonItem" destination="qaB-Yx-R6R" id="4bl-he-y61"/>
                         <outlet property="rightBarButtonItem" destination="W6N-oV-UCh" id="j4e-GA-hwM"/>
                         <outlet property="segmentedControl" destination="8Av-7O-OKJ" id="dW0-cg-d4b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85.5" y="147.5"/>
+            <point key="canvasLocation" x="334" y="148"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RON-KA-mCI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WfZ-hE-YiP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aNP-5t-ppk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pmj-sY-oDv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7nB-As-LK2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-174" y="148"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="service" width="33" height="33"/>
+    </resources>
 </document>

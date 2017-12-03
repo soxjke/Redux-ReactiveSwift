@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 enum WeatherFeatureCellKind {
     case captionOnly(caption: String)
@@ -49,7 +50,7 @@ class WeatherFeatureCell: UITableViewCell {
     private func set(url: String, caption: String) {
         iconImageView.isHidden = false
         iconCaptionLabel.isHidden = false
-        //
+        if let urlObject = URL(string: url) { iconImageView.af_setImage(withURL: urlObject) }
         iconCaptionLabel.text = caption
     }
     
