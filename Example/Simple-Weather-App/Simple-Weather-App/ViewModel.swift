@@ -39,8 +39,11 @@ class ViewModel {
     private (set) lazy var uiAction: Action<UIEvent, (), NoError> = createUIAction()
     private (set) lazy var reloadAction:  Action<(), (), NoError> = createReloadAction()
     private (set) lazy var locateAction:  Action<(), (), NoError> = createLocateAction()
-    
+
+    private (set) lazy var forecastPage: SignalProducer<Int, NoError> = self.forecastPageProducer()
+    private (set) lazy var currentOrForecast: SignalProducer<Bool, NoError> = self.currentOrForecastProducer()
     private (set) lazy var weatherFeatures: SignalProducer<[WeatherFeatureCellKind], NoError> = self.weatherFeaturesProducer()
+    private (set) lazy var forecastFeatures: SignalProducer<[[WeatherFeatureCellKind]], NoError> = self.forecastFeaturesProducer()
     private (set) lazy var title: SignalProducer<String, NoError> = self.appStore.producer.map(ViewModel.geopositionString).skipRepeats()
     private (set) lazy var isLoading: SignalProducer<Bool, NoError> = self.appStore.producer.map(ViewModel.isLoading).skipRepeats()
     
@@ -102,20 +105,33 @@ extension ViewModel {
             }
         }
     }
-    fileprivate func weatherFeaturesProducer() -> SignalProducer<[WeatherFeatureCellKind], NoError> {
+    fileprivate func forecastPageProducer() -> SignalProducer<Int, NoError> {
         return uiStore.producer
-            .combineLatest(with: appStore.producer.filter { $0.weather.weatherRequestState.isSuccess } )
-            .map(ViewModel.toWeatherFeatures)
+            .filter { if case .current = $0 { return false } else { return true } }
+            .map { if case .forecast(let page) = $0 { return page } else { return 0 } }
+    }
+    fileprivate func currentOrForecastProducer() -> SignalProducer<Bool, NoError> {
+        return uiStore.producer.map { if case .current = $0 { return true } else { return false } }
+    }
+    fileprivate func weatherFeaturesProducer() -> SignalProducer<[WeatherFeatureCellKind], NoError> {
+        return appStore.producer.map(ViewModel.toWeatherFeatures)
+    }
+    fileprivate func forecastFeaturesProducer() -> SignalProducer<[[WeatherFeatureCellKind]], NoError> {
+        return appStore.producer.map(ViewModel.toForecastFeatures)
     }
     
-    fileprivate static func toWeatherFeatures(uiState: UIState, appState: AppState) -> [WeatherFeatureCellKind] {
-        guard case .success(let currentWeather, let forecast) = appState.weather.weatherRequestState else {
+    fileprivate static func toWeatherFeatures(appState: AppState) -> [WeatherFeatureCellKind] {
+        guard case .success(let currentWeather, _) = appState.weather.weatherRequestState else {
             return []
         }
-        switch uiState {
-        case .current: return currentWeather.toWeatherFeatures()
-        case .forecast(let page): return page < forecast.count ? forecast[page].toWeatherFeatures() : []
+        return currentWeather.toWeatherFeatures()
+    }
+    
+    fileprivate static func toForecastFeatures(appState: AppState) -> [[WeatherFeatureCellKind]] {
+        guard case .success(_, let forecast) = appState.weather.weatherRequestState else {
+            return []
         }
+        return forecast.map { $0.toWeatherFeatures() }
     }
     
     fileprivate static func geopositionString(appState: AppState) -> String {
