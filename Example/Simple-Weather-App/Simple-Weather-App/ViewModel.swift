@@ -47,10 +47,6 @@ class ViewModel {
     private (set) lazy var title: SignalProducer<String, NoError> = self.appStore.producer.map(ViewModel.geopositionString).skipRepeats()
     private (set) lazy var isLoading: SignalProducer<Bool, NoError> = self.appStore.producer.map(ViewModel.isLoading).skipRepeats()
     
-    init() {
-        uiStore.producer.logEvents().start()
-    }
-    
     func isEnabledControl(for events: Set<UIEvent>) -> SignalProducer<Bool, NoError> {
         return uiStore.producer
             .combineLatest(with: appStore.producer)

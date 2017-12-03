@@ -54,7 +54,7 @@ class ViewController: UIViewController {
                 return weatherView
             }
         }
-        forecastScrollView.reactiveSetPage() <~ viewModel.forecastPage.logEvents(identifier: "page")
+        forecastScrollView.reactiveSetPage() <~ viewModel.forecastPage
         
         loadingIndicator.reactive.isAnimating <~ viewModel.isLoading
         
