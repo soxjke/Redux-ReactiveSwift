@@ -3,14 +3,14 @@ use_frameworks!
 inhibit_all_warnings!
     
 def common_pods
-    pod 'Redux-ReactiveSwift', '~> 0.1.1' # Our Redux library
-    pod 'ReactiveCocoa', '~> 7.0.0-alpha1' # ReactiveCocoa has necessary UI bindings
+    pod 'Redux-ReactiveSwift', '~> 0.1.2' # Our Redux library
+    pod 'ReactiveCocoa', '~> 7.0.1' # ReactiveCocoa has necessary UI bindings
 	pod 'ObjectMapper', '3.0.0' # ObjectMapper is for fast from/to JSON transformations
 end
 
 def test_pods
     pod 'Quick', '1.2.0' # Quick is BDD-like Specs framework for XCode unit testing
-    pod 'Nimble', '7.0.2' # Nimble is a set of matchers for XCode unit testing
+    pod 'Nimble', '7.0.3' # Nimble is a set of matchers for XCode unit testing
 end
 
 def app_pods
@@ -35,15 +35,3 @@ app_targets.each { |targetName|
         app_pods
     end
 }
-
-# Since we're integrating alpha version of ReactiveCocoa we tweak SWIFT_VERSION
-# By the final 7.0 release in November there won't be any need in tweaking SWIFT_VERSION
-post_install do |installer|
-    installer.pods_project.targets.each do |target|
-        if target.name == 'ReactiveCocoa'
-            target.build_configurations.each do |config|
-                config.build_settings['SWIFT_VERSION'] = '3.2'
-            end
-        end
-    end
-end
