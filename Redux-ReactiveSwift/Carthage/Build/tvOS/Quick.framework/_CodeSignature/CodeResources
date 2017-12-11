@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/Quick-Swift.h</key>
 		<data>
-		3E84UeRTNcFUje4Y37/XWIg/ipU=
+		cZOrOKC178uzV24BMvOb4kMg1kQ=
 		</data>
 		<key>Headers/Quick.h</key>
 		<data>
@@ -26,15 +26,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		I60wsxLGwdBz0u8VVfNBow4b3Jo=
+		lpqbMTvesUdO7zGBgWoDS08g+Sw=
 		</data>
 		<key>Modules/Quick.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		hvgXWYwIaO4ttnCJPOJXjqOBPK4=
+		GPH5wMyFk2+3Yd3mV5Hfby2LgXk=
 		</data>
 		<key>Modules/Quick.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		b3GuxpnGkiivfLLDHSQTFjXFejY=
+		7lQQqjOO8GZtBmIVkb3f7c4Gxco=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,11 +58,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3E84UeRTNcFUje4Y37/XWIg/ipU=
+			cZOrOKC178uzV24BMvOb4kMg1kQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			q6VRGRQtmQ3Xvu4vW5xKU6vjWQKFb8tikdf/toV1KCw=
+			81pRLhtLmC9ELfjWdbXuLmaxKF2hXNbHny/vqY/x6B8=
 			</data>
 		</dict>
 		<key>Headers/Quick.h</key>
@@ -102,22 +102,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hvgXWYwIaO4ttnCJPOJXjqOBPK4=
+			GPH5wMyFk2+3Yd3mV5Hfby2LgXk=
 			</data>
 			<key>hash2</key>
 			<data>
-			GNSS9fFI3gaZZg1Luzlt/V6ytCwXq7+GpgLnYcZQ25I=
+			wQbBt5vcT1VZVTcqBiajoudMfke97rlHSPJ1Vx3Ioe4=
 			</data>
 		</dict>
 		<key>Modules/Quick.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b3GuxpnGkiivfLLDHSQTFjXFejY=
+			7lQQqjOO8GZtBmIVkb3f7c4Gxco=
 			</data>
 			<key>hash2</key>
 			<data>
-			yk8on7+XrGEMS08oGENSv4uh9m6yyH1SR8E2cc6rtGc=
+			3KsnGYQT4nyQsE0pEmtF0FvKN8WvE4WSRTy/WJlV9/E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

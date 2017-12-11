@@ -3,6 +3,7 @@ language: swift
 before_install:
 - cd Redux-ReactiveSwift
 - bundle install
+- pod repo update
 script:
 - fastlane ios cocoapods_test
 - fastlane ios carthage_test
