@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (4.5.1)
+  - AlamofireImage (3.3.0):
+    - Alamofire (~> 4.5)
+  - Nimble (7.0.3)
+  - ObjectMapper (3.0.0)
+  - Quick (1.2.0)
+  - ReactiveCocoa (7.0.1):
+    - ReactiveSwift (~> 3.0)
+  - ReactiveSwift (3.0.0):
+    - Result (~> 3.2)
+  - Redux-ReactiveSwift (0.1.2):
+    - ReactiveSwift (= 3.0.0)
+  - Result (3.2.4)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (= 4.5.1)
+  - AlamofireImage (= 3.3.0)
+  - Nimble (= 7.0.3)
+  - ObjectMapper (= 3.0.0)
+  - Quick (= 1.2.0)
+  - ReactiveCocoa (~> 7.0.1)
+  - Redux-ReactiveSwift (~> 0.1.2)
+  - SnapKit (= 4.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  ReactiveCocoa: a1b5d502d0d1534f9a72981a485b297b17127f83
+  ReactiveSwift: d9fe0db33c1aaabecb092e8de83cf52875c0de6f
+  Redux-ReactiveSwift: 9af9e3296d9d58b26589cde1bc718295bb394f22
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: b14c80fb2887cd5bf1b7122342d42866c3250edd
+
+COCOAPODS: 1.3.1

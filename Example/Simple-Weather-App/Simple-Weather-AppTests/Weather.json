@@ -1,0 +1,231 @@
+{
+  "Date": "2017-10-26T07:00:00+01:00",
+  "EpochDate": 1508997600,
+  "Sun": {
+	"Rise": "2017-10-26T08:21:00+01:00",
+	"EpochRise": 1509002460,
+	"Set": "2017-10-26T19:23:00+01:00",
+	"EpochSet": 1509042180
+  },
+  "Moon": {
+	"Rise": "2017-10-26T13:58:00+01:00",
+	"EpochRise": 1509022680,
+	"Set": "2017-10-27T00:33:00+01:00",
+	"EpochSet": 1509060780,
+	"Phase": "WaxingCrescent",
+	"Age": 7
+  },
+  "Temperature": {
+	"Minimum": {
+	  "Value": 71,
+	  "Unit": "F",
+	  "UnitType": 18
+	},
+	"Maximum": {
+	  "Value": 76,
+	  "Unit": "F",
+	  "UnitType": 18
+	}
+  },
+  "RealFeelTemperature": {
+	"Minimum": {
+	  "Value": 71,
+	  "Unit": "F",
+	  "UnitType": 18
+	},
+	"Maximum": {
+	  "Value": 78,
+	  "Unit": "F",
+	  "UnitType": 18
+	}
+  },
+  "RealFeelTemperatureShade": {
+	"Minimum": {
+	  "Value": 71,
+	  "Unit": "F",
+	  "UnitType": 18
+	},
+	"Maximum": {
+	  "Value": 74,
+	  "Unit": "F",
+	  "UnitType": 18
+	}
+  },
+  "HoursOfSun": 3,
+  "DegreeDaySummary": {
+	"Heating": {
+	  "Value": 0,
+	  "Unit": "F",
+	  "UnitType": 18
+	},
+	"Cooling": {
+	  "Value": 9,
+	  "Unit": "F",
+	  "UnitType": 18
+	}
+  },
+  "AirAndPollen": [
+	{
+	  "Name": "AirQuality",
+	  "Value": 0,
+	  "Category": "Good",
+	  "CategoryValue": 1,
+	  "Type": "Ozone"
+	},
+	{
+	  "Name": "Grass",
+	  "Value": 0,
+	  "Category": "Low",
+	  "CategoryValue": 1
+	},
+	{
+	  "Name": "Mold",
+	  "Value": 0,
+	  "Category": "Low",
+	  "CategoryValue": 1
+	},
+	{
+	  "Name": "Ragweed",
+	  "Value": 0,
+	  "Category": "Low",
+	  "CategoryValue": 1
+	},
+	{
+	  "Name": "Tree",
+	  "Value": 0,
+	  "Category": "Low",
+	  "CategoryValue": 1
+	},
+	{
+	  "Name": "UVIndex",
+	  "Value": 3,
+	  "Category": "Moderate",
+	  "CategoryValue": 2
+	}
+  ],
+  "Day": {
+	"Icon": 4,
+	"IconPhrase": "Intermittent clouds",
+	"ShortPhrase": "Humid with some sun",
+	"LongPhrase": "Humid with sun through high clouds",
+	"PrecipitationProbability": 12,
+	"ThunderstormProbability": 0,
+	"RainProbability": 12,
+	"SnowProbability": 0,
+	"IceProbability": 0,
+	"Wind": {
+	  "Speed": {
+		"Value": 11.5,
+		"Unit": "mi/h",
+		"UnitType": 9
+	  },
+	  "Direction": {
+		"Degrees": 170,
+		"Localized": "S",
+		"English": "S"
+	  }
+	},
+	"WindGust": {
+	  "Speed": {
+		"Value": 20.7,
+		"Unit": "mi/h",
+		"UnitType": 9
+	  },
+	  "Direction": {
+		"Degrees": 174,
+		"Localized": "S",
+		"English": "S"
+	  }
+	},
+	"TotalLiquid": {
+	  "Value": 0,
+	  "Unit": "in",
+	  "UnitType": 1
+	},
+	"Rain": {
+	  "Value": 0,
+	  "Unit": "in",
+	  "UnitType": 1
+	},
+	"Snow": {
+	  "Value": 0,
+	  "Unit": "in",
+	  "UnitType": 1
+	},
+	"Ice": {
+	  "Value": 0,
+	  "Unit": "in",
+	  "UnitType": 1
+	},
+	"HoursOfPrecipitation": 0,
+	"HoursOfRain": 0,
+	"HoursOfSnow": 0,
+	"HoursOfIce": 0,
+	"CloudCover": 75
+  },
+  "Night": {
+	"Icon": 34,
+	"IconPhrase": "Mostly clear",
+	"ShortPhrase": "Mainly clear and humid",
+	"LongPhrase": "Mainly clear and humid",
+	"PrecipitationProbability": 1,
+	"ThunderstormProbability": 0,
+	"RainProbability": 1,
+	"SnowProbability": 0,
+	"IceProbability": 0,
+	"Wind": {
+	  "Speed": {
+		"Value": 9.2,
+		"Unit": "mi/h",
+		"UnitType": 9
+	  },
+	  "Direction": {
+		"Degrees": 156,
+		"Localized": "SSE",
+		"English": "SSE"
+	  }
+	},
+	"WindGust": {
+	  "Speed": {
+		"Value": 15,
+		"Unit": "mi/h",
+		"UnitType": 9
+	  },
+	  "Direction": {
+		"Degrees": 138,
+		"Localized": "SE",
+		"English": "SE"
+	  }
+	},
+	"TotalLiquid": {
+	  "Value": 0,
+	  "Unit": "in",
+	  "UnitType": 1
+	},
+	"Rain": {
+	  "Value": 0,
+	  "Unit": "in",
+	  "UnitType": 1
+	},
+	"Snow": {
+	  "Value": 0,
+	  "Unit": "in",
+	  "UnitType": 1
+	},
+	"Ice": {
+	  "Value": 0,
+	  "Unit": "in",
+	  "UnitType": 1
+	},
+	"HoursOfPrecipitation": 0,
+	"HoursOfRain": 0,
+	"HoursOfSnow": 0,
+	"HoursOfIce": 0,
+	"CloudCover": 12
+  },
+  "Sources": [
+	"AccuWeather"
+  ],
+  "MobileLink": "http://m.accuweather.com/en/pt/sao-vicente/274357/daily-weather-forecast/274357?day=1&lang=en-us",
+  "Link": "http://www.accuweather.com/en/pt/sao-vicente/274357/daily-weather-forecast/274357?day=1&lang=en-us"
+}

@@ -1,0 +1,37 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+inhibit_all_warnings!
+    
+def common_pods
+    pod 'Redux-ReactiveSwift', '~> 0.1.2' # Our Redux library
+    pod 'ReactiveCocoa', '~> 7.0.1' # ReactiveCocoa has necessary UI bindings
+	pod 'ObjectMapper', '3.0.0' # ObjectMapper is for fast from/to JSON transformations
+end
+
+def test_pods
+    pod 'Quick', '1.2.0' # Quick is BDD-like Specs framework for XCode unit testing
+    pod 'Nimble', '7.0.3' # Nimble is a set of matchers for XCode unit testing
+end
+
+def app_pods
+	pod 'Alamofire', '4.5.1' # Alamofire is library we will use for network requests
+    pod 'AlamofireImage', '3.3.0' # To display fancy stuff like weather icons
+	pod 'SnapKit', '4.0.0' # A Swift Autolayout DSL for iOS & OS X
+end
+
+test_targets = ['Simple-Weather-AppTests']
+app_targets = ['Simple-Weather-App']
+
+test_targets.each { |targetName|
+    target targetName do
+        common_pods
+        test_pods
+    end
+}
+
+app_targets.each { |targetName|
+    target targetName do
+        common_pods
+        app_pods
+    end
+}
