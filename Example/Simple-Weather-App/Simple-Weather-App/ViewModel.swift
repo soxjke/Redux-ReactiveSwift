@@ -11,30 +11,28 @@ import Redux_ReactiveSwift
 import Result
 import ReactiveSwift
 
-enum UIState {
-    case current
-    case forecast(page: Int)
-}
-
-enum UIEvent {
-    case turnCurrent
-    case turnForecast
-    case turnLeft
-    case turnRight
-}
-
 class ViewModel {
+    enum UIState {
+        case current
+        case forecast(page: Int)
+    }
+    enum UIEvent {
+        case turnCurrent
+        case turnForecast
+        case turnLeft
+        case turnRight
+    }
     class UIStore: Store<UIState, UIEvent> {
-        fileprivate init() {
+        init() {
             super.init(state: .current, reducers: [uistore_reducer])
         }
         required init(state: UIState, reducers: [UIStore.Reducer]) {
-            fatalError("init(state:reducers:) cannot be called on type UIStore. Use `shared` accessor")
+            super.init(state: state, reducers: reducers)
         }
     }
     
-    private let uiStore = UIStore()
-    private let appStore = AppStore.shared
+    private let uiStore: UIStore
+    private let appStore: AppStore
     
     private (set) lazy var uiAction: Action<UIEvent, (), NoError> = createUIAction()
     private (set) lazy var reloadAction:  Action<(), (), NoError> = createReloadAction()
@@ -66,6 +64,11 @@ class ViewModel {
                 return allowedEvents.isSuperset(of: events)
         }
         .skipRepeats()
+    }
+    
+    required init(appStore: AppStore, uiStore: UIStore) {
+        self.appStore = appStore
+        self.uiStore = uiStore
     }
 }
 
@@ -101,7 +104,7 @@ extension ViewModel {
             }
         }
     }
-    fileprivate func forecastPageProducer() -> SignalProducer<Int, NoError> {
+    func forecastPageProducer() -> SignalProducer<Int, NoError> {
         return uiStore.producer
             .filter { if case .current = $0 { return false } else { return true } }
             .map { if case .forecast(let page) = $0 { return page } else { return 0 } }
@@ -116,14 +119,14 @@ extension ViewModel {
         return appStore.producer.map(ViewModel.toForecastFeatures)
     }
     
-    fileprivate static func toWeatherFeatures(appState: AppState) -> [WeatherFeatureCellKind] {
+    static func toWeatherFeatures(appState: AppState) -> [WeatherFeatureCellKind] {
         guard case .success(let currentWeather, _) = appState.weather.weatherRequestState else {
             return []
         }
         return currentWeather.toWeatherFeatures()
     }
     
-    fileprivate static func toForecastFeatures(appState: AppState) -> [[WeatherFeatureCellKind]] {
+    static func toForecastFeatures(appState: AppState) -> [[WeatherFeatureCellKind]] {
         guard case .success(_, let forecast) = appState.weather.weatherRequestState else {
             return []
         }
@@ -144,7 +147,7 @@ extension ViewModel {
     }
 }
 
-func uistore_reducer(state: UIState, event: UIEvent) -> UIState {
+func uistore_reducer(state: ViewModel.UIState, event: ViewModel.UIEvent) -> ViewModel.UIState {
     switch event {
     case .turnCurrent: return .current
     case .turnForecast: return .forecast(page: 0)

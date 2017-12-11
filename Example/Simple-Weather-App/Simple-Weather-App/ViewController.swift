@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     private lazy var forecastScrollView: PagedScrollView = PagedScrollView()
     private var forecastWeatherViews: [WeatherView] = []
     
-    private var viewModel = ViewModel()
+    private var viewModel = ViewModel(appStore: AppStore.shared, uiStore: ViewModel.UIStore())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,14 +72,14 @@ class ViewController: UIViewController {
         
         let action = viewModel.uiAction
         segmentedControl.reactive.controlEvents(.valueChanged)
-            .map { $0.selectedSegmentIndex == 0 ? UIEvent.turnCurrent : UIEvent.turnForecast }
+            .map { $0.selectedSegmentIndex == 0 ? ViewModel.UIEvent.turnCurrent : ViewModel.UIEvent.turnForecast }
             .observeValues { action.apply($0).start() }
         forecastScrollView.reactivePageProducer()
             .combinePrevious(0)
             .map { $0.1 - $0.0 } // get, -1, 0, 1 values
             .filter { $0 != 0 }
             .filter { [weak self] _ in return !(self?.forecastScrollView.isSoftwareAnimation ?? false) }
-            .map { return $0 == 1 ? UIEvent.turnRight : UIEvent.turnLeft }
+            .map { return $0 == 1 ? ViewModel.UIEvent.turnRight : ViewModel.UIEvent.turnLeft }
             .startWithValues { action.apply($0).start() }
         
         //        I would write in more FRP-like way, however Swift is so dumb when it comes to parsing
