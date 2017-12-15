@@ -78,7 +78,6 @@ class ViewController: UIViewController {
             .combinePrevious(0)
             .map { $0.1 - $0.0 } // get, -1, 0, 1 values
             .filter { $0 != 0 }
-            .filter { [weak self] _ in return !(self?.forecastScrollView.isSoftwareAnimation ?? false) }
             .map { return $0 == 1 ? ViewModel.UIEvent.turnRight : ViewModel.UIEvent.turnLeft }
             .startWithValues { action.apply($0).start() }
         

@@ -19,7 +19,7 @@ class PagedScrollView<T: UIView>: UIScrollView {
             recreateConstraints()
         }
     }
-    private (set) var isSoftwareAnimation: Bool = false
+    private let isSoftwareAnimation: MutableProperty<Bool> = .init(false)
     
     init() {
         pages = []
@@ -36,11 +36,13 @@ class PagedScrollView<T: UIView>: UIScrollView {
     }
     
     func set(page: Int, animated: Bool = true) {
-        isSoftwareAnimation = true
-        setContentOffset(CGPoint(x: CGFloat(page) * bounds.size.width, y: 0), animated: animated)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { [weak self] in
-            self?.isSoftwareAnimation = false
+        if (animated) {
+            isSoftwareAnimation.value = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { [weak self] in
+                self?.isSoftwareAnimation.value = false
+            }
         }
+        setContentOffset(CGPoint(x: CGFloat(page) * bounds.size.width, y: 0), animated: animated)
     }
     
     private func recreateSubviews() {
@@ -87,6 +89,7 @@ extension PagedScrollView {
                         strongSelf.bounds.size.width > 0 else { return 0 }
                 return Int((value.x / strongSelf.bounds.size.width).rounded())
             }
+            .filter { [weak self] _ -> Bool in return !(self?.isSoftwareAnimation.value ?? false) }
             .skipRepeats()
     }
 }
