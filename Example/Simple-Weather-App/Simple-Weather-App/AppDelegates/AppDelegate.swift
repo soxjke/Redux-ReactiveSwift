@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let _ = LocationService.shared
         let _ = WeatherService.shared
         
+        AppStore.shared.producer.logEvents().start()
+        
         return true
     }
 }

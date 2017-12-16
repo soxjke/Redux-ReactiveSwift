@@ -59,10 +59,12 @@ class ViewController: UIViewController {
     
     func setupOtherActions() {
         let action = viewModel.uiAction
-        weightTextField.reactive.textValues.skipNil().map(Int.init).skipNil().observeValues { action.apply(.setWeight(weight: $0)).start() }
-        heightTextField.reactive.textValues.skipNil().map(Int.init).skipNil().observeValues { action.apply(.setWeight(weight: $0)).start() }
-        weightTextField.reactive.textValues.skipNil().map(Int.init).skipNil().observeValues { action.apply(.setWeight(weight: $0)).start() }
-        // TODO: 4. Setup other bindings
+        weightTextField.reactive.continuousTextValues.skipNil().map(Int.init).skipNil().observeValues { action.apply(.setWeight(weight: $0)).start() }
+        heightTextField.reactive.continuousTextValues.skipNil().map(Int.init).skipNil().observeValues { action.apply(.setHeight(height: $0)).start() }
+        ageTextField.reactive.continuousTextValues.skipNil().map(Int.init).skipNil().observeValues { action.apply(.setAge(age: $0)).start() }
+        
+        maleOrFemaleSwitch.reactive.isOnValues.observeValues { action.apply(.setMaleOrFemale(maleOrFemale: $0)).start() }
+        activitySlider.reactive.values.observeValues { action.apply(.setActivityType(activityType: $0)).start() }
     }
 }
 

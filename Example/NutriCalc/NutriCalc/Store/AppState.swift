@@ -19,6 +19,9 @@ struct AppState {
 extension AppState {
     var dailyCaloriesIntake: Float {
         // TODO: 2. implement Harris-Benedict equaion
-        return 0
+        return (10 * Float(weight)
+            + 6.25 * Float(height)
+            - 5 * Float(age)
+            + Float(maleOrFemale ? 5 : -161)) * activityType
     }
 }

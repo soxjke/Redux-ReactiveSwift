@@ -37,19 +37,19 @@ fileprivate extension ViewModel {
     
     // TODO: 3. implement producers
     func createWeightProducer() -> SignalProducer<String, NoError> {
-        return .empty
+        return appStore.producer.map { "\($0.weight)" }
     }
     
     func createHeightProducer() -> SignalProducer<String, NoError> {
-        return .empty
+        return appStore.producer.map { "\($0.height)" }
     }
     
     func createAgeProducer() -> SignalProducer<String, NoError> {
-        return .empty
+        return appStore.producer.map { "\($0.age)" }
     }
     
     func createKcalProducer() -> SignalProducer<String, NoError> {
-        return .empty
+        return appStore.producer.map { "\($0.dailyCaloriesIntake)" }
     }
 }
 

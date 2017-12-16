@@ -13,7 +13,7 @@ import ObjectMapper
 
 class WeatherService {
     private struct Constants {
-        static let apiKey = "z74X7aKpZlip02a5Wlrq9R70JkDnOZsq"
+        static let apiKey = "7yLb1UKneALEl7pON1ryH4qAtkCz1eGG"
     }
     static let shared: WeatherService = WeatherService()
     fileprivate lazy var sessionManager: SessionManager = self.setupSessionManager()
