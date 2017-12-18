@@ -326,6 +326,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cW-13-iST">
+                                <rect key="frame" x="166.5" y="595" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -336,9 +342,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1VO-6N-zfU" secondAttribute="trailing" constant="8" id="CaS-Hb-p9y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xjv-Or-J8v" secondAttribute="trailing" constant="8" id="CwY-ch-o8Z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yWn-mc-XoC" secondAttribute="trailing" constant="8" id="Gzq-7e-PoE"/>
+                            <constraint firstItem="6cW-13-iST" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="K3j-dp-5CP"/>
                             <constraint firstItem="mk3-E0-WFI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KrW-EP-mPg"/>
                             <constraint firstItem="AHn-UZ-nmZ" firstAttribute="centerX" secondItem="mk3-E0-WFI" secondAttribute="centerX" id="N1P-od-pHv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NA8-le-vFa" secondAttribute="trailing" constant="8" id="RJu-1r-z5b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6cW-13-iST" secondAttribute="bottom" constant="51" id="RQw-JF-iTM"/>
                             <constraint firstItem="mk3-E0-WFI" firstAttribute="top" secondItem="G2e-nk-jEG" secondAttribute="bottom" constant="20" id="RkK-sl-9NY"/>
                             <constraint firstItem="Xjv-Or-J8v" firstAttribute="top" secondItem="1VO-6N-zfU" secondAttribute="bottom" id="Xs1-tj-fSg"/>
                             <constraint firstItem="1VO-6N-zfU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="YPo-Ok-Ifg"/>
@@ -357,6 +365,7 @@
                     <connections>
                         <outlet property="activitySlider" destination="zcl-ES-Rcl" id="2b4-B2-Qp0"/>
                         <outlet property="ageTextField" destination="k6Y-vB-h1g" id="KdW-DZ-kVj"/>
+                        <outlet property="error" destination="6cW-13-iST" id="eXg-7T-DxE"/>
                         <outlet property="heightTextField" destination="yTY-S0-gkn" id="G2K-YY-7Xb"/>
                         <outlet property="kilocaloriesLabel" destination="AHn-UZ-nmZ" id="2l5-u4-HpF"/>
                         <outlet property="maleOrFemaleSwitch" destination="rjR-m9-yAT" id="ump-oD-e8z"/>

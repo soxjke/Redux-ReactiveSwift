@@ -14,6 +14,7 @@ struct AppState {
     var age: Int
     var maleOrFemale: Bool
     var activityType: Float
+    var error: String?
 }
 
 extension AppState {

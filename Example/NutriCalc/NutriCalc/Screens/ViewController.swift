@@ -10,6 +10,7 @@ import UIKit
 import ReactiveCocoa
 import ReactiveSwift
 import Result
+import SnapKit
 
 class ViewController: UIViewController {
 
@@ -26,6 +27,8 @@ class ViewController: UIViewController {
     @IBOutlet private var weightTextField: UITextField!
     @IBOutlet private var heightTextField: UITextField!
     @IBOutlet private var ageTextField: UITextField!
+    
+    @IBOutlet private var error: UILabel!
     
     let viewModel = ViewModel(appStore: AppStore.shared)
     
@@ -55,6 +58,7 @@ class ViewController: UIViewController {
         heightTextField.reactive.text <~ viewModel.heightProducer
         ageTextField.reactive.text <~ viewModel.ageProducer
         kilocaloriesLabel.reactive.text <~ viewModel.kcalProducer
+        error.reactive.text <~ viewModel.errorProducer
     }
     
     func setupOtherActions() {

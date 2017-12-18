@@ -20,6 +20,7 @@ class ViewModel {
     private (set) lazy var heightProducer: SignalProducer<String, NoError> = createHeightProducer()
     private (set) lazy var ageProducer: SignalProducer<String, NoError> = createAgeProducer()
     private (set) lazy var kcalProducer: SignalProducer<String, NoError> = createKcalProducer()
+    private (set) lazy var errorProducer: SignalProducer<String?, NoError> = createErrorProducer()
 
     required init(appStore: AppStore) {
         self.appStore = appStore
@@ -50,6 +51,10 @@ fileprivate extension ViewModel {
     
     func createKcalProducer() -> SignalProducer<String, NoError> {
         return appStore.producer.map { "\($0.dailyCaloriesIntake)" }
+    }
+    
+    func createErrorProducer() -> SignalProducer<String?, NoError> {
+        return appStore.producer.map { $0.error }
     }
 }
 

@@ -14,7 +14,8 @@ extension AppState: Defaultable {
                                               height: 160,
                                               age: 25,
                                               maleOrFemale: false,
-                                              activityType: 1.375)
+                                              activityType: 1.375,
+                                              error: nil)
 }
 
 final class AppStore: Store<AppState, AppEvent> {
@@ -28,7 +29,7 @@ final class AppStore: Store<AppState, AppEvent> {
 }
 
 internal func appstore_reducer(state: AppState, event: AppEvent) -> AppState {
-    let newWeight = weightReducer(state: state, event: event)
+    let (newWeight, error) = weightReducer(state: state, event: event)
     let newHeight = heightReducer(state: state, event: event)
     let newAge = ageReducer(state: state, event: event)
     let newSex = sexReducer(state: state, event: event)
@@ -37,20 +38,27 @@ internal func appstore_reducer(state: AppState, event: AppEvent) -> AppState {
                     height: newHeight,
                     age: newAge,
                     maleOrFemale: newSex,
-                    activityType: newActivity
+                    activityType: newActivity,
+                    error: error
     )
 }
 
-private func weightReducer(state: AppState, event: AppEvent) -> Int {
+private func weightReducer(state: AppState, event: AppEvent) -> (Int, String?) {
     switch(event) {
     case .minusWeight:
-        return state.weight - 1
+        let newWeight = state.weight - 1
+        if newWeight < 0 {
+            return (0, "Weight cannot be less than 0")
+        }
+        else {
+            return (newWeight, nil)
+        }
     case .plusWeight:
-        return state.weight + 1
+        return (state.weight + 1, nil)
     case .setWeight(let weight):
-        return weight
+        return (weight, nil)
     default:
-        return state.weight
+        return (state.weight, state.error)
     }
 }
 
