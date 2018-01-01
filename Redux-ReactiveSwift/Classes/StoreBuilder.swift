@@ -38,30 +38,31 @@ public extension StoreBuilder where StateType: Defaultable {
 
 typealias MiddlewareBuilder = StoreBuilder
 public extension MiddlewareBuilder {
-    public func middleware(_ middleware: StoreMiddleware) {
-        middlewares.append(middleware)
+    public func middleware(_ middleware: StoreMiddleware) -> Self {
+        middlewares.append(middleware); return self
     }
 }
 
 typealias ReducerBuilder = StoreBuilder
 public extension ReducerBuilder {
-    public func reducer(_ reducer: @escaping (StateType, EventType) -> (StateType)) {
-        reducers.append(reducer)
+    public func reducer(_ reducer: @escaping (StateType, EventType) -> (StateType)) -> Self {
+        reducers.append(reducer); return self
     }
 }
 
 typealias LoggerBuilder = StoreBuilder
 public extension LoggerBuilder {
-    public func logger(log: @escaping (String) -> (), flags: LoggerFlags = .logAll, name: String? = nil) {
-        middlewares.append(Logger(log: log, flags: flags, name: name))
+    public func logger(log: @escaping (String) -> (), flags: LoggerFlags = .logAll, name: String? = nil) -> Self {
+        middlewares.append(Logger(log: log, flags: flags, name: name)); return self
     }
-    public func nslogger(flags: LoggerFlags = .logAll, name: String? = "Redux-ReactiveSwift-NSLogger") {
-        middlewares.append(Logger(log: { NSLog($0) }, flags: flags, name: name))
+    public func nslogger(flags: LoggerFlags = .logAll, name: String? = "Redux-ReactiveSwift-NSLogger") -> Self {
+        middlewares.append(Logger(log: { NSLog($0) }, flags: flags, name: name)); return self
     }
-    public func nsloggerDebug(flags: LoggerFlags = .logAll, name: String? = "Redux-ReactiveSwift-NSLogger-Debug") {
+    public func nsloggerDebug(flags: LoggerFlags = .logAll, name: String? = "Redux-ReactiveSwift-NSLogger-Debug") -> Self {
 #if DEBUG
         middlewares.append(Logger(log: { NSLog($0) }, flags: flags, name: name))
 #endif
+        return self
     }
 }
 
@@ -69,18 +70,18 @@ typealias DispatcherBuilder = StoreBuilder
 public extension DispatcherBuilder {
     public func dispatcher(queue: DispatchQueue = DispatchQueue(label:"Redux-ReactiveSwift.Dispatcher"),
                            qos: DispatchQoS = .default,
-                           name: String = "Redux-ReactiveSwift.Dispatcher") {
-        middlewares.append(Dispatcher(queue: queue, qos: qos, name: name))
+                           name: String = "Redux-ReactiveSwift.Dispatcher") -> Self {
+        middlewares.append(Dispatcher(queue: queue, qos: qos, name: name)); return self
     }
-    public func dispatcher(scheduler: Scheduler) {
-        middlewares.append(Dispatcher(scheduler: scheduler))
+    public func dispatcher(scheduler: Scheduler) -> Self {
+        middlewares.append(Dispatcher(scheduler: scheduler)); return self
     }
 }
 
 typealias PersisterBuilder = StoreBuilder
 public extension PersisterBuilder where StateType: Persistable {
     public func jsonFilePersister(url: URL = JSONFilePersister<StateType>.defaultPersisterURL(),
-                                  writerQueue: DispatchQueue = DispatchQueue(label: "Redux-ReactiveSwift.JSONFilePersister")) {
-        middlewares.append(JSONFilePersister<StateType>(url: url, writerQueue: writerQueue))
+                                  writerQueue: DispatchQueue = DispatchQueue(label: "Redux-ReactiveSwift.JSONFilePersister")) -> Self {
+        middlewares.append(JSONFilePersister<StateType>(url: url, writerQueue: writerQueue)); return self
     }
 }
