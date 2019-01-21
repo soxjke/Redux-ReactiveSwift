@@ -3,13 +3,13 @@ use_frameworks!
 inhibit_all_warnings!
     
 def common_pods
-	pod 'ReactiveSwift', '~> 3.0.0'
+	pod 'ReactiveSwift', '~> 4.0'
 end
 
 def test_pods
     pod 'Quick', '1.2.0'
     pod 'Nimble', '7.0.3'
-    pod 'ReactiveCocoa', '~> 7.0.1'
+    pod 'ReactiveCocoa', '~> 8.0'
 end
 
 def app_pods

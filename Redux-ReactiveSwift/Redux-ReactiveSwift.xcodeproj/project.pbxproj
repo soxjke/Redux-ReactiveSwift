@@ -482,7 +482,6 @@
 				4BD3B3501F9691420077E8A5 /* Frameworks */,
 				4BD3B3511F9691420077E8A5 /* Headers */,
 				4BD3B3521F9691420077E8A5 /* Resources */,
-				79F10665D300B16A9EFF8465 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -502,7 +501,6 @@
 				4BD3B35E1F9692080077E8A5 /* Frameworks */,
 				4BD3B35F1F9692080077E8A5 /* Headers */,
 				4BD3B3601F9692080077E8A5 /* Resources */,
-				FD2C231B883B66AB45F6DC10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -522,7 +520,6 @@
 				4BD3B36B1F9692630077E8A5 /* Frameworks */,
 				4BD3B36C1F9692630077E8A5 /* Headers */,
 				4BD3B36D1F9692630077E8A5 /* Resources */,
-				374D1C11267B7865F93EF7EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -542,7 +539,6 @@
 				4BD3B3781F9692AA0077E8A5 /* Frameworks */,
 				4BD3B3791F9692AA0077E8A5 /* Headers */,
 				4BD3B37A1F9692AA0077E8A5 /* Resources */,
-				C47D99480225C6E324CA5B60 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -562,7 +558,6 @@
 				4BD3B3851F9694900077E8A5 /* Frameworks */,
 				4BD3B3861F9694900077E8A5 /* Resources */,
 				066C8F36C0F64BC08BA72E4D /* [CP] Embed Pods Frameworks */,
-				D1ACAE7AB0F0D52F6E447EEA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -878,21 +873,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		374D1C11267B7865F93EF7EC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-tvOS/Pods-CocoaPods-Redux-ReactiveSwift-tvOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4BD3B4131F96A88D0077E8A5 /* [Carthage] Copy frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -935,21 +915,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		79F10665D300B16A9EFF8465 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-iOS/Pods-CocoaPods-Redux-ReactiveSwift-iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8F4755DED8CEF00427936C40 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -984,51 +949,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C47D99480225C6E324CA5B60 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-macOS/Pods-CocoaPods-Redux-ReactiveSwift-macOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D1ACAE7AB0F0D52F6E447EEA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-iOSTests/Pods-CocoaPods-Redux-ReactiveSwift-iOSTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD2C231B883B66AB45F6DC10 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Redux-ReactiveSwift-watchOS/Pods-CocoaPods-Redux-ReactiveSwift-watchOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1211,7 +1131,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1277,7 +1197,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
