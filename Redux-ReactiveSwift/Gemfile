@@ -3,5 +3,5 @@ source "https://rubygems.org"
 
 # gem "rails"
 gem "fastlane"
-gem "cocoapods"
+gem "cocoapods", '~>1.6'
 gem "xcov"
