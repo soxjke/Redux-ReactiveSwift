@@ -48,7 +48,7 @@ extension Store: PropertyProtocol {
 public extension Store {
     @discardableResult
     public static func <~ <Source: BindingSource> (target: Store<State, Event>, source: Source) -> Disposable?
-        where Event == Source.Value, Source.Error == NoError
+        where Event == Source.Value
     {
         return source.producer
             .take(during: target.innerProperty.lifetime)
