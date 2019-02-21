@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/CwlPreconditionTesting_POSIX.h</key>
 		<data>
-		KNkAsmShKcv61xdaEoBEX76MVaA=
+		SRA06e2QXyt14jcs92tRfN7ra68=
 		</data>
 		<key>Headers/DSL.h</key>
 		<data>
-		xspJhcpSUtfcWDZCGz7LAadVNAo=
+		SOBfGtgRhnc4tVJG4EwkkPJii9g=
 		</data>
 		<key>Headers/NMBExceptionCapture.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/Nimble-Swift.h</key>
 		<data>
-		jeKzgjXncd/4+qtGrKKvCkWRwMo=
+		yE22Tg2LYlMXEjSxDpVl29GjLWk=
 		</data>
 		<key>Headers/Nimble.h</key>
 		<data>
@@ -30,15 +30,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lscX1GWXx+XcRidC1c9YrcJLUJM=
+		ms8DJYIpucHJAGxmhqhc33kbH10=
 		</data>
 		<key>Modules/Nimble.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		Pc1jQ/5FPxMhfN6WlVnVLPdcj1M=
+		6+cbN7yaKIHXhsoFHV689kcN7Fk=
 		</data>
 		<key>Modules/Nimble.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		YIPsKTIpULT6luPIFOd+jHdUyxM=
+		6sX80DnUYtma0xndz2Lhrh6DUbU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,22 +51,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KNkAsmShKcv61xdaEoBEX76MVaA=
+			SRA06e2QXyt14jcs92tRfN7ra68=
 			</data>
 			<key>hash2</key>
 			<data>
-			p2pd+GfBsKdSRsAI2hOCHnD4rzFvsww4WfvJ9KU0MHI=
+			OJXTKFENKMHLxfaqwTL8H6CL12YGVKwIC4p/PDQ2LZI=
 			</data>
 		</dict>
 		<key>Headers/DSL.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xspJhcpSUtfcWDZCGz7LAadVNAo=
+			SOBfGtgRhnc4tVJG4EwkkPJii9g=
 			</data>
 			<key>hash2</key>
 			<data>
-			IhkFUIWbW7ji5CEGZYlaEayp8InuzaaaSPffhuU51Bg=
+			NFDdRVJ1bTqyHbAUCpzIoHA7qFg19J7VsZTMaZ/dqM0=
 			</data>
 		</dict>
 		<key>Headers/NMBExceptionCapture.h</key>
@@ -95,11 +95,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jeKzgjXncd/4+qtGrKKvCkWRwMo=
+			yE22Tg2LYlMXEjSxDpVl29GjLWk=
 			</data>
 			<key>hash2</key>
 			<data>
-			S2fZbgPoDAtc7hqYA928H/SNGHL7w9iQw8qXRto1CSc=
+			17WYt1Jqjsrg05J2wpuMIRUqrfI5gyw+nPRoS2mqcAk=
 			</data>
 		</dict>
 		<key>Headers/Nimble.h</key>
@@ -117,22 +117,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Pc1jQ/5FPxMhfN6WlVnVLPdcj1M=
+			6+cbN7yaKIHXhsoFHV689kcN7Fk=
 			</data>
 			<key>hash2</key>
 			<data>
-			JBBG2sVmlskwWMClWniLXa40ZGzclHaDONL1IXWBtU0=
+			nrpamWgfHrFUHA+N/d07n07fUL7nXCVBICvnVOoa8FQ=
 			</data>
 		</dict>
 		<key>Modules/Nimble.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YIPsKTIpULT6luPIFOd+jHdUyxM=
+			6sX80DnUYtma0xndz2Lhrh6DUbU=
 			</data>
 			<key>hash2</key>
 			<data>
-			OkER/KfmVPzDUjvigaGyVZUL5rfd/tavpx9ShDSBLGQ=
+			wE+mcU6QbYNlcVoMD5EpOOC2NEBCQXkCQZnYmLMGiDE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -149,7 +149,7 @@
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -180,24 +180,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -233,13 +221,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>
