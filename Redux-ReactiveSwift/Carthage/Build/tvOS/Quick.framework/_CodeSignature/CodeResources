@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/Quick-Swift.h</key>
 		<data>
-		cZOrOKC178uzV24BMvOb4kMg1kQ=
+		sGivkAiP8rXEHBfgFzkIIhOB9p4=
 		</data>
 		<key>Headers/Quick.h</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Headers/QuickSpec.h</key>
 		<data>
-		B0cLbTc/bo1UiXHkZtsB6FxMM3I=
+		8lk/cgg9oHeXFiFsEUPPtLik/Ns=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lpqbMTvesUdO7zGBgWoDS08g+Sw=
+		p/LeVLS8geHCU30bgx79I6Eh6U4=
 		</data>
 		<key>Modules/Quick.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		GPH5wMyFk2+3Yd3mV5Hfby2LgXk=
+		0srDvKcmGVHEpiwrSJexOZBDxOo=
 		</data>
 		<key>Modules/Quick.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		7lQQqjOO8GZtBmIVkb3f7c4Gxco=
+		+3UmOVRnbEkvuvcyf8VkzL6qc+o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,11 +58,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cZOrOKC178uzV24BMvOb4kMg1kQ=
+			sGivkAiP8rXEHBfgFzkIIhOB9p4=
 			</data>
 			<key>hash2</key>
 			<data>
-			81pRLhtLmC9ELfjWdbXuLmaxKF2hXNbHny/vqY/x6B8=
+			bI+cO3VeecN8FgSVIgIUb+N8CWZfCbc6DBin1y8YnBw=
 			</data>
 		</dict>
 		<key>Headers/Quick.h</key>
@@ -91,33 +91,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			B0cLbTc/bo1UiXHkZtsB6FxMM3I=
+			8lk/cgg9oHeXFiFsEUPPtLik/Ns=
 			</data>
 			<key>hash2</key>
 			<data>
-			gdg83VpG4Tnf4GvfN1FREy7FLEt+MYvQeZBsPQ9MpjA=
+			KErYCB9wbuXdCdGonv0AfgUCnl/QYfDKOzB8e7tngJE=
 			</data>
 		</dict>
 		<key>Modules/Quick.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GPH5wMyFk2+3Yd3mV5Hfby2LgXk=
+			0srDvKcmGVHEpiwrSJexOZBDxOo=
 			</data>
 			<key>hash2</key>
 			<data>
-			wQbBt5vcT1VZVTcqBiajoudMfke97rlHSPJ1Vx3Ioe4=
+			9l39FBhuHN+ytl4+N/zt6bdzZWi/5VrIMp+MlopvooI=
 			</data>
 		</dict>
 		<key>Modules/Quick.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7lQQqjOO8GZtBmIVkb3f7c4Gxco=
+			+3UmOVRnbEkvuvcyf8VkzL6qc+o=
 			</data>
 			<key>hash2</key>
 			<data>
-			3KsnGYQT4nyQsE0pEmtF0FvKN8WvE4WSRTy/WJlV9/E=
+			xUw5wYJbOzkMGPxTbNwWvI0gzqp6oUippijIoSokfAw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -134,7 +134,7 @@
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -165,24 +165,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -218,13 +206,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>

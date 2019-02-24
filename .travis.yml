@@ -1,6 +1,7 @@
-osx_image: xcode9
+osx_image: xcode10.1
 language: swift
 before_install:
+- bundle install
 - cd Redux-ReactiveSwift
 - bundle install
 - pod repo update
@@ -8,6 +9,6 @@ script:
 - fastlane ios cocoapods_test
 - fastlane ios carthage_test
 - cd ..
-- pod lib lint
+- bundle exec pod lib lint --verbose
 after_success:
   - bash <(curl -s https://codecov.io/bash) -J 'Redux-ReactiveSwift'
