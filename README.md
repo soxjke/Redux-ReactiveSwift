@@ -1,4 +1,6 @@
 # IMPORTANT: SUPPORT UKRAINE NOW 🇺🇦
+
+Please, spend few minutes reading through the website: 
 https://supportukrainenow.org/
 
 
