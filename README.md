@@ -1,3 +1,5 @@
+![Support Ukraine](https://img.shields.io/badge/Support%20%F0%9F%87%BA%F0%9F%87%A6-Ukraine-yellowgreen?link=https://supportukrainenow.org/)
+
 # IMPORTANT: SUPPORT UKRAINE NOW 🇺🇦
 
 Please, spend few minutes reading through the website: 
